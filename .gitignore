@@ -1,0 +1,20 @@
+# Secrets - never commit
+.env
+.env.*
+*.key
+*.pem
+**/secrets/
+*_token*
+*_secret*
+
+# Node / build
+node_modules/
+dist/
+.next/
+.vercel/
+
+# OS
+.DS_Store
+
+# Private drafts you don't want public (opt-in per file: name it *.private.md)
+*.private.md
