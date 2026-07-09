@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The ZAO on Paragraph</title>
+<meta name="description" content="The ZAO newsletter on Paragraph - drafting, publishing, and distribution. 400+ editions of daily build-in-public.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0b0b0c;
+    --fg: #f2f2f0;
+    --muted: #9a9a95;
+    --line: #262625;
+    --accent: #f2f2f0;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #faf9f6; --fg: #16160f; --muted: #5c5c56; --line: #e2e0da; --accent: #16160f; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    line-height: 1.55;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 5rem;
+  }
+  .kicker {
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
+    font-size: 0.8rem;
+    margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  p { color: var(--fg); margin: 0 0 1.1rem; }
+  .lede { color: var(--muted); font-size: 1.05rem; max-width: 56ch; }
+  .stats {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0 2.5rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .stat b { display: block; font-size: 1.4rem; }
+  .stat span { color: var(--muted); font-size: 0.85rem; }
+  a { color: var(--accent); text-decoration-color: var(--line); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--accent); }
+  section { margin: 2.25rem 0; }
+  h2 {
+    font-size: 0.85rem;
+    text-transform: lowercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin: 0 0 0.9rem;
+    font-weight: 600;
+  }
+  .tree {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+  }
+  .tree div { padding: 0.15rem 0; }
+  .tree b { color: var(--fg); }
+  .tree span { color: var(--muted); }
+  .links { display: flex; flex-direction: column; gap: 0.4rem; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">zaoonparagraph</p>
+  <h1>The ZAO on Paragraph</h1>
+  <p class="lede">The ZAO's daily newsletter - drafting, publishing, and distribution, all in one place. Build-in-public, one issue at a time.</p>
+
+  <div class="stats">
+    <div class="stat"><b>400+</b><span>editions shipped</span></div>
+    <div class="stat"><b>78</b><span>paid supporters</span></div>
+    <div class="stat"><b>3</b><span>series: Year of the ZAO / Year of the ZABAL / ZTalent</span></div>
+  </div>
+
+  <section>
+    <h2>read it</h2>
+    <p>The newsletter itself lives on Paragraph: <a href="https://paragraph.com/@thezao">paragraph.com/@thezao</a></p>
+  </section>
+
+  <section>
+    <h2>what this repo is</h2>
+    <p>This is the working repo behind the newsletter - not the newsletter itself. Drafts get written here, checked against the voice, and pushed to Paragraph as drafts (never auto-published). Everything below is folder, not feature:</p>
+    <div class="tree">
+      <div><b>drafts/</b> <span>- in progress, not yet published</span></div>
+      <div><b>published/</b> <span>- archive of what actually went out</span></div>
+      <div><b>templates/</b> <span>- daily-3 / deep-dive / recap formats</span></div>
+      <div><b>automation/</b> <span>- the Paragraph API pipe, draft-only, hard-gated</span></div>
+      <div><b>research/</b> <span>- strategy and platform notes</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>the daily-3 builder</h2>
+    <p>Issues get composed and voice-scored at <a href="https://zabalnewsletterbuilder.vercel.app">zabalnewsletterbuilder.vercel.app</a> before landing here as a draft.</p>
+  </section>
+
+  <section>
+    <h2>the voice</h2>
+    <p>all lowercase. no commas. every issue opens with "zm." no emojis, no em dashes, no hype. one signoff: BetterCallZaal on behalf of the ZABAL Team.</p>
+  </section>
+
+  <footer>
+    <p>source: <a href="https://github.com/bettercallzaal/zaoonparagraph">github.com/bettercallzaal/zaoonparagraph</a></p>
+  </footer>
+</main>
+</body>
+</html>
