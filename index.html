@@ -112,6 +112,13 @@
   </section>
 
   <section>
+    <h2>latest issues</h2>
+    <p id="latest-issues-status" style="color: var(--muted); font-size: 0.85rem;">loading...</p>
+    <div id="latest-issues" class="links"></div>
+    <p style="color: var(--muted); font-size: 0.8rem; margin-top: 0.75rem;">pulled live from Paragraph's public API - no auth, no build step. this page is proof this repo can run headless against Paragraph's own content.</p>
+  </section>
+
+  <section>
     <h2>what this repo is</h2>
     <p>This is the working repo behind the newsletter - not the newsletter itself. Drafts get written here, checked against the voice, and pushed to Paragraph as drafts (never auto-published). Everything below is folder, not feature:</p>
     <div class="tree">
@@ -137,5 +144,33 @@
     <p>source: <a href="https://github.com/bettercallzaal/zaoonparagraph">github.com/bettercallzaal/zaoonparagraph</a></p>
   </footer>
 </main>
+<script>
+(async function () {
+  var statusEl = document.getElementById('latest-issues-status');
+  var listEl = document.getElementById('latest-issues');
+  var PUBLICATION_ID = 'DB7iU1HMVzTT9bI4ec6X';
+  try {
+    var res = await fetch('https://public.api.paragraph.com/api/v1/publications/' + PUBLICATION_ID + '/posts?limit=3');
+    if (!res.ok) throw new Error('status ' + res.status);
+    var data = await res.json();
+    var items = (data && data.items) || [];
+    if (items.length === 0) {
+      statusEl.textContent = 'no issues found';
+      return;
+    }
+    statusEl.remove();
+    items.forEach(function (post) {
+      var row = document.createElement('div');
+      var link = document.createElement('a');
+      link.href = 'https://paragraph.com/@thezao/' + post.slug;
+      link.textContent = post.title;
+      row.appendChild(link);
+      listEl.appendChild(row);
+    });
+  } catch (err) {
+    statusEl.textContent = 'could not load latest issues right now';
+  }
+})();
+</script>
 </body>
 </html>
