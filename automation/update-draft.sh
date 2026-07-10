@@ -1,18 +1,20 @@
 #!/usr/bin/env bash
-# Push a markdown file to Paragraph as a DRAFT via the public API.
-# Never publishes, never sends the newsletter, never schedules.
-# Runs check-voice.sh first and refuses to push if a hard rule fails.
+# Update an existing Paragraph post's title + content by ID. Companion to
+# create-draft.sh - built after a manual one-off curl was needed to fix
+# the Day 191 draft in place instead of creating a duplicate.
 #
-# Usage: automation/create-draft.sh <drafts/file.md> [title] [--force]
-# Title is optional - if omitted, derived from the file's "# Heading" line.
-# The file can be the raw drafts/ file (with its "# Title" line) or a
-# body-only file - either way the H1 line is stripped before posting.
-# --force skips the voice check (use only when you've reviewed it yourself).
+# Note: Paragraph's update endpoint does not return a status field, so
+# unlike create-draft.sh this cannot re-confirm status=draft after the
+# call. Only use this on a post you already know is a draft - never on
+# one you haven't verified.
+#
+# Usage: automation/update-draft.sh <post-id> <drafts/file.md> [title] [--force]
 
 set -euo pipefail
 
-FILE="${1:?usage: create-draft.sh <markdown-file> [title] [--force]}"
-shift
+POST_ID="${1:?usage: update-draft.sh <post-id> <markdown-file> [title] [--force]}"
+FILE="${2:?usage: update-draft.sh <post-id> <markdown-file> [title] [--force]}"
+shift 2
 
 TITLE=""
 FORCE=0
@@ -66,27 +68,22 @@ PY
 PAYLOAD=$(python3 - "$TITLE" "$MARKDOWN" <<'PY'
 import json, sys
 title, markdown = sys.argv[1], sys.argv[2]
-print(json.dumps({
-    "title": title,
-    "markdown": markdown,
-    "status": "draft",
-    "sendNewsletter": False,
-}))
+print(json.dumps({"title": title, "markdown": markdown}))
 PY
 )
 
-RESPONSE=$(curl -sS -X POST "https://public.api.paragraph.com/api/v1/posts" \
+RESPONSE=$(curl -sS -X PUT "https://public.api.paragraph.com/api/v1/posts/${POST_ID}" \
   -H "Authorization: Bearer ${PARAGRAPH_API_KEY}" \
   -H "Content-Type: application/json" \
   -d "$PAYLOAD")
 
 echo "$RESPONSE"
 
-STATUS=$(echo "$RESPONSE" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('status','unknown'))" 2>/dev/null || echo "unknown")
+SUCCESS=$(echo "$RESPONSE" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('success', False))" 2>/dev/null || echo "False")
 
-if [ "$STATUS" != "draft" ]; then
-  echo "WARNING: Paragraph did not return status=draft (got: $STATUS). Check the response above before trusting this ran safely." >&2
+if [ "$SUCCESS" != "True" ]; then
+  echo "WARNING: response did not confirm success. Check the response above." >&2
   exit 2
 fi
 
-echo "Draft created on Paragraph. Status confirmed: draft. Go publish it yourself when ready."
+echo "Post ${POST_ID} updated. This does not change its publish status - verify that separately if unsure."
