@@ -12,9 +12,14 @@ Two things came up while checking the live @thezao dashboard this morning that a
 - The GeckoTerminal pool link on the coin page returns a 404 - no indexed trading pool. There's a token, but no real functioning market for it right now.
 - Writer Coins are confirmed **opt-in, not automatic** - Paragraph's own docs (`docs/earn/writer-coins`) require going to Publication Settings > Monetization and clicking "Launch writer coin" with a wallet connected. This did not happen by accident or by default - someone deliberately launched it.
 
-**What's NOT confirmed - worth checking in Settings > Monetization directly before the meeting:**
-- Who launched it and when. Basescan didn't surface a clean creation timestamp from what's publicly readable, and this predates anything discovered in this session's research - it wasn't mentioned in yesterday's Paragraph platform research pass at all, meaning it was launched before that research or missed by it.
-- Whether the newsletter's own AI agent (live since 2026-07-07) launched it, or a team member did manually at some earlier point.
+**Update - contract creation and deployer, resolved:** the contract was created **2025-11-24** (227 days before this brief), block 38616506, tx `0x25d23a4a8dc384df536df29fd0cd9a62d7a30d8e26119c0985e1309807cb5a76`. That's roughly seven months before the native AI agent existed (shipped 2026-07-07) - the agent did not launch this coin.
+
+The deploying address (`0x807347b560ea593a5672eD598dCbE3bfA449cA88`) carries a community "Fake_Phishing2888739" tag on Basescan, which is worth naming plainly rather than burying. Here's what resolves that: it has 29,437 total transactions and holds 126+ different ERC-20 tokens, and its recent activity is almost entirely `launch()` calls to `0x9E68675b4bbaA7C281e07496cF24BAe65E8450EC` - a **verified contract named `ParagraphCoinFactory`** on Basescan, which shows 12,389 total transactions with activity concentrated from this same single source address. That pattern - one wallet, thousands of `launch()` calls, all to Paragraph's own verified coin factory - is what a shared platform backend relayer looks like, not a wallet built to target one publication. This strongly indicates $ZAAL was launched through Paragraph's real, legitimate coin infrastructure, not by an impersonator using ZAO's name.
+
+The phishing tag itself is still unresolved and worth a direct question to Paragraph support before doing anything further with the coin (seeding liquidity, promoting it) - but it reads as either a stale/false-positive community label on a high-volume infrastructure wallet, or an unrelated incident mixed into that wallet's other activity, not evidence that $ZAAL itself is fraudulent.
+
+**Still not confirmed - worth checking in Settings > Monetization directly before the meeting:**
+- Who on the team clicked "Launch writer coin" back on 2025-11-24, since Paragraph's own docs confirm this requires a deliberate action and a connected wallet - it wasn't automatic and it wasn't the AI agent.
 
 **One thing everyone should know before the meeting:** launching a Writer Coin already changed the site's main call to action - Paragraph's docs confirm the top-nav "Subscribe" button becomes "Support" once a coin is live, and existing support buttons now point to buying the coin instead of a plain subscribe/tip flow. This is already live on @thezao right now, whether or not anyone remembers deciding it.
 
