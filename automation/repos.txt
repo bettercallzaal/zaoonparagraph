@@ -1,0 +1,10 @@
+# Local repo paths to check for real wins when drafting a daily-3 or weekly recap.
+# One path per line. Blank lines and lines starting with # are ignored.
+# Add/remove paths here as projects come and go - collect-wins.sh reads this file.
+
+/Users/zaalpanthaki/Desktop/repos/zaoonparagraph
+/Users/zaalpanthaki/Desktop/repos/zabalnewsletterbuilder
+/Users/zaalpanthaki/Desktop/repos/ZAOOS
+/Users/zaalpanthaki/Documents/zuke/ZAOVideoEditor
+/Users/zaalpanthaki/Documents/zuke/Zuke
+/Users/zaalpanthaki/Documents/zuke/juke-space-recap
