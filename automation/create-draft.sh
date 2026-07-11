@@ -89,4 +89,22 @@ if [ "$STATUS" != "draft" ]; then
   exit 2
 fi
 
+POST_ID=$(echo "$RESPONSE" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('id',''))" 2>/dev/null || echo "")
+if [ -n "$POST_ID" ]; then
+  MAP_FILE="$SCRIPT_DIR/post-ids.json"
+  python3 - "$MAP_FILE" "$FILE" "$POST_ID" <<'PY'
+import json, os, sys
+map_file, file_key, post_id = sys.argv[1], sys.argv[2], sys.argv[3]
+data = {}
+if os.path.exists(map_file):
+    with open(map_file) as f:
+        data = json.load(f)
+data[file_key] = post_id
+with open(map_file, "w") as f:
+    json.dump(data, f, indent=2, sort_keys=True)
+    f.write("\n")
+PY
+  echo "Recorded post id in automation/post-ids.json"
+fi
+
 echo "Draft created on Paragraph. Status confirmed: draft. Go publish it yourself when ready."
