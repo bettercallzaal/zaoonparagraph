@@ -19,7 +19,8 @@ See `CLAUDE.md` for the charter, voice rules, and the current cleanup goal.
 3. `automation/check-voice.sh drafts/<file>` - runs every mechanical voice check in one shot (commas, em dashes, exclamation, work-day time refs, single signature, opens with zm., word count band). `create-draft.sh` and `update-draft.sh` both run this automatically and refuse to push on a hard failure (`--force` to override).
 4. `automation/create-draft.sh drafts/<file>` - pushes it to Paragraph as a draft (never publishes, never sends the newsletter). Title is auto-derived from the file's `# Heading` line unless passed explicitly.
 5. Need to fix something after it's already pushed? `automation/update-draft.sh <post-id> drafts/<file>` updates it in place - no duplicate draft.
-6. Once Zaal actually publishes it on Paragraph: `automation/archive-issue.sh drafts/<file>` moves it to `published/` so that folder is a real archive instead of staying empty.
+6. `automation/check-published.sh` - checks every tracked draft (`automation/post-ids.json`, written automatically by `create-draft.sh`) against Paragraph's real live status and flags any that have actually been published so they're not sitting un-archived.
+7. Once Zaal actually publishes it on Paragraph: `automation/archive-issue.sh drafts/<file>` moves it to `published/` and updates `post-ids.json` to match - so that folder is a real archive instead of staying empty, and the ID tracking stays correct after the move.
 
 ## Thumbnail
 
