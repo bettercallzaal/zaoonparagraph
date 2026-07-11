@@ -19,3 +19,4 @@ dist/
 
 # Private drafts you don't want public (opt-in per file: name it *.private.md)
 *.private.md
+.gstack/
