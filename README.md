@@ -21,6 +21,16 @@ See `CLAUDE.md` for the charter, voice rules, and the current cleanup goal.
 5. Need to fix something after it's already pushed? `automation/update-draft.sh <post-id> drafts/<file>` updates it in place - no duplicate draft.
 6. Once Zaal actually publishes it on Paragraph: `automation/archive-issue.sh drafts/<file>` moves it to `published/` so that folder is a real archive instead of staying empty.
 
+## Thumbnail
+
+The daily design lives in Canva ("ZABAL Daily Designs") - only the day number changes issue to issue. Three tested steps replace manually editing the number and re-downloading:
+
+1. `automation/render-thumbnail.sh <clean-background.png> <day-number> <output.png>` - overlays "DAY N" onto a background with the number removed in Canva. `--top` / `--font-size` nudge the position if needed.
+2. Commit the rendered PNG to this repo (e.g. `assets/thumbnails/day-N.png`) and push - `raw.githubusercontent.com/bettercallzaal/zaoonparagraph/main/assets/thumbnails/day-N.png` is the hosted URL Paragraph will fetch.
+3. `automation/set-thumbnail.sh <post-id> <raw-url>` - sets it as the post's thumbnail. Paragraph fetches and re-hosts it on their own storage, so the raw GitHub URL only needs to be reachable at call time.
+
+All three steps tested individually and working. Not yet combined into one script since there's no real background image to test the full pipeline against.
+
 ## Current focus
 
 Paragraph posting is decided: keep the zabalnewsletterbuilder + zaoonparagraph daily-3 flow as production (draft-only, human-gated). Paragraph's own native AI agent (shipped 2026-07-07) is worth piloting narrowly later, not a replacement yet - see `research/2026-07-09-paragraph-platform-potential.md` for why.
