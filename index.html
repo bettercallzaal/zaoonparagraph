@@ -119,6 +119,13 @@
   </section>
 
   <section>
+    <h2>review queue</h2>
+    <p id="review-queue-status" style="color: var(--muted); font-size: 0.85rem;">loading...</p>
+    <div id="review-queue" class="links"></div>
+    <p style="color: var(--muted); font-size: 0.8rem; margin-top: 0.75rem;">recent pull requests on this repo, pulled live from GitHub - drafts, research, and tooling as they land. check from anywhere.</p>
+  </section>
+
+  <section>
     <h2>what this repo is</h2>
     <p>This is the working repo behind the newsletter - not the newsletter itself. Drafts get written here, checked against the voice, and pushed to Paragraph as drafts (never auto-published). Everything below is folder, not feature:</p>
     <div class="tree">
@@ -169,6 +176,32 @@
     });
   } catch (err) {
     statusEl.textContent = 'could not load latest issues right now';
+  }
+})();
+
+(async function () {
+  var statusEl = document.getElementById('review-queue-status');
+  var listEl = document.getElementById('review-queue');
+  try {
+    var res = await fetch('https://api.github.com/repos/bettercallzaal/zaoonparagraph/pulls?state=all&per_page=8');
+    if (!res.ok) throw new Error('status ' + res.status);
+    var prs = await res.json();
+    if (!Array.isArray(prs) || prs.length === 0) {
+      statusEl.textContent = 'no pull requests found';
+      return;
+    }
+    statusEl.remove();
+    prs.forEach(function (pr) {
+      var row = document.createElement('div');
+      var link = document.createElement('a');
+      link.href = pr.html_url;
+      var tag = pr.merged_at ? '[merged] ' : (pr.state === 'open' ? '[open] ' : '[closed] ');
+      link.textContent = tag + '#' + pr.number + ' - ' + pr.title;
+      row.appendChild(link);
+      listEl.appendChild(row);
+    });
+  } catch (err) {
+    statusEl.textContent = 'could not load the review queue right now';
   }
 })();
 </script>
