@@ -21,9 +21,11 @@ WaveWarZ already has exactly what COC Concertz didn't: a **daily-to-weekly caden
 
 **Why this is lower-friction than the COC Concertz idea:** no cross-project buy-in question - WaveWarZ leaderboard data is already public on `wavewarz.info`, reading it and writing a recap doesn't require anyone's permission the way posting COC Concertz show content on a new publication would. It's purely an editorial/formatting decision Zaal can make alone.
 
-## What's not yet confirmed
+## Resolved - no public API
 
-Whether WaveWarZ exposes this leaderboard data via an API (checked only the public web pages, not for a documented API) - if it does, `collect-wins.sh`'s pattern could extend to pull real standings automatically instead of reading the leaderboard pages by hand each week.
+Checked the network traffic on the live leaderboard page directly: WaveWarZ is a Next.js app, and the leaderboard data loads via Next.js's internal React Server Components mechanism (`?_rsc=<hash>` requests), not a documented REST or JSON endpoint. That's an internal rendering detail, not a stable public API - it can change on any Next.js version bump and isn't meant to be built against.
+
+This means the weekly recap idea above needs manual reading of the leaderboard pages each week, same as originally caveated - `collect-wins.sh`'s automated-pull pattern doesn't extend here without WaveWarZ shipping an actual public API first.
 
 ## Sources
 
