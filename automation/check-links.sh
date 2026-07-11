@@ -1,18 +1,28 @@
 #!/usr/bin/env bash
-# Extract every http(s) link from drafts/, published/, and research/ and
-# check it's still live. Grounded claims are only as good as the links
-# backing them - this catches rot before someone clicks a dead source.
+# Extract every http(s) link and check it's still live. Grounded claims
+# are only as good as the links backing them - this catches rot before
+# someone clicks a dead source.
 #
-# Usage: check-links.sh
+# Usage: check-links.sh [file]
+# With no argument: scans drafts/, published/, and research/.
+# With a file argument: scans just that one file (e.g. called from
+# create-draft.sh before pushing a specific issue).
 
 set -uo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_ROOT"
 
-LINKS=$(grep -rhoE '\]\((https?://[^)]+)\)' drafts/ published/ research/ 2>/dev/null \
-  | sed -E 's/^\]\((.*)\)$/\1/' \
-  | sort -u)
+TARGET="${1:-}"
+if [ -n "$TARGET" ]; then
+  LINKS=$(grep -hoE '\]\((https?://[^)]+)\)' "$TARGET" 2>/dev/null \
+    | sed -E 's/^\]\((.*)\)$/\1/' \
+    | sort -u)
+else
+  LINKS=$(grep -rhoE '\]\((https?://[^)]+)\)' drafts/ published/ research/ 2>/dev/null \
+    | sed -E 's/^\]\((.*)\)$/\1/' \
+    | sort -u)
+fi
 
 if [ -z "$LINKS" ]; then
   echo "No links found."
