@@ -37,10 +37,19 @@ fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CHECK_VOICE="$SCRIPT_DIR/check-voice.sh"
+CHECK_LINKS="$SCRIPT_DIR/check-links.sh"
 
 if [ "$FORCE" -eq 0 ] && [ -x "$CHECK_VOICE" ]; then
   if ! "$CHECK_VOICE" "$FILE"; then
     echo "Voice check failed - fix the draft or rerun with --force to push anyway." >&2
+    exit 1
+  fi
+  echo
+fi
+
+if [ "$FORCE" -eq 0 ] && [ -x "$CHECK_LINKS" ]; then
+  if ! "$CHECK_LINKS" "$FILE"; then
+    echo "One or more links in this draft are dead - fix them or rerun with --force to push anyway." >&2
     exit 1
   fi
   echo
