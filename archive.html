@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archive - The ZAO on Paragraph</title>
+<meta name="description" content="Full archive of The ZAO newsletter, paginated live from Paragraph's public API. A ZAO-controlled home for every edition.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2316160f'/%3E%3Ctext x='32' y='44' font-family='ui-monospace,Menlo,monospace' font-size='34' font-weight='700' fill='%23faf9f6' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zaoonparagraph.vercel.app/archive.html">
+<meta property="og:title" content="Archive - The ZAO on Paragraph">
+<meta property="og:description" content="Every edition of The ZAO newsletter, paginated live from Paragraph's public API.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Archive - The ZAO on Paragraph">
+<meta name="twitter:description" content="Every edition of The ZAO newsletter, paginated live from Paragraph's public API.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0b0b0c;
+    --fg: #f2f2f0;
+    --muted: #9a9a95;
+    --line: #262625;
+    --accent: #f2f2f0;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #faf9f6; --fg: #16160f; --muted: #5c5c56; --line: #e2e0da; --accent: #16160f; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    line-height: 1.55;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 5rem;
+  }
+  .kicker {
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
+    font-size: 0.8rem;
+    margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  p { color: var(--fg); margin: 0 0 1.1rem; }
+  .lede { color: var(--muted); font-size: 1.05rem; max-width: 56ch; }
+  a { color: var(--accent); text-decoration-color: var(--line); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--accent); }
+  section { margin: 2.25rem 0; }
+  h2 {
+    font-size: 0.85rem;
+    text-transform: lowercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin: 0 0 0.9rem;
+    font-weight: 600;
+  }
+  .toolbar {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+  input[type="search"] {
+    flex: 1 1 220px;
+    min-width: 0;
+    background: transparent;
+    color: var(--fg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 0.65rem 0.85rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  input[type="search"]::placeholder { color: var(--muted); }
+  .count { color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
+  .issues { display: flex; flex-direction: column; }
+  .issue {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .issue a { flex: 1; }
+  .issue time { color: var(--muted); font-size: 0.8rem; white-space: nowrap; }
+  .load-more {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.85rem;
+    background: transparent;
+    color: var(--fg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .load-more:hover { border-color: var(--accent); }
+  .load-more:disabled { opacity: 0.5; cursor: default; }
+  .status { color: var(--muted); font-size: 0.85rem; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">zaoonparagraph</p>
+  <h1>the archive</h1>
+  <p class="lede">Every edition of The ZAO newsletter, pulled live from Paragraph's public API - no build step, no key, a permanent ZAO-controlled home for the full run.</p>
+
+  <section>
+    <div class="toolbar">
+      <input type="search" id="filter" placeholder="filter by title..." aria-label="filter issues by title">
+      <span class="count" id="count">loading...</span>
+    </div>
+    <p class="status" id="status">loading issues...</p>
+    <div class="issues" id="issues"></div>
+    <button class="load-more" id="load-more" style="display:none">load more</button>
+  </section>
+
+  <footer>
+    <p>back to <a href="index.html">zaoonparagraph</a> - read live on <a href="https://paragraph.com/@thezao">paragraph.com/@thezao</a></p>
+    <p>source: <a href="https://github.com/bettercallzaal/zaoonparagraph">github.com/bettercallzaal/zaoonparagraph</a></p>
+  </footer>
+</main>
+<script>
+(function () {
+  var PUBLICATION_ID = 'DB7iU1HMVzTT9bI4ec6X';
+  var PAGE_SIZE = 20;
+  var API = 'https://public.api.paragraph.com/api/v1/publications/' + PUBLICATION_ID + '/posts';
+
+  var statusEl = document.getElementById('status');
+  var countEl = document.getElementById('count');
+  var issuesEl = document.getElementById('issues');
+  var loadMoreBtn = document.getElementById('load-more');
+  var filterEl = document.getElementById('filter');
+
+  var allPosts = [];
+  var cursor = null;
+  var total = null;
+  var loading = false;
+
+  function render() {
+    var query = filterEl.value.trim().toLowerCase();
+    var visible = query
+      ? allPosts.filter(function (p) { return p.title.toLowerCase().indexOf(query) !== -1; })
+      : allPosts;
+
+    issuesEl.innerHTML = '';
+    visible.forEach(function (post) {
+      var row = document.createElement('div');
+      row.className = 'issue';
+      var link = document.createElement('a');
+      link.href = 'https://paragraph.com/@thezao/' + post.slug;
+      link.textContent = post.title;
+      var time = document.createElement('time');
+      var ts = Number(post.publishedAt);
+      time.textContent = isNaN(ts) ? '' : new Date(ts).toISOString().slice(0, 10);
+      row.appendChild(link);
+      row.appendChild(time);
+      issuesEl.appendChild(row);
+    });
+
+    countEl.textContent = query
+      ? visible.length + ' matching / ' + allPosts.length + ' loaded'
+      : allPosts.length + ' loaded' + (total != null ? ' of ' + total : '');
+  }
+
+  function loadPage() {
+    if (loading) return;
+    loading = true;
+    loadMoreBtn.disabled = true;
+    loadMoreBtn.textContent = 'loading...';
+
+    var url = API + '?limit=' + PAGE_SIZE + (cursor ? '&cursor=' + encodeURIComponent(cursor) : '');
+    fetch(url)
+      .then(function (res) {
+        if (!res.ok) throw new Error('status ' + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        var items = (data && data.items) || [];
+        allPosts = allPosts.concat(items);
+        var pagination = data && data.pagination;
+        cursor = pagination ? pagination.cursor : null;
+        total = pagination ? pagination.total : null;
+        var hasMore = pagination ? pagination.hasMore : false;
+
+        if (statusEl) { statusEl.remove(); statusEl = null; }
+        render();
+
+        loadMoreBtn.style.display = hasMore ? 'block' : 'none';
+        loadMoreBtn.disabled = false;
+        loadMoreBtn.textContent = 'load more';
+
+        if (allPosts.length === 0) {
+          countEl.textContent = 'no issues found';
+        }
+      })
+      .catch(function () {
+        if (statusEl) statusEl.textContent = 'could not load the archive right now - try refreshing';
+        else countEl.textContent = 'could not load more right now';
+        loadMoreBtn.disabled = false;
+        loadMoreBtn.textContent = 'load more';
+      })
+      .finally(function () {
+        loading = false;
+      });
+  }
+
+  loadMoreBtn.addEventListener('click', loadPage);
+  filterEl.addEventListener('input', render);
+
+  loadPage();
+})();
+</script>
+</body>
+</html>
