@@ -10,8 +10,17 @@ set -euo pipefail
 POST_ID="${1:?usage: set-thumbnail.sh <post-id> <image-url>}"
 IMAGE_URL="${2:?usage: set-thumbnail.sh <post-id> <image-url>}"
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+if [ -z "${PARAGRAPH_API_KEY:-}" ] && [ -f "$REPO_ROOT/.env" ]; then
+  set -a
+  source "$REPO_ROOT/.env"
+  set +a
+fi
+
 if [ -z "${PARAGRAPH_API_KEY:-}" ]; then
-  echo "PARAGRAPH_API_KEY not set. Put it in .env (gitignored) and source it, or export it in your shell." >&2
+  echo "PARAGRAPH_API_KEY not set. Put it in .env (gitignored) at the repo root." >&2
   exit 1
 fi
 
