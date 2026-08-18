@@ -142,3 +142,17 @@ A fresh Claude Code session reading only this README should be able to:
 - See the one open PR and know what it does
 
 The repo should be plug-and-play after setup. If something doesn't work, the automation/test-all.sh health check will tell you what's broken.
+
+## The amalgam (2026-08-18)
+
+This repo is now the single home for ZAO newsletter craft and operational
+knowledge, not just the bash pipeline. Start at `docs/amalgam-map.md` - it maps
+every newsletter-related system (this repo, the deployed zabalnewsletterbuilder,
+the /newsletter skill, the ZAOOS research docs, the archives) and the next
+builds in order.
+
+- `docs/craft-research.md` - THE TWELVE craft rules + the announcement skeleton, from 21 fetched sources
+- `docs/mode-c-mcp-playbook.md` - driving Paragraph through the MCP: image hosting, tweet embeds, the traps
+- `docs/paragraph-node-catalogue.md` - every Tiptap node type observed across 6 strong live publications
+- `docs/case-study-day230.md` - the Day 230 finals edition, assembled end-to-end via MCP, as the worked example
+- `docs/voice-guide.md` - the running log of Zaal's line-level voice corrections
