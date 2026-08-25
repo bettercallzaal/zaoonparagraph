@@ -8,9 +8,19 @@ The ZAO newsletter: **400+ editions** across Year of the ZAO / Year of the ZABAL
 
 ## Immediate goal (why this repo exists now)
 
-**Clean up Paragraph posting.** Paragraph shipped an onboarding AI assistant (app.paragraph.com/onboard) that offers to help with posts/drafts/distribution. Decide and standardize ONE clean flow:
-- Onboard the @thezao publication as an EXISTING newsletter (not from scratch).
-- Decide: lean on Paragraph's new AI assistant, OR keep the zabalnewsletterbuilder daily-3 flow. Pick one, make it clean, document it.
+**Flow decided 2026-08-25: the Paragraph MCP flow ships editions.** The bash
+pipeline in `automation/` stays as the tested fallback and as the mechanical
+voice/link gate. It has not posted an edition since Day 194 in July, and the six
+editions published Jul 24 to Aug 24 all bypassed it. Full evidence in the README
+under "How editions actually ship"; operating manual in
+`docs/mode-c-mcp-playbook.md`.
+
+What that leaves open:
+- `published/` is the record of what went out. Keep it current - an edition that
+  ships without landing here is drift.
+- Onboard the @thezao publication as an EXISTING newsletter (not from scratch)
+  if the onboarding assistant at app.paragraph.com/onboard is ever revisited.
+- The zabalnewsletterbuilder daily-3 tool still composes; it does not post.
 
 ## Folders
 

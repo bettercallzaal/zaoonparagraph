@@ -2,17 +2,54 @@
 
 **The ZAO newsletter on Paragraph** - drafting, editing, publishing to Paragraph, and distribution all in one place. 400+ editions of daily build-in-public documentation across three series (Year of the ZAO, Year of the ZABAL, ZTalent), with 78 paid supporters.
 
-## Status
+## Status (2026-08-25)
 
-Working and shipping daily. All tooling is in place and tested:
-- Daily-3 builder: work starts at zabalnewsletterbuilder.vercel.app (separate repo)
-- Draft validation: voice checks, link checks, thumbnail rendering all pass
-- Publishing: drafts push to Paragraph's API without auto-publish (human gate only)
-- Archive: infrastructure exists to move published editions to `published/` folder and track post IDs
+The newsletter is shipping. This repo is the home for craft, record and checks -
+it is not the thing that pushes editions to Paragraph.
 
-Current bottleneck: the scripts handle 5 sitting drafts (Days 190-194) ready to push, but human editorial decision on when to publish them is the actual gate, not tooling.
+- Live cadence: six editions published between 2026-07-24 and 2026-08-24 (Days
+  205, 209, 215, 223, 231, 236). All six are archived in `published/`.
+- None of those six went through this repo's bash pipeline. See the flow
+  decision below.
+- `drafts/` is empty. The five July dailies that sat there (Days 190-194) were
+  triaged and archived on 2026-08-19 as unpublishable by construction - see
+  `drafts/archive/TRIAGE.md`. Their Paragraph drafts are still sitting
+  unpublished on Paragraph; deleting them is Zaal's call.
+- Because `drafts/` is empty, `automation/status.sh` and `automation/test-all.sh`
+  currently report on zero files. Green output from them right now means "nothing
+  queued", not "everything checked".
 
-Open PR: #30 adds auto .env loading and a `status.sh` command to see what's blocking posting at a glance.
+## How editions actually ship (decided 2026-08-25)
+
+**The MCP flow is canonical. The bash pipeline in `automation/` is not the
+posting path.**
+
+CLAUDE.md asked for one flow to be picked. The record picks it:
+
+- Not one of the six published editions has an entry in
+  `automation/post-ids.json` from `create-draft.sh` - and that script records an
+  id automatically on every push, so a bash push cannot happen silently.
+- Not one of the six has a source file in `drafts/` or a content commit in this
+  repo's history.
+- `docs/case-study-day230.md` documents Day 231 being assembled end to end
+  through the Paragraph MCP plus browser agent, down to the post id.
+
+So: Day 231 is proven MCP. The other five are proven not-bash - they shipped
+outside this repo and the exact surface was never recorded. Either way the bash
+pipeline has not posted an edition since Day 194 in July.
+
+What each part is for now:
+
+| Part | Role |
+|---|---|
+| Paragraph MCP + `docs/mode-c-mcp-playbook.md` | how editions get built and published. Canonical. |
+| `docs/craft-research.md`, `docs/voice-guide.md`, `templates/` | what an edition has to be |
+| `automation/check-voice.sh`, `check-links.sh` | mechanical gates, runnable against any draft regardless of how it will ship |
+| `published/` + `automation/post-ids.json` | the record of what went out |
+| `automation/create-draft.sh`, `update-draft.sh`, `archive-issue.sh`, thumbnails | working fallback path. Tested, safe, unused since July. Keep it, do not assume it ran. |
+
+The rest of the bash commands below are documented as that fallback, not as the
+daily habit.
 
 ## Stack
 
@@ -78,8 +115,8 @@ automation/collect-wins.sh 2026-07-12
 
 | Folder | Purpose |
 |--------|---------|
-| `drafts/` | Markdown work-in-progress, not yet published |
-| `published/` | Archive of editions that went live (moved here after Zaal publishes on Paragraph) |
+| `drafts/` | Markdown work-in-progress, not yet published. Currently empty. `drafts/archive/` holds triaged dailies that will never ship, with reasons |
+| `published/` | The record of editions that went live. Starts at Day 205 (2026-07-24), not the full 400+ back catalogue. See `published/README.md` for what these files are and are not |
 | `templates/` | Reusable markdown formats: `daily-3.md`, `deep-dive.md`, `weekly-recap.md` |
 | `automation/` | Paragraph API integration scripts + voice/link checks + status reporting |
 | `research/` | Strategy notes, Paragraph platform findings, growth docs |
@@ -104,7 +141,12 @@ See `research/2026-07-10-headless-paragraph-experiment.md` for a working proof t
 - **Publishing is gated**: create-draft.sh pushes to Paragraph as a draft (never published). Actual publication happens in Paragraph's UI only - this repo has zero auto-publish.
 - **Post ID tracking**: automation/post-ids.json tracks which drafts map to which Paragraph post IDs, so `update-draft.sh` can edit in place without duplicates. Keep it in sync when publishing or archiving.
 
-## Workflow example
+## Workflow example (the bash fallback, not the current habit)
+
+The canonical flow is the MCP one - see `docs/mode-c-mcp-playbook.md`, and
+`docs/case-study-day230.md` for a worked edition. The sequence below is the
+fallback path. It works and it is safe, but no edition has shipped through it
+since Day 194 in July.
 
 1. Visit zabalnewsletterbuilder.vercel.app and compose a daily-3 issue.
 2. Copy the output and paste it into a new file: `drafts/2026-07-14-day-195.md`.
@@ -135,13 +177,19 @@ See `research/2026-07-10-headless-paragraph-experiment.md` for a working proof t
 
 A fresh Claude Code session reading only this README should be able to:
 - Understand what the repo does and why it exists
-- Set up the environment (copy `.env.example`, add PARAGRAPH_API_KEY)
+- Know which flow actually ships editions (MCP) and which one is the fallback (bash)
+- Set up the environment (copy `.env.example`, add PARAGRAPH_API_KEY) for the fallback path
 - Run any of the main commands without guessing
 - Know where to find strategy docs and how to pick up the next feature
 - Understand the voice rules so edits stay on-brand
-- See the one open PR and know what it does
+- Read `published/` and know exactly what has gone out since Day 205
 
-The repo should be plug-and-play after setup. If something doesn't work, the automation/test-all.sh health check will tell you what's broken.
+Known gaps, so nobody reads silence as health: `automation/status.sh` and
+`automation/test-all.sh` only look at `drafts/` and `published/*.md` top level,
+and `automation/post-ids.json` still keys the five triaged dailies to their old
+`drafts/` paths from before they moved to `drafts/archive/`. Both are being
+fixed on their own branch. Until then, treat their all-clear as "nothing
+queued", not "nothing wrong".
 
 ## The amalgam (2026-08-18)
 
