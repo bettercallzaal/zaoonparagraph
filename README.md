@@ -15,9 +15,12 @@ it is not the thing that pushes editions to Paragraph.
   triaged and archived on 2026-08-19 as unpublishable by construction - see
   `drafts/archive/TRIAGE.md`. Their Paragraph drafts are still sitting
   unpublished on Paragraph; deleting them is Zaal's call.
-- Because `drafts/` is empty, `automation/status.sh` and `automation/test-all.sh`
-  currently report on zero files. Green output from them right now means "nothing
-  queued", not "everything checked".
+- `drafts/` being empty no longer makes the health checks vacuous.
+  `automation/test-all.sh` covers queued drafts, archived drafts and the
+  published record, and treats an empty check set as a failure rather than a
+  pass. `automation/status.sh` reports the queue and then compares what is live
+  on Paragraph against `published/`, exiting non-zero when an edition shipped
+  without landing here.
 
 ## How editions actually ship (decided 2026-08-25)
 
@@ -79,7 +82,8 @@ The `.env` file is gitignored - never commit it. All scripts auto-source it if n
 automation/check-voice.sh drafts/<filename>
 automation/check-links.sh drafts/<filename>
 
-# Health check: see what's pushed, what's published, what's pending
+# Queue + drift: what's pushed, what's pending, and any edition that went live
+# without landing in published/. Exits non-zero on drift.
 automation/status.sh
 
 # Render thumbnail: overlay "DAY N" onto a background image
@@ -97,7 +101,8 @@ automation/set-thumbnail.sh <post-id> <raw-github-url>
 # Move a published edition from drafts/ to published/ and sync post IDs
 automation/archive-issue.sh drafts/<filename>
 
-# Full health check (voice + links on all drafts)
+# Full health check: voice on queued drafts, links everywhere, tracked post id
+# on every published edition. Nothing to check counts as a failure.
 automation/test-all.sh
 ```
 
@@ -184,12 +189,10 @@ A fresh Claude Code session reading only this README should be able to:
 - Understand the voice rules so edits stay on-brand
 - Read `published/` and know exactly what has gone out since Day 205
 
-Known gaps, so nobody reads silence as health: `automation/status.sh` and
-`automation/test-all.sh` only look at `drafts/` and `published/*.md` top level,
-and `automation/post-ids.json` still keys the five triaged dailies to their old
-`drafts/` paths from before they moved to `drafts/archive/`. Both are being
-fixed on their own branch. Until then, treat their all-clear as "nothing
-queued", not "nothing wrong".
+Known gaps, so nobody reads silence as health: `automation/check-links.sh` does
+not scan `docs/`, and the 21 craft-research sources there are bare URLs it would
+not match anyway, so nothing rot-checks them. `automation/check-voice.sh`
+encodes the daily rules only and has no announcement mode. Both are open.
 
 ## The amalgam (2026-08-18)
 
