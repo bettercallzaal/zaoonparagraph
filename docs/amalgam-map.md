@@ -4,11 +4,18 @@ Decision (Zaal, 2026-08-18): zaoonparagraph is the single home for ZAO newslette
 craft, tooling, and operational knowledge. Sibling systems stay where they run,
 but this file is the map, and drift from it is a bug.
 
+Flow decision (2026-08-25): the Paragraph MCP flow is how editions ship. The
+bash pipeline in `automation/` is the tested fallback and the mechanical gate,
+not the posting path - no edition has gone through it since Day 194 in July, and
+the six editions published Jul 24 to Aug 24 all bypassed it. Evidence and the
+full reasoning are in the README. `published/` is now the record.
+
 ## In this repo
 
 | What | Where |
 |---|---|
-| Draft pipeline (voice gate, create/update draft, archive, thumbnails, link check) | `automation/` - see README |
+| Draft pipeline, fallback path (voice gate, create/update draft, archive, thumbnails, link check) | `automation/` - see README |
+| The record of what actually published | `published/` - see `published/README.md` |
 | Formats | `templates/` (daily-3, weekly-recap, deep-dive) |
 | Craft rules - THE TWELVE + announcement skeleton, 21 fetched sources | `docs/craft-research.md` |
 | MCP operating manual (Mode C) + Mode B traps | `docs/mode-c-mcp-playbook.md` |
