@@ -39,6 +39,29 @@ To get a local file onto Paragraph's real storage without the agent:
 3. Repeat per image, then upload the REAL cover last.
 4. `update-post` writing each `{"type":"image","attrs":{"src":"<hosted url>"}}`.
 
+## The signature becomes a bullet on markdown paste (found 2026-09-05)
+
+Pasting an edition's markdown into the editor converts it to rich text correctly for
+every node EXCEPT the sign-off. `- BetterCallZaal on behalf of the ZABAL Team` is
+valid markdown for a list item, so the editor renders it as a **bulleted list**.
+
+**Every published edition renders it as a plain paragraph with a literal hyphen** -
+verified against the live Day 246 post, not from memory. So the paste is wrong and
+must be repaired every time.
+
+`Cmd+Shift+V` does NOT fix it - in the Paragraph editor the plain-text paste silently
+did nothing and left the line empty.
+
+**What works:**
+
+1. Triple-click the bullet line, `Delete`, then `Backspace` to lift out of the list.
+2. Type the text with a LEADING SPACE and no hyphen:
+   `" BetterCallZaal on behalf of the ZABAL Team"`.
+3. `cmd+Left` to the line start, then type the single character `-`.
+
+The list input rule fires on typing a SPACE after `-`, never on the hyphen itself, so
+inserting the hyphen last is what defeats it. Check the rendered line before moving on.
+
 ## Tweet embeds
 
 The `twitter` node carries a large `tweetData` blob the editor builds on paste -
