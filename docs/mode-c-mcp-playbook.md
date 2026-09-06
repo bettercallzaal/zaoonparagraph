@@ -39,6 +39,59 @@ To get a local file onto Paragraph's real storage without the agent:
 3. Repeat per image, then upload the REAL cover last.
 4. `update-post` writing each `{"type":"image","attrs":{"src":"<hosted url>"}}`.
 
+## The chat input swallows messages typed at COORDINATES - use a ref (found 2026-09-06)
+
+Four messages to the Paragraph chat vanished this session: typed, Return pressed, thread
+unchanged, input still showing its placeholder, **no error of any kind.** The old playbook
+note blamed focus loss after every send. That was not the cause.
+
+**The real cause is that the app resizes its own window between screenshots.** Two
+consecutive captures came back 1564x784 then 1565x785, and the chat pane reflows with it.
+A coordinate read off the previous screenshot lands a few pixels out - in the message list
+instead of the textbox - and typing into a non-input swallows the text silently.
+
+**The fix that works: address the input by element reference, never by coordinate.**
+
+```
+find  -> query "the chat message input box"   -> returns e.g. ref_111
+computer left_click with ref: "ref_111"       (NOT coordinate)
+computer type  ...
+screenshot to confirm the text is visibly in the box
+computer key Return
+screenshot to confirm the send - look for "Mulling it over" or the message in the thread
+```
+
+Clicking by ref succeeded on the first try after four coordinate attempts failed. Same
+applies to any control in this app: `find` first, click the ref.
+
+Related, and the reason this is so easy to miss: **the chat panel renders a STALE copy of
+the post.** After editing the draft in the editor, the chat pane still showed the previous
+body, including a Saturday placeholder that had already been replaced. Judge the draft
+only from the right-hand editor panel or a `get-post`, never from the chat's echo.
+
+## The signature becomes a bullet on markdown paste (found 2026-09-05)
+
+Pasting an edition's markdown into the editor converts it to rich text correctly for
+every node EXCEPT the sign-off. `- BetterCallZaal on behalf of the ZABAL Team` is
+valid markdown for a list item, so the editor renders it as a **bulleted list**.
+
+**Every published edition renders it as a plain paragraph with a literal hyphen** -
+verified against the live Day 246 post, not from memory. So the paste is wrong and
+must be repaired every time.
+
+`Cmd+Shift+V` does NOT fix it - in the Paragraph editor the plain-text paste silently
+did nothing and left the line empty.
+
+**What works:**
+
+1. Triple-click the bullet line, `Delete`, then `Backspace` to lift out of the list.
+2. Type the text with a LEADING SPACE and no hyphen:
+   `" BetterCallZaal on behalf of the ZABAL Team"`.
+3. `cmd+Left` to the line start, then type the single character `-`.
+
+The list input rule fires on typing a SPACE after `-`, never on the hyphen itself, so
+inserting the hyphen last is what defeats it. Check the rendered line before moving on.
+
 ## Tweet embeds
 
 The `twitter` node carries a large `tweetData` blob the editor builds on paste -
