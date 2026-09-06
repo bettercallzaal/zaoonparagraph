@@ -244,3 +244,70 @@ was not, because "likely" still ends up in a published post if nobody checks it.
 or it is plain prose. There is no useful middle rating.** Three of my sweep verdicts were
 wrong or unusable (`@dr_bruce`, `@MCFLYETH`, `@NessyNFT`) and every single correction came
 from Zaal, not from better searching.
+
+---
+
+## Resolved by Zaal's own post, 2026-09-06 (`x.com/bettercallzaal/status/2096615625288565180`)
+
+> zm zaalcaster / purple fit check from yesterday / onchain hat from @CandyToyBoxYT1 /
+> noggles and purple gm farcaster shirt from @ProfWerder my last time in NYC for farcon.
+
+### ✅ CANDY'S X HANDLE, finally
+
+**`@CandyToyBoxYT1`** - "Candy 🛡️", 2,016 followers, joined 2021. Her own bio:
+*"Web3 Builder | Co-Founder @WaveWarz LIVE-Traded Music Battles | Co-Founder @TheZAODAO
+| Founder @LoanzonBase | VibeCode"*.
+
+Confirmed by her bio naming both WaveWarZ and ZAO co-founder, and by Zaal tagging her
+himself. It also corroborates the `$LOANZ` fact in doc 229 (*"Founder @LoanzonBase"*).
+
+> **This is the handle I said repeatedly could not be found.** I checked `@candytoybox`
+> (0 followers) and `@Candy_TOYBOX` (1 follower) and correctly refused to use either. The
+> real one has a `YT1` suffix that no amount of guessing would have produced.
+> **Same lesson, fourth time: ask the person who knows.**
+
+### ✅ @ProfWerder
+
+**"thenounishprof.eth"**, 6,635 followers, joined 2015. Nouns-affiliated (`@nouncil`,
+`@FloriNouns`), teaches blockchain at FGCU, and is *"building GM"* - which is the
+`/gmfarcaster` shirt in the photo. He gave Zaal the noggles and the shirt.
+
+### 🔴 Photo 3 is NOT from this weekend, and it is not New York
+
+*"purple fit check from yesterday"* - so Saturday 2026-09-05, and the sunroom is not a
+NYC venue. **My refusal to caption it was correct**: any caption implying New York would
+have been false. **It must not go into the NYC article.** Zaal has posted it standalone,
+which is the right home for it.
+
+### 🔴 BLOCKER 6 IS NOW ANSWERABLE - FarCon 2025 was in New York
+
+The plan doc files blocker 6 as: *"Zaal recalls FarCon 2025, the library records NFT NYC
+2025 (Lil WaveWarZ Takeover) and dates FarCon to Rome, May 2026."*
+
+**FarCon NYC 2025 is real and dated.** Per the Unlock Protocol event page: *"New York -
+MAY 2025"*, with **Builders Day on 1 May 2025** and the **Summit on 2 May 2025 in
+Brooklyn, NY**.
+
+So the apparent contradiction dissolves - there are **two different FarCons**:
+
+| Event | When | Where |
+|---|---|---|
+| **FarCon NYC** | **1-2 May 2025** | Brooklyn, NY |
+| FarCon | May 2026 | Rome (per the library) |
+| NFT.NYC 2025 | 23-27 June 2025 | New York |
+
+**Zaal's recollection was right and the library was not wrong either.** Both happened.
+
+### ⚠️ The question that is now sharp, and only Zaal can close it
+
+Zaal wrote *"my last time in NYC for farcon."* If FarCon (**May 2025**) was his last NYC
+trip before this weekend, **he was not in New York for NFT.NYC 2025 in June** - and the
+persona, the ICM box and doc 1231 all record **"Lil WaveWarZ Takeover at NFT NYC (2025)"**
+as the third consecutive IRL proof point.
+
+**Either that event was at FarCon in May and is mis-attributed to NFT.NYC in three places,
+or he made two NYC trips in 2025 and the phrasing was loose.**
+
+> **Not resolving this.** It touches the ICM box's NYC track record, which is a published
+> brand claim, and the difference is a real event at a real conference. **Ask Zaal.**
+> Do not edit the box, the persona or doc 1231 until he answers.
