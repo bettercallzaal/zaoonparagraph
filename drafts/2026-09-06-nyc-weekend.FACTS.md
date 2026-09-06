@@ -217,3 +217,30 @@ brand, est. 2010.
 
 **Five names still need Zaal:** Will, fdot, Beamer, Jay Connects, and confirmation on
 Nessy and Mr McFly. He met them; that is faster and more reliable than any sweep.
+
+---
+
+## Handles resolved by Zaal directly (2026-09-05, relayed via the orchestrator seat)
+
+Source: Zaal's own answers, recorded at `~/zao-vault/people/handles.csv`, commit dfeb4b3.
+**His answers supersede every sweep result below them.**
+
+| Name | Handle | Note |
+|---|---|---|
+| **Will** | **@Willep333** | **A SEPARATE PERSON FROM ATTABOTTY.** The post is not double-counting. The `[CONFIRM]` marker has been removed and the sentence stands as written |
+| **fdot** | **@EfdotStudio** | My sweep was right that `@fdotworld` was the wrong person, wrong about there being no account |
+| **Jay Connects** | **@JayConnects0** | Not `@jayconnects`, which is the custom t-shirt business |
+| **Mr McFly** | **@MrMcFly100** | 🔴 **This CORRECTS my sweep.** I rated `@MCFLYETH` "likely" on the strength of a web3-coded bio and 1,132 followers. **It was wrong.** |
+| **Nessy** | **NONE. DO NOT TAG.** | 🔴 **Her account was hacked.** Use the name "Nessy" in prose and tag nobody. **`@NessyNFT` must not be used anywhere.** This was never a handle-matching problem |
+| **Beamer** | still open | Zaal did not answer it. Leave as plain prose |
+
+### What the Mr McFly miss teaches, on top of the @dr_bruce one
+
+`@dr_bruce` was a **confident wrong** - I found a plausible account and had to be corrected
+by Zaal. `@MCFLYETH` was a **hedged wrong** - I labelled it "likely," which felt safe and
+was not, because "likely" still ends up in a published post if nobody checks it.
+
+**The rule that actually holds: a handle is either confirmed by the person who knows them,
+or it is plain prose. There is no useful middle rating.** Three of my sweep verdicts were
+wrong or unusable (`@dr_bruce`, `@MCFLYETH`, `@NessyNFT`) and every single correction came
+from Zaal, not from better searching.

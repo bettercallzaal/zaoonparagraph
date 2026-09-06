@@ -21,7 +21,7 @@ I started at the Canal Street Show at LUME Studios, on the Bowery. Volume 6, the
 
 The centerpiece was a live art battle: Kat Buglione and Leeaux against Judasaca and Alyssa Stevens. Judasaca and Alyssa took it. Jeffy Waves, City the King and Kae Lash played.
 
-I caught Attabotty at the end of the night, and met Will and fdot there. [CONFIRM: is Will the same person as Attabotty, whose name is William?] I also ran into Desultor, who I had not seen in a while.
+I caught Attabotty at the end of the night, and met Will and fdot there. I also ran into Desultor, who I had not seen in a while.
 
 Five minutes down the road at 327 Bowery, Christiano Covino was running Underground Sound at Bowery Palace with Yeti MOB and B Nice. Doors at 11, free entry, going until 4 in the morning.
 
@@ -65,11 +65,13 @@ I closed the night at Candy's running our nightly WaveWarZ quick battles.
 
 ## Saturday
 
-Saturday I met up with CandyToyBox and we headed into the city together to make WaveWarZ content.
+Saturday was the one day I actually planned around people. I was hoping to catch Lui, JANGO UU, Stu Kwan, maybe Mr McFly.
 
-Candy is a ZAO co-founder and she lives here. She writes the WaveWarZ contracts and owns the repos. She also designed both of our first two festivals. Most of my weekend was me walking into rooms alone and finding out who was in them. Saturday was the opposite: the two of us, on purpose, with something to make.
+None of it came together.
 
-[SATURDAY SLOT, in progress. NEEDED: where you actually went, what you shot, who was there, and whether Lui, Make or Jen landed.]
+What I got instead was a full day out in the city with CandyToyBox, just the two of us, vibing out and talking WaveWarZ, and a bunch of content out of it. Candy is a ZAO co-founder and she lives here. She writes the WaveWarZ contracts and owns the repos, and she designed both of our first two festivals.
+
+Most of this weekend was me walking into rooms alone and finding out who was in them. Saturday was the opposite, and it was the easiest day of the trip, because I spent it with somebody I did not have to meet.
 
 ## We have done this the hard way before
 
@@ -87,7 +89,9 @@ Attention is the actual budget, and it is smaller than anybody admits. A plan do
 
 Both things were true this weekend. The plan is what let me be present in six rooms in one day. Not paying attention is what cost me forty minutes standing on two platforms.
 
-And the rest of it, the part that actually mattered, came down to whether one person in a room already knew me. On a quiet floor where nobody did, I got nothing. In two rooms where four of them had been on our stage in 2024, I got the whole night.
+And the rest of it, the part that actually mattered, came down to whether one person in a room already knew me. On a quiet floor where nobody did, I got nothing. In two rooms where four of them had been on our stage in 2024, I got the whole night. On the last day, when none of the people I had planned to see turned up, the day was still good, because the person who came with me already knew me.
+
+Three days, three versions of the same lesson.
 
 The plan is not there to tell you what will happen. It is there to make sure that when something does, you are actually looking at it.
 
