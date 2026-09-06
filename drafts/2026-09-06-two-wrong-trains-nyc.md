@@ -1,15 +1,15 @@
 # Two Wrong Trains
 
 <!-- SUBTITLE (Paragraph field, not body):
-     I planned this weekend down to the block and still rode the wrong way twice. Here is what I think a plan is actually for. -->
+     I did not plan a thing. I left the whole weekend open, and that turned out to be the point. -->
 
 zm
 
 Twice in one day I got on the train going the wrong way.
 
-Not because the route was hard. Because I was not paying attention. I knew where I was going both times. I had the whole weekend mapped out, and I still stood on the wrong platform twice, going backwards, in a city I have been coming to for years.
+Not because the route was hard. Because I was not paying attention, and I was not paying attention because I had nowhere I had to be.
 
-That is worth sitting with, because this was the most planned trip I have taken. And it was also the trip where the best thing that happened was something no plan could have produced.
+I did not plan this weekend. I left it wide open on purpose. No schedule, no roster of who I was seeing, nothing past a couple of links people had sent me. Two wrong trains is what that costs, and I would pay it again, because every good thing that happened to me in New York came out of a room I did not schedule.
 
 ## Thursday
 
@@ -37,13 +37,11 @@ Four of the nine were standing in two rooms on one block on a Thursday night, tw
 
 I did not organize that. I did not text anybody. I walked into a party and a quarter of a lineup I booked in 2024 was already there.
 
-## Friday, and what the plan actually bought
+## Friday, and the room that did nothing
 
-Friday, every place I needed to be sat within a few blocks of the Bowery. The Solana offices on East Houston. Time To Be Happy at 219 Bowery, which had three separate shows that day. Heft at 300 Broome. Cycol at 91 Allen. Bowery Palace at 327, from the night before. Six venues, all inside about a ten minute walk of each other. I did not have to think about how to get anywhere for most of a day.
+Friday I got lucky with geography, and I did nothing to earn it. Every place worth being sat within a few blocks of the Bowery. The Solana offices on East Houston. Time To Be Happy at 219 Bowery, which had three separate shows that day. Heft at 300 Broome. Cycol at 91 Allen. Bowery Palace at 327, from the night before. Six venues, all inside about a ten minute walk of each other.
 
-I did not use that to be more efficient. I used it to stop looking at my phone.
-
-That is the whole return on the plan. Not speed. Attention. When the route is already decided, you are not standing in a room reading a map. You are standing in a room looking at the room.
+That is the whole reason an unplanned day worked. When everything is on one block you are not standing in a room reading a map. You are standing in a room looking at the room.
 
 Then I went up to the Solana offices on my own, and I want to be honest about this part because it is the useful bit. Great space. Everybody heads down, working, doing their jobs. A coworking floor is not a networking room, and walking into one alone is walking into a library. I got nothing out of it at first.
 
@@ -51,9 +49,9 @@ Then Judasaca walked in.
 
 Juan Salazar works as Judasaca, a Colombian artist bridging traditional work with digital and AR, and the one who had taken the battle the night before. We had been trying to link up for a while and there he was, and the entire day turned over in about ten seconds. We ended up doing an interview on the roof of that building, which is the best backdrop I have had for one of these.
 
-No plan produced that. No plan could have.
+Nothing I did produced that. I could not have scheduled it if I had tried.
 
-But the easy lesson is the wrong one. The easy version is that plans do not matter and you should just show up. That is not what happened. What happened is that I was in that building, in that neighborhood, that afternoon, with nothing else pulling at me, because of a plan. The plan did not make the moment. The plan made me available for it.
+But I want to be careful, because the easy lesson is the wrong one. The easy version is that you should just show up and the universe provides. It does not. The reason that room turned over is that somebody in it already knew me, and that is not luck and it is not spontaneity. That took years.
 
 From there we went to meet a friend of his and of Yuzapata, who I missed on this trip, and I got to hear a band play live in the studio. No stage, no lineup, just a band playing for the people who happened to be standing there.
 
@@ -69,7 +67,7 @@ Saturday was the one day I actually planned around people. I was hoping to catch
 
 None of it came together.
 
-What I got instead was a full day out in the city with CandyToyBox, just the two of us, vibing out and talking WaveWarZ, and a bunch of content out of it. Candy is a ZAO co-founder and she lives here. She writes the WaveWarZ contracts and owns the repos, and she designed both of our first two festivals.
+What I got instead was a full day out in the city with CandyToyBox, just the two of us, ending up at Pier 57 talking WaveWarZ over the Hudson, and a bunch of content out of it. Candy is a ZAO co-founder and she lives here. She writes the WaveWarZ contracts and owns the repos, and she designed both of our first two festivals.
 
 Most of this weekend was me walking into rooms alone and finding out who was in them. Saturday was the opposite, and it was the easiest day of the trip, because I spent it with somebody I did not have to meet.
 
@@ -77,23 +75,25 @@ Most of this weekend was me walking into rooms alone and finding out who was in 
 
 Our first festival was ZAO-PALOOZA at NFT.NYC in April 2024. Six people organized it. They had never met each other in person until the day of the event. They saw the venue for the first time that same day. The whole thing came together in six weeks, twelve artists performed, and it broke even.
 
-I have told that as a wild story for two years. Reading it back this weekend, I think I have been telling it wrong.
+I have told that as a wild story for two years, and this weekend made me realise what the story is actually about.
 
-That was not six people winging it. That was six weeks of work by people who then had to be completely improvisational for one day, because everything else about that day was unknown to them. The planning is what earned them the right to improvise. Without it they would have spent the day solving problems instead of running a show.
+Twelve artists went on stage for six people who had never met. That works exactly once, and only because everybody in it decided to trust a room full of strangers. The six weeks were not what made it work. The willingness was.
 
-Spontaneity is not the absence of a plan. Spontaneity is what you can afford once the plan has handled everything predictable.
+Two years later, four of the artists we put on that stage were standing in two rooms on one block in the same city, and I walked into both of them by accident.
 
 ## So, the two wrong trains
 
-Attention is the actual budget, and it is smaller than anybody admits. A plan does not add hours to your day. It moves your attention off logistics and onto people. But it only holds while you are paying enough attention to execute it. Stop paying attention and the best plan in the world puts you on a train going the wrong way.
+Here is what the weekend actually taught me, and it is not what I expected to write.
 
-Both things were true this weekend. The plan is what let me be present in six rooms in one day. Not paying attention is what cost me forty minutes standing on two platforms.
+The one thing I aimed at is the one thing that did not happen. Saturday was the only day I had names in my head, and none of them turned up. Everything else, all of it, came from walking into a room with no idea who was in it.
 
-And the rest of it, the part that actually mattered, came down to whether one person in a room already knew me. On a quiet floor where nobody did, I got nothing. In two rooms where four of them had been on our stage in 2024, I got the whole night. On the last day, when none of the people I had planned to see turned up, the day was still good, because the person who came with me already knew me.
+But that only works because of the part you cannot leave open. On a quiet floor where nobody knew me, I got nothing at all. In two rooms where four people had been on our stage in 2024, I got the whole night. On the last day, with none of my names, the day was good anyway because the person who came with me already knew me.
 
-Three days, three versions of the same lesson.
+Three days, three versions of the same lesson. It was never about the schedule.
 
-The plan is not there to tell you what will happen. It is there to make sure that when something does, you are actually looking at it.
+You cannot plan the moment. What you can do is spend years being somebody the room already knows, and then leave enough space in the day for the room to do its work.
+
+Two wrong trains is a cheap price for that. I would pay it again.
 
 Thank you to everyone who made room this weekend.
 

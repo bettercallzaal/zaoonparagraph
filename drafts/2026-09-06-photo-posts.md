@@ -13,9 +13,11 @@ and here he is on a platform.
 
 > Zm
 >
-> Planned this weekend down to the block. Still got on the wrong train twice.
+> Got on the wrong train twice this weekend.
 >
-> The plan is not there to tell you what happens. It is there so that when something does, you are actually looking at it.
+> I did not plan any of it. Left the whole thing wide open on purpose, and every good thing that happened came out of a room I did not schedule.
+
+**CORRECTED 2026-09-06.** The first version opened "Planned this weekend down to the block." **That was false.** Zaal did not plan the weekend - he left it open deliberately. The planning in this session was mine, done in the background, and writing it as his put a claim in his mouth that he had to catch himself, mid-compose, seconds before posting.
 
 ---
 
@@ -24,7 +26,7 @@ and here he is on a platform.
 **⚠️ WHICH ROOFTOP? I need this before the post is right.** The view is west across the
 water to New Jersey, which does not fit 141 E Houston on the east side. Two versions:
 
-### 2A - if this IS the Judasaca interview rooftop
+### ~~2A - the Judasaca interview rooftop~~ RULED OUT
 **Embed position: Friday, after "which is the best backdrop I have had for one of these."**
 
 > Zm
@@ -33,14 +35,16 @@ water to New Jersey, which does not fit 141 E Houston on the east side. Two vers
 >
 > I walked into that building alone and got nothing out of it. Then he walked in and the whole day turned over.
 
-### 2B - if this is Saturday, making WaveWarZ content
+### 2B - CONFIRMED. Saturday, Pier 57, with Candy
 **Embed position: Saturday, after the "somebody I did not have to meet" line.**
 
 > Zm
 >
-> Out across the city making WaveWarZ content. None of the people I planned to see turned up.
+> Ended up at Pier 57 with Candy talking WaveWarZ over the Hudson.
 >
-> Easiest day of the trip anyway, because I spent it with somebody I did not have to meet.
+> The one day I had names in my head, none of them turned up. Easiest day of the trip anyway.
+
+**Zaal, 2026-09-06: "this was with candy talking wavewarz at pier 57."** Pier 57 sits on the Hudson at 15th Street, which is why the view looks west to New Jersey and why it never fitted 141 E Houston.
 
 ---
 
