@@ -39,6 +39,32 @@ To get a local file onto Paragraph's real storage without the agent:
 3. Repeat per image, then upload the REAL cover last.
 4. `update-post` writing each `{"type":"image","attrs":{"src":"<hosted url>"}}`.
 
+## USE THE CHAT, NOT THE EDITOR - Zaal's standing rule (2026-09-07)
+
+**Zaal: "dont ever use the editor i want u to use the chat and then look at the editor."**
+The editor is for LOOKING. Every change goes through the Paragraph chat.
+
+He is right on the evidence, not just as a preference. Pasting a body into the editor
+turned the sign-off into a bulleted list **three separate times**, and each one needed a
+manual repair. The chat produced a correct plain-paragraph sign-off **first try**, because
+it is told the rule and applies it, where a markdown paste just obeys markdown.
+
+### Getting a long body through the chat
+
+The input submits on Enter, so a multi-paragraph body cannot be typed. It CAN be pasted,
+and a paste does not fire the submit. The reliable recipe:
+
+1. Flatten the body to ONE line, replacing every paragraph break with a pilcrow
+   character. Assert no newline survives before you continue.
+2. Prefix an instruction naming the convention: pilcrow marks a paragraph break, a
+   segment starting with `##` is a heading, double asterisks are bold, and the sign-off
+   must be a plain paragraph and never a bulleted list.
+3. Put the whole thing on the clipboard, click the input **by ref**, `cmd+v`, screenshot
+   to confirm the tail arrived, then Return.
+
+Measured 2026-09-07: 48 paragraphs, 6,997 characters, zero newlines, pasted and applied
+cleanly with headings, bold and a plain sign-off all correct.
+
 ## The chat input swallows messages typed at COORDINATES - use a ref (found 2026-09-06)
 
 Four messages to the Paragraph chat vanished this session: typed, Return pressed, thread
