@@ -311,3 +311,37 @@ or he made two NYC trips in 2025 and the phrasing was loose.**
 > **Not resolving this.** It touches the ICM box's NYC track record, which is a published
 > brand claim, and the difference is a real event at a real conference. **Ask Zaal.**
 > Do not edit the box, the persona or doc 1231 until he answers.
+
+---
+
+## ✅ JEN / ONE LOVE ART DAO - confirmed by Zaal, 2026-09-06
+
+**Zaal, direct:** all the work by **One Love Art DAO** was done by **Jen**, who ZAO
+**worked with previously at ZAO-CHELLA**. Her work and her artists were displayed
+**throughout the whole weekend**, and seeing it was a highlight.
+
+**This closes the open question in the plan doc**, which read: *"'Jen one love' on Zaal's
+NFT NYC list may be from One Love Art DAO... UNVERIFIED - the name match is suggestive,
+not confirmed."* It is confirmed, and it is more than a name match: **there is prior
+working history between ZAO and Jen at ZAO-CHELLA (Miami, Art Basel, Dec 2024).**
+
+### What the ART NYC sheet independently shows about One Love
+
+| Event | Date | Detail |
+|---|---|---|
+| The Space Between Worlds | Sep 2 | 20 exhibiting painters, co-organised by **One Love** with NZ Art Collective and Shalin Studios |
+| One Love Billboard | Sep 2, 10:30 PM | **"70+ Global Artists Exhibited"**, at West 52nd and Broadway |
+
+> **Lead worth chasing, NOT a claim.** The Canal Street Show is listed on the same sheet
+> with the identical phrase **"70+ Global Artists Exhibited"**. Same wording, same week.
+> That is suggestive that One Love curated or supplied artists for Canal Street too, which
+> would mean Jen's work was behind the room where Zaal met four ZAO-PALOOZA card artists.
+> **Unverified. Ask Jen or Zaal before writing it anywhere.**
+
+### Why this matters beyond the article
+
+Rung 2 is *"get the NYC onchain artists together, with Candy."* Jen runs an art DAO with
+70+ global artists, ZAO has already worked with her, and her artists were on walls across
+New York all weekend. **She is not a contact to make. She is a collaborator ZAO already
+has.** Still not a roster claim - it is a working relationship, and Zaal decides what to
+do with it.
