@@ -34,6 +34,17 @@ fi
 
 FAIL=0
 
+# Strip HTML comments ONCE, up front, and run every check against the stripped
+# text. Drafts carry <!-- ... --> notes (subtitle text, slot markers) that are not
+# published copy. A previous fix taught only the opening-line check to skip them,
+# which left the comma / dash / exclamation counts scanning comment bodies - and
+# the marker "<!-- SUBTITLE (Paragraph field, not body):" alone contributes one
+# exclamation and one comma, failing a clean daily draft on its own metadata.
+STRIPPED="$(mktemp -t checkvoice)"
+trap 'rm -f "$STRIPPED"' EXIT
+perl -0777 -pe 's/<!--.*?-->//gs' "$FILE" > "$STRIPPED"
+FILE="$STRIPPED"
+
 check() {
   local label="$1"
   local passed="$2"
@@ -86,9 +97,7 @@ check "exactly one signature (found: $SIG_COUNT)" $([ "$SIG_COUNT" -eq 1 ] && ec
 # Skip headings, blank lines, and HTML comments. Drafts carry <!-- ... --> notes
 # (subtitle text, slot markers) that are not published body copy, and treating one
 # as the opening line is a false failure.
-OPENING_LINE=$(sed 's/<!--.*-->//' "$FILE" \
-  | awk '/<!--/{c=1} !c; /-->/{c=0}' \
-  | grep -v '^#' | grep -v '^[[:space:]]*$' | head -1)
+OPENING_LINE=$(grep -v '^#' "$FILE" | grep -v '^[[:space:]]*$' | head -1)
 if echo "$OPENING_LINE" | grep -qiE '^zm[.!]?$'; then
   check "opens with zm" 0
 else
