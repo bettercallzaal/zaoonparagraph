@@ -79,6 +79,6 @@ The series title is honest and carries no news. Options:
 - JANGO UU moved out of the cost column because he was not around
 
 ## What I will not do without you
-Correct the ICM box, the persona or doc 1231 on the Lil WaveWarZ Takeover. Three docs say
-NFT.NYC 2025, all three trace to one undated row in doc 1231, and it is a published claim
+Correct the ICM box, the persona or doc `community/1231-zao-history-timeline` on the Lil WaveWarZ Takeover. Three docs say
+NFT.NYC 2025, all three trace to one undated row in doc `community/1231-zao-history-timeline`, and it is a published claim
 about the chapter's track record. **Your call, not mine.**

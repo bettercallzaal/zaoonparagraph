@@ -259,7 +259,7 @@ from Zaal, not from better searching.
 | Founder @LoanzonBase | VibeCode"*.
 
 Confirmed by her bio naming both WaveWarZ and ZAO co-founder, and by Zaal tagging her
-himself. It also corroborates the `$LOANZ` fact in doc 229 (*"Founder @LoanzonBase"*).
+himself. It also corroborates the `$LOANZ` fact in doc `community/229-zao-member-profiles` (*"Founder @LoanzonBase"*).
 
 > **This is the handle I said repeatedly could not be found.** I checked `@candytoybox`
 > (0 followers) and `@Candy_TOYBOX` (1 follower) and correctly refused to use either. The
@@ -302,7 +302,7 @@ So the apparent contradiction dissolves - there are **two different FarCons**:
 
 Zaal wrote *"my last time in NYC for farcon."* If FarCon (**May 2025**) was his last NYC
 trip before this weekend, **he was not in New York for NFT.NYC 2025 in June** - and the
-persona, the ICM box and doc 1231 all record **"Lil WaveWarZ Takeover at NFT NYC (2025)"**
+persona, the ICM box and doc `community/1231-zao-history-timeline` all record **"Lil WaveWarZ Takeover at NFT NYC (2025)"**
 as the third consecutive IRL proof point.
 
 **Either that event was at FarCon in May and is mis-attributed to NFT.NYC in three places,
@@ -310,7 +310,7 @@ or he made two NYC trips in 2025 and the phrasing was loose.**
 
 > **Not resolving this.** It touches the ICM box's NYC track record, which is a published
 > brand claim, and the difference is a real event at a real conference. **Ask Zaal.**
-> Do not edit the box, the persona or doc 1231 until he answers.
+> Do not edit the box, the persona or doc `community/1231-zao-history-timeline` until he answers.
 
 ---
 
@@ -345,3 +345,31 @@ Rung 2 is *"get the NYC onchain artists together, with Candy."* Jen runs an art 
 New York all weekend. **She is not a contact to make. She is a collaborator ZAO already
 has.** Still not a roster claim - it is a working relationship, and Zaal decides what to
 do with it.
+
+---
+
+## ⚠️ NEVER CITE A BARE DOC NUMBER (added 2026-09-07)
+
+**218 doc numbers in the ZAO research library resolve to more than one document** - 462
+docs, 21% of the library. **A number does not identify a document.**
+
+Three numbers cited in this session's work collide:
+
+| Number | Resolves to |
+|---|---|
+| **1231** | `community/1231-zao-history-timeline` **and** `wavewarz/1231-wwtracker-analytics-wave13-cumulative-growth` |
+| **229** | `community/229-zao-member-profiles` **and** `_archive/229-attabotty-danici-profile` |
+| **1013** | `business/1013-zaofestivals-budgets-zaostock-zaoville` **and** `dev-workflows/1013-morning-routine-that-changed-my-life` |
+
+**I reached doc 1231 during the Takeover retraction with `find -name "1231-*" | head -1`.**
+That is the exact reconstruct-from-number failure the orchestrator warned about, and
+`head -1` returning the right directory was luck. Verified afterwards by content - the
+history timeline carries the Takeover claim and the wavewarz doc has zero mentions - so the
+retraction did land correctly. **The method was still wrong.**
+
+**Use `zao-research-health --resolve N` whenever you have only a number.** Cite
+`topic/NNNN-slug` paths. Every citation in these drafts has been qualified.
+
+> The failure mode is nasty because it looks like a tool bug. You query, get a number,
+> reconstruct a path, read the wrong document, and conclude the index is broken. The index
+> is not broken. The reconstruction is.

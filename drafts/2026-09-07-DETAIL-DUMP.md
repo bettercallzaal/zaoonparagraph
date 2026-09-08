@@ -36,7 +36,7 @@ Two candidate events, and the library contradicts itself:
 - **FarCon NYC: 1-2 May 2025.** Builders Day May 1, Summit May 2, **Brooklyn**
   (Unlock Protocol event page, "New York - MAY 2025")
 - **NFT.NYC 2025: 23-27 June 2025**
-- The persona, the ICM box and doc 1231 all say **"Lil WaveWarZ Takeover at NFT NYC (2025)"**, third consecutive IRL proof point
+- The persona, the ICM box and doc `community/1231-zao-history-timeline` all say **"Lil WaveWarZ Takeover at NFT NYC (2025)"**, third consecutive IRL proof point
 - But you wrote on 2026-09-06: **"my last time in NYC for farcon"**
 - At FarCon you got **noggles and the purple gm farcaster shirt from @ProfWerder** (thenounishprof.eth, Nouns, teaches blockchain at FGCU, building GM)
 
