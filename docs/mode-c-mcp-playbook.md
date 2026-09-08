@@ -39,6 +39,33 @@ To get a local file onto Paragraph's real storage without the agent:
 3. Repeat per image, then upload the REAL cover last.
 4. `update-post` writing each `{"type":"image","attrs":{"src":"<hosted url>"}}`.
 
+## The handle gate - enforced, not remembered (2026-09-08)
+
+`automation/check-voice.sh` now refuses any draft that tags a handle the CRM has not
+verified. It reads `~/zao-vault/people/handles.csv`:
+
+| CRM confidence | Result |
+|---|---|
+| `verified` | passes, and prints who it resolved to |
+| `wrong` / `do-not-tag` / `do-not-link` | **FAIL**, with the reason from the CRM |
+| anything else (`likely`, `unknown`) | **WARN** - a hedged wrong still ships if nobody checks |
+| not in the CRM at all | **FAIL** - verify and add a row, or use plain prose |
+
+Farcaster channel refs and obvious placeholders are exempt. HTML comments and URLs are
+stripped before scanning, so a link is never mistaken for a mention.
+
+**Why it is enforced rather than written down.** On 2026-09-07 three handles were nearly
+published against the wrong human being: `@dr_bruce` is an occupational medicine
+specialist with no connection to ZAO, `@candytoybox` is not Candy (she is
+`@CandyToyBoxYT1`, and the suffix was unguessable), and `@NessyNFT` must never be used
+because Nessy's account was hacked. A fourth, `@MCFLYETH`, was rated "likely" - which felt
+safe and was wrong. **Every one of those corrections came from Zaal, not from searching
+harder.** Regression-tested against all four; all four now block with the CRM's own reason.
+
+The estate's measured lesson is that honor-system rules run at 3-40% and structurally
+enforced ones at ~100%. This was an honor-system rule for one day and it needed a human to
+hold it four times.
+
 ## USE THE CHAT, NOT THE EDITOR - Zaal's standing rule (2026-09-07)
 
 **Zaal: "dont ever use the editor i want u to use the chat and then look at the editor."**

@@ -40,6 +40,7 @@ FAIL=0
 # which left the comma / dash / exclamation counts scanning comment bodies - and
 # the marker "<!-- SUBTITLE (Paragraph field, not body):" alone contributes one
 # exclamation and one comma, failing a clean daily draft on its own metadata.
+ORIG_FILE="$FILE"
 STRIPPED="$(mktemp -t checkvoice)"
 trap 'rm -f "$STRIPPED"' EXIT
 perl -0777 -pe 's/<!--.*?-->//gs' "$FILE" > "$STRIPPED"
@@ -111,6 +112,24 @@ if [ "$WORD_COUNT" -ge "$LO" ] && [ "$WORD_COUNT" -le "$HI" ]; then
   check "word count in $LO-$HI band (found: $WORD_COUNT)" 0
 else
   echo "WARN  word count outside $LO-$HI band (found: $WORD_COUNT) - soft target, not a hard fail"
+fi
+
+# Handle gate. A tagged handle is confirmed by someone who knows the person, or it
+# stays plain prose. Three handles were nearly published against the wrong human on
+# 2026-09-07 and every correction came from Zaal, not from searching harder. Honor
+# -system rules in this estate run at 3-40%; enforced ones run at ~100%.
+HANDLE_SCRIPT="$(dirname "$0")/check-handles.py"
+if [ -f "$HANDLE_SCRIPT" ]; then
+  if python3 "$HANDLE_SCRIPT" "$ORIG_FILE" >/tmp/handlecheck.$$ 2>&1; then
+    grep -E "^(ok|WARN)" /tmp/handlecheck.$$ | sed 's/^/      /'
+    check "all tagged handles verified" 0
+  else
+    grep -E "^(FAIL|BLOCKED)" /tmp/handlecheck.$$ | sed 's/^/      /'
+    check "all tagged handles verified" 1
+  fi
+  rm -f /tmp/handlecheck.$$
+else
+  echo "WARN  check-handles.py missing - handle gate SKIPPED"
 fi
 
 if [ "$FAIL" -eq 0 ]; then
