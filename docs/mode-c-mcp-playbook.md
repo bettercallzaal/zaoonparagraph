@@ -39,6 +39,19 @@ To get a local file onto Paragraph's real storage without the agent:
 3. Repeat per image, then upload the REAL cover last.
 4. `update-post` writing each `{"type":"image","attrs":{"src":"<hosted url>"}}`.
 
+## The placeholder gate - enforced (2026-09-08)
+
+`check-voice.sh` now fails any draft containing `[bracketed text]`, `TODO`, `TBD`,
+`FIXME`, `XXX`, `TK`, `PLACEHOLDER` or `SLOT`. Markdown links `[text](url)` are stripped
+first so they never trip it, and HTML comments are already stripped, because an editorial
+note is not published copy.
+
+**Why.** On 2026-09-07 the LIVE Paragraph draft carried
+`[CONFIRM: is Will the same person as Attabotty, whose name is William?]` inline in the
+Thursday section, plus a `[SATURDAY SLOT - fill tonight]` body. **The old check-voice
+passed that draft** - verified by running it. Both were caught by a person reading the
+text, which is exactly the safeguard that does not scale.
+
 ## The handle gate - enforced, not remembered (2026-09-08)
 
 `automation/check-voice.sh` now refuses any draft that tags a handle the CRM has not

@@ -114,6 +114,16 @@ else
   echo "WARN  word count outside $LO-$HI band (found: $WORD_COUNT) - soft target, not a hard fail"
 fi
 
+# Placeholder gate. On 2026-09-07 the LIVE Paragraph draft carried
+# "[CONFIRM: is Will the same person as Attabotty, whose name is William?]" inline in
+# the Thursday section, and a "[SATURDAY SLOT - fill tonight]" heading body. Both were
+# caught by a human reading it, not by any check - this script passed the draft.
+# Markdown links [text](url) are stripped first so they never trip it. HTML comments
+# are already stripped above, because an editorial note is not published copy.
+PH_SRC="$(sed -E 's/\[([^]]*)\]\([^)]*\)/\1/g' "$FILE")"
+PH_HITS=$(printf '%s' "$PH_SRC" | grep -oE '\[[^]]{2,}\]|\b(TODO|TBD|FIXME|XXX|TK|PLACEHOLDER|SLOT)\b' | sort -u | tr '\n' ' ')
+check "no placeholders or slots (found: ${PH_HITS:-none})" $([ -z "$PH_HITS" ] && echo 0 || echo 1)
+
 # Handle gate. A tagged handle is confirmed by someone who knows the person, or it
 # stays plain prose. Three handles were nearly published against the wrong human on
 # 2026-09-07 and every correction came from Zaal, not from searching harder. Honor
