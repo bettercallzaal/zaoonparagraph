@@ -55,9 +55,12 @@ of your cover image.
 
 ### 6. Small factual holes, one line each
 - The **band** in the studio Friday
-- The **venue** for ZAO-PALOOZA 2024 - recorded nowhere in the library
 - **What went wrong** at ZAO-PALOOZA. Six weeks with strangers had a disaster in it and
   the piece is all triumph
+
+> **Removed from this list 2026-09-07: the ZAO-PALOOZA venue.** Zaal does not remember it.
+> That is an unrecoverable fact, not an unanswered question, and the article already writes
+> around it. Do not put it back.
 - What you and **Jen** actually did at ZAO-CHELLA, and whether you saw her this trip
 - **Beamer's** handle
 

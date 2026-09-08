@@ -21,7 +21,7 @@ For Zaal to voice-note over. Sourced facts only. Gaps marked HOLE.
   (Nine cards, twelve artists. Both true - not every performer got a card)
 
 ### HOLES on trip 1 - only you know these
-- **What was the venue?** Never recorded anywhere in the library
+- ~~What was the venue?~~ **UNRECOVERABLE, 2026-09-07.** Zaal: *"dont remember zaopalooza venue tbh."* Not a pending answer - there is no answer unless a photo or an email turns it up. **Do not re-ask and do not guess one.** The article already writes around it: *"They saw the venue for the first time that same day"* needs the venue to have existed, not to be named.
 - **What actually happened that night?** We have logistics and zero atmosphere
 - **Who were the six volunteers?** Only Candy is named, as designer
 - **What went wrong?** A six week build with strangers had to have a disaster in it
