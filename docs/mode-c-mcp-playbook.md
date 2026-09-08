@@ -39,6 +39,25 @@ To get a local file onto Paragraph's real storage without the agent:
 3. Repeat per image, then upload the REAL cover last.
 4. `update-post` writing each `{"type":"image","attrs":{"src":"<hosted url>"}}`.
 
+## Socials go through a file, never straight to the clipboard (2026-09-08)
+
+**Write social posts to `drafts/socials/YYYY-MM-DD-<slug>.md`, then run
+`automation/check-social.sh` on that file before Zaal posts.**
+
+On 2026-09-08 seven platform posts were generated straight to a clipboard page. They were
+never a file, so **nothing checked them** - not the handle gate, not the placeholder gate,
+nothing. A social post is the most outbound thing this repo produces and it had the least
+checking of anything in it.
+
+`check-social.sh` runs the gates that apply to socials and skips the ones that do not.
+Socials are not newsletter editions, so no `zm` opener check, no signature, no word band.
+It enforces: zero em dashes, zero emojis, zero hashtags, no placeholders, and every tagged
+handle verified against the CRM. Exit 1 on any failure - verified, because a gate that
+exits 0 on failure is an inverted alarm.
+
+macOS note: BSD `grep` has no `-P`, so the emoji check goes through python. The first
+version of this script used `grep -cP` and would have shipped broken had it not been run.
+
 ## The placeholder gate - enforced (2026-09-08)
 
 `check-voice.sh` now fails any draft containing `[bracketed text]`, `TODO`, `TBD`,
