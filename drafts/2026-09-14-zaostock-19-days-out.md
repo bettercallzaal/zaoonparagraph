@@ -3,15 +3,18 @@
 <!-- Publication: ZAO Festivals / The ZAO on Paragraph. Send: 2026-09-14 15:30 EDT, Zaal's tap.
      Voice: announcement. Facts verified against zaostock.com 2026-09-14 09:50 EDT
      (/, /artist/lyons-den, /artist/dcoop, /tickets, /zaoville all HTTP 200).
-     Clip: ~/.zao/clipboard/clip-20260914-095117-zaostock-newsletter-0914-v4.html
+     v5 14:4x EDT on Zaal's rulings via zj: all eight names in running order as the homepage
+     shows them, the closing three billed as headliners, the evening is the ZAOstock after-party
+     at Black Moon with a DJ run by Steve from six. The DJ and Steve are Zaal's word, not on the
+     site; everything else re-checked at 14:45 EDT, all six URLs as before.
      LyonsDen link: /artist/lyonsden was 404 at 09:50, /artist/lyons-den was 200, so the
      body uses lyons-den. Once the rename lands either URL works. -->
 
 ZAOstock is Saturday 3 October, 19 days from today, on the Franklin Street Parklet in downtown Ellsworth, Maine. Free to walk up to, all ages, rain or shine. One stage, eight acts, noon to six.
 
-At six the street clears and Black Moon Public House hosts their own evening next door, so the day keeps going, it just moves indoors and becomes theirs.
+At six the street clears and the ZAOstock after-party starts next door at Black Moon Public House, with a DJ, run by Steve. The day keeps going, it just moves indoors.
 
-The running order is on the homepage now, all eight names. Bios and photos go up one artist at a time, and the first two are up.
+The running order is up, all eight names: The Crown Vics, OPEN X, Grass Rug, Acadia Rising, Michael Anderson, DCoop, LyonsDen, Fellenz. The closing three, DCoop, LyonsDen and Fellenz, are the headliners. Bios and photos go up one artist at a time, and the first two are up.
 
 LyonsDen is a Native American independent artist out of the Onondaga Reservation, self-produced, pulling reggae roots, hip-hop and blues into the same songs. He earned a spot at SXSW after winning a Battle of the Bands, then went out on the Beyond The Block Tour.
 
@@ -31,9 +34,9 @@ zaostock.com
 
 ## Shorter version
 
-ZAOstock is Saturday 3 October, 19 days out, on the Franklin Street Parklet in Ellsworth, Maine. Free, all ages, rain or shine. One stage, eight acts, noon to six, then Black Moon hosts their own evening next door.
+ZAOstock is Saturday 3 October, 19 days out, on the Franklin Street Parklet in Ellsworth, Maine. Free, all ages, rain or shine. One stage, eight acts, noon to six, then the after-party next door at Black Moon with a DJ from six.
 
-The running order is up on the homepage and the first two bios are live.
+The running order is up: The Crown Vics, OPEN X, Grass Rug, Acadia Rising, Michael Anderson, then the headliners DCoop, LyonsDen and Fellenz. The first two bios are live.
 
 LyonsDen, a self-produced Native American artist from the Onondaga Reservation who plays reggae, hip-hop and blues like they were always one thing. zaostock.com/artist/lyons-den
 
