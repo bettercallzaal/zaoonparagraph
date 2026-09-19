@@ -26,6 +26,18 @@ This is not the full archive. The ZAO newsletter has 400+ editions going back to
 2023 and this folder starts at Day 205. Everything before that lives on
 Paragraph only.
 
+## Backfill note (2026-09-19)
+
+Five more editions shipped with no record here: Days 246, 250, 258, 259 and 260. Recovered on
+2026-09-19 the same way as the first six: the body from `paragraph.com/@thezao/<slug>.md`, the
+post id, subtitle and publish time from `public.api.paragraph.com/api/v1/publications/<pub>/posts/slug/<slug>`.
+The route was checked against a known answer first: Day 236 came back with the post id already
+in this table. Dates in the table are the publish date in Eastern time; Paragraph's own page
+shows the UTC date, which is a day later for anything sent after 8 PM (Days 246, 259, 260).
+
+Day 259's slug ends in `-1`. Days 258 to 260 say "9th annual Art of Ellsworth"; left as
+published, because this folder is a record.
+
 ## The record
 
 | File | Published | Day | Title | Post id |
@@ -36,6 +48,11 @@ Paragraph only.
 | `2026-08-11-day-223.md` | 2026-08-11 | 223 | Year of the ZABAL - Day 223 | `urznjA8ACkK2demLMjt8` |
 | `2026-08-19-day-231.md` | 2026-08-19 | 231 | Year of the ZABAL - Day 231: The Final Six | `BwTXAFGr5HaZDddViaw0` |
 | `2026-08-24-day-236.md` | 2026-08-24 | 236 | Year of the ZABAL - Day 236 | `9MVuDTbIjZ38EC63VZbw` |
+| `2026-09-03-day-246.md` | 2026-09-03 | 246 | Year of the ZABAL - Day 246 | `Sa7O9dFpMQlanY47bipg` |
+| `2026-09-08-day-250.md` | 2026-09-08 | 250 | Year of the ZABAL - Day 250 | `L4MRZvyn24Ab9YYBp5ws` |
+| `2026-09-15-day-258.md` | 2026-09-15 | 258 | Year of the ZABAL - Day 258 | `iLdRuGx9eFYfFJViNyfV` |
+| `2026-09-16-day-259.md` | 2026-09-16 | 259 | Year of the ZABAL - Day 259 | `5r1z6VkqvtK9Fz4saC00` |
+| `2026-09-17-day-260.md` | 2026-09-17 | 260 | Year of the ZABAL - Day 260 | `xhbNYMu1HV3h4q0MB1g3` |
 
 Subtitles, cover images and live URLs:
 
@@ -47,6 +64,11 @@ Subtitles, cover images and live URLs:
 | 223 | The board closes Sunday, August 16. There is no vote - six finalists get picked, two per track. | https://paragraph.com/@thezao/year-of-the-zabal-day-223 |
 | 231 | ZABAL Gamez Season 1 comes down to 6 names in 3 tracks. Battles on WaveWarZ. Finals run the last week of August. | https://paragraph.com/@thezao/year-of-the-zabal-day-231-the-final-six-1 |
 | 236 | Season 1 ends this week. Three battles, six finalists, 500 USDC, and the artist final is tonight. | https://paragraph.com/@thezao/year-of-the-zabal-day-236 |
+| 246 | headed to nyc and counting down 30 days to zaostock in maine | https://paragraph.com/@thezao/year-of-the-zabal-day-246 |
+| 250 | I went to New York with no plan at all. Here is what that bought me, and what it cost. | https://paragraph.com/@thezao/year-of-the-zabal-day-250 |
+| 258 | DCoop is playing at ZAOstock | https://paragraph.com/@thezao/year-of-the-zabal-day-258 |
+| 259 | LyonsDen is playing ZAOstock | https://paragraph.com/@thezao/year-of-the-zabal-day-259-1 |
+| 260 | Tom Fellenz is playing ZAOstock | https://paragraph.com/@thezao/year-of-the-zabal-day-260 |
 
 Post ids are also in `automation/post-ids.json`, keyed by the file path here.
 
