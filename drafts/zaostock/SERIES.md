@@ -34,7 +34,7 @@ comment, the page to re-fetch on the morning it goes out.
 | Fri 25 Sep | 268 | The stream | - | zaostock.com/live | blocked; /live says "Stream not live yet", and the platform is not named until a test passes. Day 273 covers how to watch without naming one |
 | Sat 26 Sep | 269 | 1 week out: the running order, no set times | `2026-09-26-day-269-one-week-out.md` | zaostock.com/program | drafted |
 | Sun 27 Sep | 270 | The last 3 acts: DCoop, LyonsDen, Tom Fellenz | `2026-09-27-day-270-headliners.md` | the 3 artist pages | drafted; "headliners" wording is Zaal's call (see file header) |
-| Mon 28 Sep | 271 | Artist slot | - | zaostock.com/artist/the-crown-vics, /artist/open-x | blocked; both pages say "No bio yet." |
+| Mon 28 Sep | 271 | Artist slot | `UNDATED-the-crown-vics.md` or `UNDATED-open-x.md` | zaostock.com/artist/the-crown-vics, /artist/open-x | text ready, undated; bios went live 2026-09-19, no photo on either page, so the photo line is left out on the seat's word. Slot is the seat's to assign |
 | Tue 29 Sep | 272 | The place: getting there, parking, what to pack | `2026-09-29-day-272-the-place.md` | zaostock.com/ellsworth | drafted |
 | Wed 30 Sep | 273 | 3 ways to be there, in person or online | `2026-09-30-day-273-how-to-be-there.md` | zaostock.com/live | drafted |
 | Thu 1 Oct | 274 | How Saturday runs | `2026-10-01-day-274-run-of-show.md` | zaostock.com/program | drafted |
@@ -44,12 +44,12 @@ comment, the page to re-fetch on the morning it goes out.
 
 ## Artist slots
 
-8 acts, 3 shipped. The gate is a page that carries a bio and a photo. Measured by `curl` on 2026-09-19:
+8 acts, 3 shipped. The gate is a page that carries a bio and a photo. Measured by `curl` on 2026-09-19, 10:05 EDT:
 
 | Act | Order | Bio | Photo | Edition |
 |---|---|---|---|---|
-| The Crown Vics | 1 | no ("No bio yet.") | no | not written |
-| OPEN X | 2 | no ("No bio yet.") | no | not written |
+| The Crown Vics | 1 | yes (live 2026-09-19) | no (initials tile) | `UNDATED-the-crown-vics.md`, text ready |
+| OPEN X | 2 | yes (live 2026-09-19) | no (initials tile) | `UNDATED-open-x.md`, text ready |
 | Grass Rug | 3 | yes | no (initials tile) | `HOLD-grass-rug.md` |
 | Acadia Rising | 4 | yes | no (initials tile) | `HOLD-acadia-rising.md` |
 | Michael Anderson | 5 | yes | yes | `2026-09-21-day-264-michael-anderson.md` |
@@ -59,8 +59,14 @@ comment, the page to re-fetch on the morning it goes out.
 
 A `HOLD-` file has no date and no day number. When its page passes the gate it is renamed to
 `<date>-day-<N>-<slug>.md`, N comes from `edition-facts.sh` that day, and it takes the next open
-artist slot (22, 24 or 28 Sep). If the 2 remaining bios land after the 28th, those acts are covered
-by name in Days 269, 274 and 275 either way.
+artist slot (22, 24 or 28 Sep).
+
+An `UNDATED-` file is the same thing with the hold lifted for text: the seat ruled on 2026-09-19 that
+The Crown Vics and OPEN X go out from their bios, with the "bio and a photo" closing line left out
+until the page shows a photo. Grass Rug and Acadia Rising are in the identical state (bio, initials
+tile) but their files still carry that line and the HOLD name, because the ruling named 2 acts, not 4.
+4 acts are waiting on 3 open slots (22, 24, 28 Sep); which goes when is the seat's call. All 8 are
+covered by name in Days 269, 274 and 275 either way.
 
 ## Open for Zaal
 
