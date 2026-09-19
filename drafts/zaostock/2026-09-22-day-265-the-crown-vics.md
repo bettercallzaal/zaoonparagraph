@@ -1,10 +1,12 @@
-# Year of the ZABAL - Day N
+# Year of the ZABAL - Day 265
 
 <!-- SUBTITLE (Paragraph field, not body):
      The Crown Vics open ZAOstock. A Maine rock 'n' roll dance band, first on the Franklin Street stage at noon on October 3. -->
 
-<!-- ARTIST SLOT, TEXT READY, NO DATE YET. "Day N" in the title and the day line, and the
-     filename, get filled from edition-facts.sh on the day the seat gives it a slot.
+<!-- ARTIST SLOT. Send: Tue 22 Sep 2026 (day 265), Zaal's tap. Slot set by the seat on 2026-09-19:
+     artist editions follow the running order on /program, the one public source. Zaal can
+     reorder; if he does, the title, the day line and the filename move together.
+     Day number: 2026-09-22 = day 265 (2026-09-19 measured as 262 by edition-facts.sh).
      Hold lifted for text by the seat on 2026-09-19 (bio live, photo_url not wired). Voice:
      announcement. Zero Paragraph credits.
      Measured by curl 2026-09-19 10:05 EDT: zaostock.com/artist/the-crown-vics is HTTP 200 and
@@ -19,7 +21,7 @@
 
 zm
 
-year of the zabal day N
+year of the zabal day 265
 
 The Crown Vics are playing ZAOstock, and they are playing first.
 

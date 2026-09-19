@@ -3,12 +3,15 @@
 <!-- SUBTITLE (Paragraph field, not body):
      Acadia Rising is playing ZAOstock. Original flute and hand percussion from Ellsworth, 4th on the Franklin Street stage on October 3. -->
 
-<!-- ARTIST SLOT, ON HOLD. Not dated and not numbered on purpose: the filename, "Day N" in the
-     title and the day line get filled from edition-facts.sh on the day it is cleared.
-     GATE: FAILS on 2026-09-19 08:5x EDT. zaostock.com/artist/acadia-rising is HTTP 200 and
-     carries a bio, but the photo slot is the initials tile "AR". The brief's gate is bio AND
-     photo. The closing line of the body is only true once the photo is up.
-     TO CLEAR: re-fetch the page; when an <img> with alt "Acadia Rising" is there, fill N and send.
+<!-- ARTIST SLOT, TEXT READY, NO DATE YET. NEEDS A 4TH SLOT, ZAAL'S CALL: the 3 open artist
+     slots (22, 24, 28 Sep) went to The Crown Vics, OPEN X and Grass Rug in running order, and
+     Acadia Rising is 4th. "Day N" in the title and the day line, and the filename, get filled
+     from edition-facts.sh when a day is chosen.
+     HOLD LIFTED FOR TEXT by the seat on 2026-09-19. Measured by curl 10:05 EDT:
+     zaostock.com/artist/acadia-rising is HTTP 200 with a bio; the photo slot is the initials
+     tile "AR". So the usual closing line about "a bio and a photo" is LEFT OUT. Put it back
+     when the page shows a photo. The zaostock lane lists the photo as due 20 Sep: RE-FETCH the
+     page on the morning this goes out.
      Voice: announcement. Zero Paragraph credits.
      Sources: that page (flute and hand percussion, global influences and the natural beauty of
      Maine, improvisation, genre "World Rhythms / Global Fusion", city "Ellsworth, Maine",
@@ -41,8 +44,6 @@ On Facebook: [facebook.com/AcadiaRising](https://facebook.com/AcadiaRising)
 On Instagram: [instagram.com/acadia.rising](https://instagram.com/acadia.rising)
 
 The running order: [zaostock.com/program](https://zaostock.com/program)
-
-Artists are published one at a time, after they have confirmed in writing and sent a bio and a photo.
 
 RSVP is free at [ticket.zaostock.com](https://ticket.zaostock.com) so we know how many people to plan for. If you want to put something behind the day you can do that at [zaostock.com/tickets](https://zaostock.com/tickets).
 
