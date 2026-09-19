@@ -27,7 +27,7 @@ comment, the page to re-fetch on the morning it goes out.
 | Wed 16 Sep | 259 | LyonsDen | - | https://paragraph.com/@thezao/year-of-the-zabal-day-259-1 | shipped |
 | Thu 17 Sep | 260 | Tom Fellenz | - | https://paragraph.com/@thezao/year-of-the-zabal-day-260 | shipped |
 | Fri 18 Sep | 261 | (Art of Ellsworth in the plan) | - | - | nothing shipped; not in the feed on 2026-09-19 |
-| Sat 19 Sep | 262 | 2 weeks out: free, all ages, RSVP, the $20 and $50 tiers | `2026-09-19-day-262-two-weeks-out.md` | zaostock.com/tickets | drafted |
+| Sat 19 Sep | 262 | 2 weeks out, get prepared: RSVP, book a room, the brand assets, volunteer, the tiers, sponsor an artist, the stream | `2026-09-19-day-262-two-weeks-out.md` | zaostock.com/tickets, /design, /ellsworth, /acadia, /apply, /sponsor, /live | drafted; v2 on Zaal's word 2026-09-19 |
 | Sun 20 Sep | 263 | ZAOville, the July chapter, and the series | `2026-09-20-day-263-zaoville.md` | zaostock.com/zaoville, /festivals | drafted; 2 names for Zaal to clear (see file header) |
 | Mon 21 Sep | 264 | Artist slot: Michael Anderson | `2026-09-21-day-264-michael-anderson.md` | zaostock.com/artist/michael-anderson | drafted; page has bio and photo |
 | Tue 22 Sep | 265 | Artist slot: The Crown Vics | `2026-09-22-day-265-the-crown-vics.md` | zaostock.com/artist/the-crown-vics | text ready; bio live, no photo on the page 2026-09-19, so the photo line is out. Re-fetch that morning |
