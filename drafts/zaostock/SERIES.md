@@ -16,7 +16,7 @@ which ran 1 low.
 
 Status words: `shipped` (live on Paragraph, link in the row), `drafted` (in this folder, voice check
 green), `text ready` (written, bio live, no photo yet, photo line left out), `blocked` (cannot be written yet, reason in the row),
-`open` (nobody has written it).
+`skeleton` (written with every fixed fact in and labelled blanks only the day can fill), `open` (nobody has written it).
 
 Every `drafted` row was written on 2026-09-19 from a fetch that day. Each one names, in its header
 comment, the page to re-fetch on the morning it goes out.
@@ -28,7 +28,7 @@ comment, the page to re-fetch on the morning it goes out.
 | Thu 17 Sep | 260 | Tom Fellenz | - | https://paragraph.com/@thezao/year-of-the-zabal-day-260 | shipped |
 | Fri 18 Sep | 261 | (Art of Ellsworth in the plan) | - | - | nothing shipped; not in the feed on 2026-09-19 |
 | Sat 19 Sep | 262 | 2 weeks out, get prepared: RSVP, book a room, the brand assets, volunteer, the tiers, sponsor an artist, the stream | `2026-09-19-day-262-two-weeks-out.md` | zaostock.com/tickets, /design, /ellsworth, /acadia, /apply, /sponsor, /live | drafted; v2 on Zaal's word 2026-09-19 |
-| Sun 20 Sep | 263 | ZAOville, the July chapter, and the series | `2026-09-20-day-263-zaoville.md` | zaostock.com/zaoville, /festivals | drafted; 2 names for Zaal to clear (see file header) |
+| Sun 20 Sep | 263 | ZAOville, the July chapter, and the series | `2026-09-20-day-263-zaoville.md` | zaostock.com/zaoville, /festivals | drafted; names 4 ZAOville acts on Zaal's ruling 2026-09-19, not the 6 the page lists |
 | Mon 21 Sep | 264 | Artist slot: Michael Anderson | `2026-09-21-day-264-michael-anderson.md` | zaostock.com/artist/michael-anderson | drafted; page has bio and photo |
 | Tue 22 Sep | 265 | Artist slot: The Crown Vics | `2026-09-22-day-265-the-crown-vics.md` | zaostock.com/artist/the-crown-vics | text ready; bio live, no photo on the page 2026-09-19, so the photo line is out. Re-fetch that morning |
 | Wed 23 Sep | 266 | The 10 partners, and the volunteer call | `2026-09-23-day-266-partners.md` | zaostock.com/partners, /volunteer | drafted |
@@ -41,8 +41,8 @@ comment, the page to re-fetch on the morning it goes out.
 | Wed 30 Sep | 273 | 3 ways to be there, in person or online | `2026-09-30-day-273-how-to-be-there.md` | zaostock.com/live | drafted |
 | Thu 1 Oct | 274 | How Saturday runs | `2026-10-01-day-274-run-of-show.md` | zaostock.com/program | drafted |
 | Fri 2 Oct | 275 | Tomorrow | `2026-10-02-day-275-tomorrow.md` | zaostock.com/, /program | drafted |
-| Sat 3 Oct | 276 | Day of | - | - | open; written on the day, from what happens |
-| Sun 4 Oct | 277 | Recap, with photos | - | - | open; written after |
+| Sat 3 Oct | 276 | Day of | `2026-10-03-day-276-day-of.SKELETON.md` | the day itself | skeleton; fixed facts in, every [FILL] is a thing only the day answers |
+| Sun 4 Oct | 277 | Recap, with photos | `2026-10-04-day-277-recap.SKELETON.md` | the day itself, the images lane | skeleton; same shape, plus the local-business measurement the site promises |
 
 ## Artist slots
 
