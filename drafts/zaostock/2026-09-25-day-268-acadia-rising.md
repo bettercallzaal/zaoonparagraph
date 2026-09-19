@@ -1,12 +1,18 @@
-# Year of the ZABAL - Day N
+# Year of the ZABAL - Day 268
 
 <!-- SUBTITLE (Paragraph field, not body):
      Acadia Rising is playing ZAOstock. Original flute and hand percussion from Ellsworth, 4th on the Franklin Street stage on October 3. -->
 
-<!-- ARTIST SLOT, TEXT READY, NO DATE YET. NEEDS A 4TH SLOT, ZAAL'S CALL: the 3 open artist
-     slots (22, 24, 28 Sep) went to The Crown Vics, OPEN X and Grass Rug in running order, and
-     Acadia Rising is 4th. "Day N" in the title and the day line, and the filename, get filled
-     from edition-facts.sh when a day is chosen.
+<!-- ARTIST SLOT. Send: Fri 25 Sep 2026 (day 268), Zaal's tap. Dated on Zaal's ruling, seat grill
+     2026-09-19: "Let's do it this week Monday to Friday planned for". Mon 21 to Thu 24 were
+     taken (Michael Anderson, The Crown Vics, the partners, OPEN X), so Fri 25 is the open
+     weekday. It was the stream edition's day in the plan; that edition is blocked until a test
+     passes, and Day 273 covers how to watch. If he reorders, the title, the day line and the
+     filename move together.
+     Day number: 2026-09-25 = day 268 (2026-09-19 measured as 262 by edition-facts.sh; date -j
+     gives day-of-year 268 for 2026-09-25).
+     PHOTO: Zaal is asking Sen for it on Sun 20 Sep. RE-FETCH zaostock.com/artist/acadia-rising
+     on the morning of 09-25.
      HOLD LIFTED FOR TEXT by the seat on 2026-09-19. Measured by curl 10:05 EDT:
      zaostock.com/artist/acadia-rising is HTTP 200 with a bio; the photo slot is the initials
      tile "AR". So the usual closing line about "a bio and a photo" is LEFT OUT. DO NOT put it back, with or without a photo: the seat ruled 2026-09-19 that "confirmed in writing" stays out of everything unpublished (zaostock.com/press says no act has countersigned). The zaostock lane lists the photo as due 20 Sep: RE-FETCH the
@@ -22,7 +28,7 @@
 
 zm
 
-year of the zabal day N
+year of the zabal day 268
 
 Acadia Rising is playing ZAOstock.
 
