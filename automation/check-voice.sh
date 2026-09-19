@@ -57,6 +57,18 @@ fi
 DASH_COUNT=$(grep -o '—\|–' "$FILE" | wc -l | tr -d ' ')
 check "zero em/en dashes (found: $DASH_COUNT)" $([ "$DASH_COUNT" -eq 0 ] && echo 0 || echo 1)
 
+# No emojis, and none of the decorative symbols that stand in for them (checkmarks,
+# warning triangles, play buttons, stars). Both voices. Counted by code point in
+# python3 because a bracket range of 4-byte characters is not portable across greps.
+EMOJI_COUNT=$(python3 - "$FILE" <<'PY'
+import sys
+R = [(0x1F000, 0x1FAFF), (0x2600, 0x27BF), (0x2B00, 0x2BFF), (0x25A0, 0x25FF), (0xFE0F, 0xFE0F), (0x200D, 0x200D)]
+text = open(sys.argv[1], encoding="utf-8", errors="replace").read()
+print(sum(1 for ch in text if any(lo <= ord(ch) <= hi for lo, hi in R)))
+PY
+)
+check "zero emojis or decorative symbols (found: ${EMOJI_COUNT:-UNKNOWN})" $([ "${EMOJI_COUNT:-x}" = "0" ] && echo 0 || echo 1)
+
 EXCLAIM_COUNT=$(grep -o '!' "$FILE" | wc -l | tr -d ' ')
 if [ "$MODE" = "daily" ]; then
   check "zero exclamation marks (found: $EXCLAIM_COUNT)" $([ "$EXCLAIM_COUNT" -eq 0 ] && echo 0 || echo 1)
