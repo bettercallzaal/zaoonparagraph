@@ -11,6 +11,22 @@ Paragraph AI, no Polish. Only facts on zaostock.com, fetched, with the fetch tim
 header comment. No set times. No stream platform named until a test passes. No Art of Ellsworth
 year number until Zaal rules. Zaal publishes; this lane never does.
 
+**When /program and an artist page disagree on a genre, an edition does not pick a side.**
+The artist pages read their Genre field from the database; /program and /artists read theirs from
+code, so a correction reaches the two at different times, and either one can be the stale half.
+Both directions were measured on 2026-09-19. Grass Rug: /program said "Indie jam rock" while
+/artist/grass-rug still said "Jam rock band", the page behind because the SQL waits on a Supabase
+login (ZAOstock #247). Tom Fellenz, earlier that day: /program said "Rock guitar and soundtrack"
+while his page already said "Solo Instrumental Acoustic Guitar", so there the code was the stale
+half; by 18:10 those two agreed.
+
+So the instruction is: re-fetch both. If they agree, quote it. **If they differ, do not pick.**
+Either use wording both surfaces share, which in practice means the artist's own bio (Day 271's
+body does this, and it is why its subtitle can say "indie jam rock": his bio reads "indie jam-rock
+sound" on both surfaces), or leave the genre out of that edition. Then tell the seat the same hour
+so the zaostock lane reconciles the two. An edition never settles a disagreement the site has not
+settled, and picking the surface that looks more current is settling it.
+
 Day numbers are day of year from `edition-facts.sh` (2026-09-19 measured as 262), not from the plan,
 which ran 1 low.
 

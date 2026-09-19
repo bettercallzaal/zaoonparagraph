@@ -15,10 +15,11 @@
      because the same page says Black Moon keeps its own hours.
      CHANGED 2026-09-19 14:26 EDT: /program now words Tom Fellenz as "Solo Instrumental Acoustic
      Guitar" (it said "Rock guitar and soundtrack" at 08:5x). Body updated to match.
-     CHANGED AGAIN 2026-09-19 18:08 EDT: /program now words Grass Rug as "Indie jam rock" (it said
-     "Jam rock band" earlier the same day). Body updated to match. Their artist page supports
-     both: Genre reads "Jam rock band" and the bio says "indie jam-rock sound". /program is the
-     source this edition names, so /program wins.
+     CHANGED AGAIN 2026-09-19 18:08 EDT: /program now words Grass Rug as "Indie jam rock" while
+     /artist/grass-rug still reads "Jam rock band". The two surfaces DISAGREE, so per SERIES.md
+     this edition picks neither: "indie jam rock" is used because his own bio says "indie jam-rock
+     sound" and that bio is identical on both surfaces. Every other act's genre here was measured
+     the same as on its artist page at 18:10 EDT.
      RE-FETCH /program ON THE MORNING OF 09-26: if the order or a genre line changed, this moves.
      Count check: 8 acts named, numbered 1 to 8 in prose. -->
 
