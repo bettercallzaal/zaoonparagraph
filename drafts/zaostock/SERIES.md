@@ -11,6 +11,18 @@ Paragraph AI, no Polish. Only facts on zaostock.com, fetched, with the fetch tim
 header comment. No set times. No stream platform named until a test passes. No Art of Ellsworth
 year number until Zaal rules. Zaal publishes; this lane never does.
 
+**A genre can differ between /program and the artist page, and either one can be the stale one.**
+The artist pages read their Genre field from the database; /program and /artists read theirs from
+code, so a correction lands on the two surfaces at different times. Both directions were measured
+on 2026-09-19. Grass Rug: /program said "Indie jam rock" while /artist/grass-rug still said "Jam
+rock band", the page lagging because the SQL waits on a Supabase login (ZAOstock #247). Tom
+Fellenz, earlier the same day: /program said "Rock guitar and soundtrack" while his page already
+said "Solo Instrumental Acoustic Guitar", so there the code was the stale half; by 18:10 both read
+the same. So: re-fetch BOTH before an edition quotes a genre, and where they differ take /program,
+which is where the site is heading (the seat, 2026-09-19), and say in the header which you took and
+when you measured it. A bio quoted from an artist page is safe either way, because both surfaces
+carry the same bio text.
+
 Day numbers are day of year from `edition-facts.sh` (2026-09-19 measured as 262), not from the plan,
 which ran 1 low.
 
