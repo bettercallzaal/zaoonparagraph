@@ -61,7 +61,7 @@ comment, the page to re-fetch on the morning it goes out.
 
 An `UNDATED-` file is a finished edition with no day: "Day N" in the title and the day line. When it gets a slot it is renamed to `<date>-day-<N>-<slug>.md` and N is filled from `edition-facts.sh`.
 
-The seat ruled on 2026-09-19 that an act goes out from its bio once the bio is live, with the usual "confirmed in writing and sent a bio and a photo" closing line left out until the page shows a photo. That covers The Crown Vics, OPEN X, Grass Rug and Acadia Rising. Each file's header says to put the line back when a photo is there, and to re-fetch the page on the morning it goes out. Michael Anderson's page has a photo, so his edition keeps the line. All 8 acts are also covered by name in Days 269, 274 and 275.
+The seat ruled on 2026-09-19 that an act goes out from its bio once the bio is live. The old closing line, "confirmed in writing and sent a bio and a photo", is out of every unpublished edition and does not come back when a photo lands: zaostock.com/press says no act has countersigned, so the claim is not one we can make. Days 258 to 260 stay as shipped. Michael Anderson's edition says "The lineup is public" instead; the 4 no-photo artist editions simply end without the line. Re-fetch each artist page on the morning it goes out. All 8 acts are also covered by name in Days 269, 274 and 275.
 
 ## Open for Zaal
 

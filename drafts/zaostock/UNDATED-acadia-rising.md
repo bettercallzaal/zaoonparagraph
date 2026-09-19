@@ -9,8 +9,7 @@
      from edition-facts.sh when a day is chosen.
      HOLD LIFTED FOR TEXT by the seat on 2026-09-19. Measured by curl 10:05 EDT:
      zaostock.com/artist/acadia-rising is HTTP 200 with a bio; the photo slot is the initials
-     tile "AR". So the usual closing line about "a bio and a photo" is LEFT OUT. Put it back
-     when the page shows a photo. The zaostock lane lists the photo as due 20 Sep: RE-FETCH the
+     tile "AR". So the usual closing line about "a bio and a photo" is LEFT OUT. DO NOT put it back, with or without a photo: the seat ruled 2026-09-19 that "confirmed in writing" stays out of everything unpublished (zaostock.com/press says no act has countersigned). The zaostock lane lists the photo as due 20 Sep: RE-FETCH the
      page on the morning this goes out.
      Voice: announcement. Zero Paragraph credits.
      Sources: that page (flute and hand percussion, global influences and the natural beauty of
