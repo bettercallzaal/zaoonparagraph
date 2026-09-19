@@ -12,9 +12,12 @@
      influences, "all from one guitar", SF Bay Area), /program (acts 6, 7, 8; Tom Fellenz closes
      the outdoor block), /zaoville (DCoop and LyonsDen both played 25 July).
      "HEADLINERS": Zaal's ruling 2026-09-14 14:2x, the closing three are billed as headliners.
-     The live homepage groups DCoop under "The afternoon" and only LyonsDen and Tom Fellenz under
-     "Closing", and the word headliners is not on the site. The body says "the last 3 acts of the
-     day", which is true on both readings. If Zaal wants the word, it goes in the opening line.
+     On 2026-09-19 the homepage still grouped DCoop under "The afternoon", so the body said "the
+     last 3 acts of the day" rather than naming a group. Zaal then ruled "Just move dcoop" and the
+     zaostock lane moved him; MEASURED by curl at 18:08 EDT the same day, "Closing" on the
+     homepage is DCoop, LyonsDen, Tom Fellenz, and /program's running order is unchanged. So the
+     body's phrase is now exactly the Closing block and needs no edit. The word "headliners" is
+     still nowhere on the site; if Zaal wants it, it goes in the opening line.
      Links are the artists' own, copied from their pages and from Days 258 and 260 as published:
      dot.cards/dcoope2, fellenz.net. LyonsDen's page lists no link. -->
 

@@ -15,6 +15,10 @@
      because the same page says Black Moon keeps its own hours.
      CHANGED 2026-09-19 14:26 EDT: /program now words Tom Fellenz as "Solo Instrumental Acoustic
      Guitar" (it said "Rock guitar and soundtrack" at 08:5x). Body updated to match.
+     CHANGED AGAIN 2026-09-19 18:08 EDT: /program now words Grass Rug as "Indie jam rock" (it said
+     "Jam rock band" earlier the same day). Body updated to match. Their artist page supports
+     both: Genre reads "Jam rock band" and the bio says "indie jam-rock sound". /program is the
+     source this edition names, so /program wins.
      RE-FETCH /program ON THE MORNING OF 09-26: if the order or a genre line changed, this moves.
      Count check: 8 acts named, numbered 1 to 8 in prose. -->
 
@@ -28,7 +32,7 @@ ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street
 
 Music starts at noon with a short welcome on the mic. Then 8 independent acts play back to back on the parklet stage, and between sets the MC keeps the day moving with the story of the event and a word from the partners.
 
-The Crown Vics open the day, a rock n roll dance band. OPEN X are 2nd, power pop rock. Grass Rug are 3rd, a jam rock band from Portland, Maine.
+The Crown Vics open the day, a rock n roll dance band. OPEN X are 2nd, power pop rock. Grass Rug are 3rd, indie jam rock, from Portland, Maine.
 
 Acadia Rising are 4th, world rhythms and global fusion, flute and hand percussion, from Ellsworth itself. Michael Anderson is 5th, solo piano, from Bar Harbor. DCoop is 6th, rooted in hip-hop and pulling from reggae, rock, punk, tribal, country, EDM and R&B.
 
