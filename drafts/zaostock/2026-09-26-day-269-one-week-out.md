@@ -13,6 +13,8 @@
      the 2026-09-19 re-brief overrides it. Only the festival window (12 to 6) and the after-party
      start the program page prints (from 6) appear. The page's "poster: 6 to 10 PM" is left out
      because the same page says Black Moon keeps its own hours.
+     CHANGED 2026-09-19 14:26 EDT: /program now words Tom Fellenz as "Solo Instrumental Acoustic
+     Guitar" (it said "Rock guitar and soundtrack" at 08:5x). Body updated to match.
      RE-FETCH /program ON THE MORNING OF 09-26: if the order or a genre line changed, this moves.
      Count check: 8 acts named, numbered 1 to 8 in prose. -->
 
@@ -30,7 +32,7 @@ The Crown Vics open the day, a rock n roll dance band. OPEN X are 2nd, power pop
 
 Acadia Rising are 4th, world rhythms and global fusion, flute and hand percussion, from Ellsworth itself. Michael Anderson is 5th, solo piano, from Bar Harbor. DCoop is 6th, rooted in hip-hop and pulling from reggae, rock, punk, tribal, country, EDM and R&B.
 
-LyonsDen is 7th, Native, electro, reggae and hip-hop. Tom Fellenz is 8th, rock guitar and soundtrack, and he closes the outdoor block.
+LyonsDen is 7th, Native, electro, reggae and hip-hop. Tom Fellenz is 8th, solo instrumental acoustic guitar, and he closes the outdoor block.
 
 We are not publishing set times. The order is the order, and on the day things can shift by a few minutes. If you want to see all 8, come at noon.
 
