@@ -1,35 +1,65 @@
 # Year of the ZABAL - Day 262
 
 <!-- SUBTITLE (Paragraph field, not body):
-     ZAOstock is 2 weeks out. Free, all ages, rain or shine. RSVP so we know how many to plan for. -->
+     2 weeks to ZAOstock. Hope you are prepared. RSVP, book a room, grab the brand assets, take a volunteer shift. -->
 
 <!-- Send: Sat 19 Sep 2026, Zaal's tap. Voice: announcement. Zero Paragraph credits: paste this
      markdown into the editor, no AI, no Polish.
+     v2, 2026-09-19 11:0x EDT, on Zaal's word: "2 weeks to zaostock hope you are prepared brand
+     assets are here etc". v1 (RSVP and tiers only) was merged in #48; this widens it into a
+     get-ready edition. The opening 2 sentences are his words.
      Day number: edition-facts.sh, 2026-09-19 = day 262.
-     Sources, all HTTP 200 by curl on 2026-09-19 08:5x EDT: zaostock.com/ (free, all ages, rain
-     or shine, the 8 names in order), /tickets ($20 Supporter, $50 Pro Ticket, 20 spots, the 1:1,
-     the $1,000 round 1 goal, what the RSVP is for), /program (tent cover from Wallace Events),
+     Sources, all HTTP 200 by curl on 2026-09-19 between 08:5x and 10:5x EDT:
+     zaostock.com/ (free, all ages, rain or shine, the 8 names in order)
+     /tickets ($20 Supporter, $50 Pro Ticket, 20 spots, the 1:1, the $1,000 round 1 goal, what
+       the RSVP is for)
+     /ellsworth (rooms go fast in foliage season, the public lot and free street parking, layers
+       and a rain layer, the Island Explorer through October 12)
+     /acadia (about 25 miles; the Cadillac Mountain summit drive needs a reservation through
+       October 25, booked on Recreation.gov, the last slots release 2 days ahead)
+     /design (the design kit: "Every file downloads"; the moose by attabotty, white on
+       transparent, put it on a dark ground, do not recolour or crop the antlers; signs,
+       illustrations, colours and type by Samantha "Candy", CandyToyBox; ask before printing
+       the signs)
+     /apply (7 roles, shifts, crew shirt and a meal, no commitment until a specific shift;
+       /volunteer is a 307 redirect to it, so the body links /apply, the page that returns 200)
+     /sponsor (sponsor an artist = cover one artist's travel, the artist opts in; packages on
+       request; info@thezao.com)
+     /live (the stream plays on that page, 12 to 6, no sign-up)
+     /program (tent cover from Wallace Events, the running order)
      ticket.zaostock.com (302 to luma.com/vhwv9n2h).
-     Left out on purpose: the Art of Ellsworth year number (unruled), any set time, the stream
-     platform, the crypto giving route on /donate. -->
+     Credits follow the design kit's own rule: the moose to attabotty, the rest to Candy.
+     LINKED ON PURPOSE: /design, not /brand. /brand is live but not in the sitemap, shows a
+     different palette and font, and /build calls /design "the one source".
+     NOT LINKED ON PURPOSE: /press and /build. Both are live and both print internal notes and
+     the 12:05 to 5:46 music window. Reported to the seat for the zaostock lane.
+     Left out: the Art of Ellsworth year number (unruled), any set time, the stream platform,
+     sponsor prices (the site has none), the crypto giving route on /donate.
+     Count check: 7 volunteer roles named, 8 acts named, 3 editions named. -->
 
 zm
 
 year of the zabal day 262
 
-ZAOstock is 2 weeks out.
+2 weeks to ZAOstock. Hope you are prepared.
 
 ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6. It is part of Art of Ellsworth, during Maine Craft Weekend.
 
-It is free, all ages, and it runs rain or shine under tent cover from Wallace Events. There is no gate and no wristband to buy.
+It is free, all ages, and it runs rain or shine under tent cover from Wallace Events. There is no gate and no wristband to buy. So being prepared is mostly small things, and here they are.
 
-The one thing we are asking for this week is an RSVP. It is free and it takes a moment. It is not a ticket you show at a door, because there is no door. It tells us how much water, seating and shelter to plan for. If you are coming, or think you might, tell us at [ticket.zaostock.com](https://ticket.zaostock.com).
+RSVP. It is free and it takes a moment. It is not a ticket you show at a door, because there is no door. It tells us how much water, seating and shelter to plan for. If you are coming, or think you might, tell us at [ticket.zaostock.com](https://ticket.zaostock.com).
 
-If you want to put something behind the day, there are 2 ways to do it, and neither one buys a better spot, an earlier entry or a different view. The Supporter tier is $20. It goes to artist fees, materials and production, and it credits you as a supporter on the festival page. The Pro Ticket is $50, there are 20 of them, and it is the same thing plus a 1:1 with someone on the ZAO team before the event. The first goal is $1,000 across both. Both are at [zaostock.com/tickets](https://zaostock.com/tickets).
+If you are travelling, book a room now. Early October is foliage season at the gateway to Acadia and rooms go fast. There is a public lot and free street parking near the parklet. Pack layers and something for rain. Hotels, airports and where to eat are at [zaostock.com/ellsworth](https://zaostock.com/ellsworth). If you are making a weekend of it, Acadia National Park is about 25 miles away, and driving to the Cadillac Mountain summit needs a reservation that you book ahead. Our guide has the rest: [zaostock.com/acadia](https://zaostock.com/acadia).
 
-3 of the 8 acts have had their own edition so far: DCoop, LyonsDen and Tom Fellenz. The rest go up one at a time, as each artist's bio and photo come in. On the day they play in this order: The Crown Vics, OPEN X, Grass Rug, Acadia Rising, Michael Anderson, DCoop, LyonsDen, Tom Fellenz.
+The brand assets are here. The design kit at [zaostock.com/design](https://zaostock.com/design) has the moose logo, the signs for the day, the hand-drawn poster pieces, the colours and the type, and every file downloads. If you are an artist, a partner, a space host or just someone making a post, use them. The moose is by attabotty. The signage, illustrations, colours and type are by Samantha "Candy", CandyToyBox. Credit them when you use their work. 2 rules: the moose is white, so put it on a dark ground, and use it as supplied, no recolouring and no cropping the antlers. Ask us before you print any of the signs.
 
-The running order is at [zaostock.com/program](https://zaostock.com/program).
+Take a shift. There are 7 volunteer roles: setup, check-in, water, safety, teardown, content, and floater. You get a crew shirt and a meal, and there is no commitment until you say yes to a specific shift. Sign up at [zaostock.com/apply](https://zaostock.com/apply).
+
+Put something behind it, if you can. The Supporter tier is $20 and the Pro Ticket is $50, with 20 spots and a 1:1 with someone on the ZAO team before the event. Neither one buys a better spot, because there is no better spot. Both go to artist fees, materials and production, and both credit you as a supporter. The first goal is $1,000. It is all at [zaostock.com/tickets](https://zaostock.com/tickets). If you run a business, you can sponsor an artist, which means covering 1 artist's travel to Ellsworth, with their agreement. Start at [zaostock.com/sponsor](https://zaostock.com/sponsor) or write to info@thezao.com.
+
+And if you cannot be in Maine, bookmark [zaostock.com/live](https://zaostock.com/live). The stream plays on that page from 12 to 6 Eastern. No sign-up.
+
+3 of the 8 acts have had their own edition so far: DCoop, LyonsDen and Tom Fellenz. The rest go up one at a time over the next 2 weeks. On the day they play in this order: The Crown Vics, OPEN X, Grass Rug, Acadia Rising, Michael Anderson, DCoop, LyonsDen, Tom Fellenz. The running order is at [zaostock.com/program](https://zaostock.com/program).
 
 2 weeks. See you on Franklin Street.
 
