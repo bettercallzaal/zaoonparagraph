@@ -1,6 +1,6 @@
 # ZAOstock series - one edition a day to 3 October
 
-**NEEDS A 4TH SLOT, ZAAL'S CALL.** Acadia Rising's edition is written (`UNDATED-acadia-rising.md`) and has no day. The 3 open artist slots went out in running order, the one public source: The Crown Vics Tue 22 Sep, OPEN X Thu 24 Sep, Grass Rug Mon 28 Sep (seat, 2026-09-19; Zaal can reorder). Acadia Rising is 4th in that order and there is no 4th slot. Fri 25 Sep is the open candidate, since the stream edition planned for it is blocked.
+**Artist slots, all 8 placed.** Shipped: DCoop (258), LyonsDen (259), Tom Fellenz (260). Dated: Michael Anderson Mon 21 Sep, The Crown Vics Tue 22, OPEN X Thu 24, Acadia Rising Fri 25, Grass Rug Mon 28. The first 3 new slots follow the /program running order (seat, 2026-09-19); Acadia Rising went to Fri 25 on Zaal's ruling the same day, "this week Monday to Friday". Zaal can reorder.
 
 The editorial calendar for the ZAOstock run, from `~/zao-vault/projects/zaostock-17-day-plan-2026-09-16.md`
 section 3, as re-briefed on 2026-09-19. One row per day. Every file here is a whole Day N edition:
@@ -33,7 +33,7 @@ comment, the page to re-fetch on the morning it goes out.
 | Tue 22 Sep | 265 | Artist slot: The Crown Vics | `2026-09-22-day-265-the-crown-vics.md` | zaostock.com/artist/the-crown-vics | text ready; bio live, no photo on the page 2026-09-19, so the photo line is out. Re-fetch that morning |
 | Wed 23 Sep | 266 | The 10 partners, and the volunteer call | `2026-09-23-day-266-partners.md` | zaostock.com/partners, /volunteer | drafted |
 | Thu 24 Sep | 267 | Artist slot: OPEN X | `2026-09-24-day-267-open-x.md` | zaostock.com/artist/open-x | text ready; bio live, no photo on the page 2026-09-19, so the photo line is out. Re-fetch that morning |
-| Fri 25 Sep | 268 | The stream | - | zaostock.com/live | blocked; /live says "Stream not live yet", and the platform is not named until a test passes. Day 273 covers how to watch without naming one |
+| Fri 25 Sep | 268 | Artist slot: Acadia Rising | `2026-09-25-day-268-acadia-rising.md` | zaostock.com/artist/acadia-rising | text ready; dated on Zaal's ruling 2026-09-19 (the week of 21 to 25 Sep). Bio live, no photo on the page 2026-09-19; Zaal is asking Sen for it Sun 20 Sep: re-fetch that morning. The stream edition planned for this day stays blocked; Day 273 covers how to watch |
 | Sat 26 Sep | 269 | 1 week out: the running order, no set times | `2026-09-26-day-269-one-week-out.md` | zaostock.com/program | drafted |
 | Sun 27 Sep | 270 | The last 3 acts: DCoop, LyonsDen, Tom Fellenz | `2026-09-27-day-270-headliners.md` | the 3 artist pages | drafted; "headliners" wording is Zaal's call (see file header) |
 | Mon 28 Sep | 271 | Artist slot: Grass Rug | `2026-09-28-day-271-grass-rug.md` | zaostock.com/artist/grass-rug | text ready; bio live, no photo on the page 2026-09-19, so the photo line is out. Photo due 20 Sep per the zaostock lane: re-fetch that morning |
@@ -53,13 +53,11 @@ comment, the page to re-fetch on the morning it goes out.
 | The Crown Vics | 1 | yes (live 2026-09-19) | no (initials tile) | `2026-09-22-day-265-the-crown-vics.md`, Tue 22 Sep |
 | OPEN X | 2 | yes (live 2026-09-19) | no (initials tile) | `2026-09-24-day-267-open-x.md`, Thu 24 Sep |
 | Grass Rug | 3 | yes | no (initials tile) | `2026-09-28-day-271-grass-rug.md`, Mon 28 Sep |
-| Acadia Rising | 4 | yes | no (initials tile) | `UNDATED-acadia-rising.md`, NO SLOT |
+| Acadia Rising | 4 | yes | no (initials tile) | `2026-09-25-day-268-acadia-rising.md`, Fri 25 Sep |
 | Michael Anderson | 5 | yes | yes | `2026-09-21-day-264-michael-anderson.md` |
 | DCoop | 6 | yes | yes | shipped, Day 258 |
 | LyonsDen | 7 | yes | yes | shipped, Day 259 |
 | Tom Fellenz | 8 | yes | yes | shipped, Day 260 |
-
-An `UNDATED-` file is a finished edition with no day: "Day N" in the title and the day line. When it gets a slot it is renamed to `<date>-day-<N>-<slug>.md` and N is filled from `edition-facts.sh`.
 
 The seat ruled on 2026-09-19 that an act goes out from its bio once the bio is live. The old closing line, "confirmed in writing and sent a bio and a photo", is out of every unpublished edition and does not come back when a photo lands: zaostock.com/press says no act has countersigned, so the claim is not one we can make. Days 258 to 260 stay as shipped. Michael Anderson's edition says "The lineup is public" instead; the 4 no-photo artist editions simply end without the line. Re-fetch each artist page on the morning it goes out. All 8 acts are also covered by name in Days 269, 274 and 275.
 
