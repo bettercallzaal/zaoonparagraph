@@ -11,8 +11,7 @@
      announcement. Zero Paragraph credits.
      Measured by curl 2026-09-19 10:05 EDT: zaostock.com/artist/the-crown-vics is HTTP 200 and
      carries a bio; the photo slot is the initials tile "TC". So the usual closing line about
-     "a bio and a photo" is LEFT OUT of this edition, on the seat's instruction. Put it back
-     when the page shows a photo.
+     "a bio and a photo" is LEFT OUT of this edition, on the seat's instruction. DO NOT put it back, with or without a photo: the seat ruled 2026-09-19 that "confirmed in writing" stays out of everything unpublished (zaostock.com/press says no act has countersigned).
      Sources: that page (every line about the band; genre "Rock n roll dance band"; "Act 1 of
      8"), /program (1st in the order, music starts at noon).
      "Maine's premier" is the band's own billing on their page, so the body attributes it and

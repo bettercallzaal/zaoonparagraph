@@ -14,6 +14,9 @@
      His page lists no links and no handles, so none appear. None were looked up elsewhere.
      "the 4th act we are publishing": Days 258, 259, 260 were DCoop, LyonsDen, Tom Fellenz. If
      another artist goes out before this one, that number changes.
+     CLOSING LINE CHANGED 2026-09-19 on the seat's word: "after they have confirmed in writing" is
+     out of everything unpublished, because zaostock.com/press says no act has countersigned.
+     Days 258 to 260 stay as shipped. The line now says the lineup is public, which /program shows.
      Not in the body: that he brings his own keyboard (the plan says so; his page does not). -->
 
 zm
@@ -38,7 +41,7 @@ His page: [zaostock.com/artist/michael-anderson](https://zaostock.com/artist/mic
 
 The running order: [zaostock.com/program](https://zaostock.com/program)
 
-Artists are published one at a time, after they have confirmed in writing and sent a bio and a photo.
+The lineup is public, all 8 acts, and each one gets an edition of their own.
 
 RSVP is free at [ticket.zaostock.com](https://ticket.zaostock.com) so we know how many people to plan for. If you want to put something behind the day you can do that at [zaostock.com/tickets](https://zaostock.com/tickets).
 
