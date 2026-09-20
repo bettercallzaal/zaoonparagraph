@@ -45,6 +45,7 @@ comment, the page to re-fetch on the morning it goes out.
 | Fri 18 Sep | 261 | (Art of Ellsworth in the plan) | - | - | nothing shipped; not in the feed on 2026-09-19 |
 | Sat 19 Sep | 262 | 2 weeks out, get prepared: RSVP, book a room, the brand assets, volunteer, the tiers, sponsor an artist, the stream | `2026-09-19-day-262-two-weeks-out.md` | zaostock.com/tickets, /design, /ellsworth, /acadia, /apply, /sponsor, /live | drafted; v2 on Zaal's word 2026-09-19 |
 | Sun 20 Sep | 263 | ZAOville, the July chapter, and the series | `2026-09-20-day-263-zaoville.md` | zaostock.com/zaoville, /festivals | drafted; names 4 ZAOville acts on Zaal's ruling 2026-09-19, not the 6 the page lists |
+| Sun 20 Sep | 263 | FALLBACK, only if Day 262 did not ship on Sat 19 | `IF-SLIPPED-day-263-get-prepared.md` | same sources as Day 262 | prepared 2026-09-19 23:4x. Using it means the ZAOville edition does not go out that day and needs a slot Zaal frees, or is cut. If Day 262 shipped, delete this file |
 | Mon 21 Sep | 264 | Artist slot: Michael Anderson | `2026-09-21-day-264-michael-anderson.md` | zaostock.com/artist/michael-anderson | drafted; page has bio and photo |
 | Tue 22 Sep | 265 | Artist slot: The Crown Vics | `2026-09-22-day-265-the-crown-vics.md` | zaostock.com/artist/the-crown-vics | text ready; bio live, no photo on the page 2026-09-19, so the photo line is out. Re-fetch that morning |
 | Wed 23 Sep | 266 | The 10 partners, and the volunteer call | `2026-09-23-day-266-partners.md` | zaostock.com/partners, /volunteer | drafted |
