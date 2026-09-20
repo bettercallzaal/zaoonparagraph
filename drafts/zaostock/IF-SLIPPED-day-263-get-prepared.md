@@ -1,13 +1,16 @@
 # Year of the ZABAL - Day 263
 
 <!-- SUBTITLE (Paragraph field, not body):
-     13 days to ZAOstock. Hope you are prepared. RSVP, book a room, grab the brand assets, take a volunteer shift. -->
+     Under 2 weeks to ZAOstock. Hope you are prepared. RSVP, book a room, grab the brand assets, take a volunteer shift. -->
 
 <!-- FALLBACK ONLY. USE THIS FILE IF AND ONLY IF Day 262 did NOT go out on Sat 19 Sep.
      Prepared 2026-09-19 23:4x EDT, when Day 262 was still unpublished at 23:37 and the "2 weeks
      out" framing was about to stop being true. Identical to Day 262 except the day number and
-     three date-locked lines, which now say 13 days. Verified by diff: 6 changed lines, and no
-     other word moved.
+     three date-locked lines.
+     COUNTDOWN CHANGED 2026-09-20 09:0x on the seat's point: it said "13 days", which is true only
+     on 20 Sep, and this edition has already slipped once. It now says "under 2 weeks", which is
+     true every day from 20 Sep to 2 Oct, so another slip cannot make it false. Zaal can put an
+     exact number back if he is publishing the same day he reads it.
      IF THIS FILE IS USED, the ZAOville edition (2026-09-20-day-263-zaoville.md) does NOT go out
      on Sun 20. Every day from 262 to 275 already has an edition, so there is no free slot to
      move it into: it is either cut or it takes a slot Zaal frees. That is his call, not a thing
@@ -47,7 +50,7 @@ zm
 
 year of the zabal day 263
 
-13 days to ZAOstock. Hope you are prepared.
+Under 2 weeks to ZAOstock. Hope you are prepared.
 
 ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6. It is part of Art of Ellsworth, during Maine Craft Weekend.
 
@@ -67,6 +70,6 @@ And if you cannot be in Maine, bookmark [zaostock.com/live](https://zaostock.com
 
 3 of the 8 acts have had their own edition so far: DCoop, LyonsDen and Tom Fellenz. The rest go up one at a time between now and the day. On the day they play in this order: The Crown Vics, OPEN X, Grass Rug, Acadia Rising, Michael Anderson, DCoop, LyonsDen, Tom Fellenz. The running order is at [zaostock.com/program](https://zaostock.com/program).
 
-13 days. See you on Franklin Street.
+Under 2 weeks. See you on Franklin Street.
 
 - BetterCallZaal on behalf of the ZABAL Team
