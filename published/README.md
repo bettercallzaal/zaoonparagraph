@@ -77,7 +77,13 @@ fixed body. **The two URLs for this post render it differently.** Measured in a 
 on all 8 links. Same post, same content; the second route's server render puts a whitespace
 run between `</a>` and the punctuation, and the `.md` export copies it. This is a Paragraph
 rendering defect, not something the copy can fix, short of putting the punctuation back inside
-the link. The file here follows the flush reading. Link to the `/writing/` form in socials. The same edition went out as an X Article at 23:32 EDT,
+the link. The file here follows the flush reading. Link to the `/writing/` form in socials.
+
+**Ruled 2026-09-20 23:43 EDT by Zaal, both** (`zao-vault/decisions/grill-2026-09-20-seat-late.md`,
+item 3): move the punctuation back inside each of the 8 links in the post copy, so both routes
+render with no space, and link the `/writing/` route in socials. The in-editor change is a
+publish action and is Zaal's hand. Until he makes it, this file records the post as it stands.
+When he does, re-pull the body (cache-busted) and replace this file. The same edition went out as an X Article at 23:32 EDT,
 https://x.com/i/status/2101877250132193503, with section headings added and its canonical URL
 pointed at the Paragraph post. The first X Article this publication has sent.
 

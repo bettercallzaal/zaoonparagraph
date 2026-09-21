@@ -6,6 +6,13 @@ already slipped twice. Every remaining edition that carries a countdown gets the
 recomputed against `date` on the morning it goes out, in the same command that writes it, and
 the cover art re-rendered if the number is in the image. A drafted countdown is never trusted.
 
+**Link punctuation, after Day 263.** Put a sentence's closing period or comma INSIDE the link
+text: `[RSVP for free.](url)`, not `[RSVP for free](url).` Paragraph's `/@thezao/<slug>` route
+renders a visible space between a closing link and punctuation that follows it; the `/writing/`
+route does not (measured 2026-09-20, headless browser). Punctuation inside the link renders flush
+on both. Socials link the `/writing/<slug>` form. Zaal ruled both, 2026-09-20 23:43
+(`zao-vault/decisions/grill-2026-09-20-seat-late.md`, item 3).
+
 **Artist slots, all 8 placed.** Shipped: DCoop (258), LyonsDen (259), Tom Fellenz (260). Dated: Michael Anderson Mon 21 Sep, The Crown Vics Tue 22, OPEN X Thu 24, Acadia Rising Fri 25, Grass Rug Mon 28. The first 3 new slots follow the /program running order (seat, 2026-09-19); Acadia Rising went to Fri 25 on Zaal's ruling the same day, "this week Monday to Friday". Zaal can reorder.
 
 The editorial calendar for the ZAOstock run, from `~/zao-vault/projects/zaostock-17-day-plan-2026-09-16.md`
