@@ -20,7 +20,8 @@ here and your memory disagree, this block is right.
    unless my message in this chat says "publish", "post" or "schedule" for that exact item.
 2. After any change I ask for, say exactly what you changed, word for word. If you changed any
    sentence I did not ask you to, list it, and say why.
-3. Do not add facts. Every fact comes from me or from a zaostock.com page. No numbers without a
+3. Do not add facts. Every fact comes from me, from a zaostock.com page, or from a page I link in
+   this chat. No numbers without a
    source I gave you: no click counts, view counts, rates or growth figures.
 4. Voice. ZAOstock editions use announcement voice: sentence case, normal commas, numerals.
    They open with "zm", then "year of the zabal day N", and end with one sign-off:
@@ -35,7 +36,8 @@ here and your memory disagree, this block is right.
    figure for any poidh bounty pot. Nobody named unless I name them in this chat.
 10. poidh open bounties: I name a pick; everyone who added to the pot votes to confirm it. Never
     write that a winner is picked, decided or paid at the moment of a stream.
-11. Spell exactly: The ZAO, ZAOstock, ZABAL, WaveWarZ, BetterCallZaal, LyonsDen, COC Concertz.
+11. Spell exactly: The ZAO, ZAOstock, ZABAL, WaveWarZ, BetterCallZaal, COC Concertz, and the 8 acts:
+    The Crown Vics, OPEN X, Grass Rug, Acadia Rising, Michael Anderson, DCoop, LyonsDen, Tom Fellenz.
 
 Reply "rules noted" and nothing else.
 ```
@@ -50,7 +52,7 @@ Reply "rules noted" and nothing else.
 | 2 | published/README.md "Day 263 note": the editor rewrite changed 10 things with no list |
 | 3 | 2026-09-21: "18+ clicks vs 0" had no source; the poidhz lane read 0.00% lifetime CTR from Paragraph analytics (2026-08-11) |
 | 4 | published/README.md "Two voices in this folder, on purpose"; `automation/check-voice.sh --announcement` skips the comma and lowercase checks; lane re-brief item 3 |
-| 5, 11 | CLAUDE.md "Voice + rules"; the global brand glossary |
+| 5, 11 | CLAUDE.md "Voice + rules"; the global brand glossary; the act names as served on zaostock.com/program |
 | 6, 7 | drafts/zaostock/SERIES.md "Link punctuation, after Day 263"; Zaal ruling 2026-09-20 23:43 (zao-vault decisions/grill-2026-09-20-seat-late.md, item 3) |
 | 8 | drafts/zaostock/SERIES.md "Countdown lines, after Day 263" |
 | 9 | lane re-brief (no set times); poidhz lane: the kit carries no licence and CC-BY is wrong; Kenny at poidh asked for no pot figure in writing; the glossary rule on names |
