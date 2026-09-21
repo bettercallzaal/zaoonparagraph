@@ -6,6 +6,13 @@ already slipped twice. Every remaining edition that carries a countdown gets the
 recomputed against `date` on the morning it goes out, in the same command that writes it, and
 the cover art re-rendered if the number is in the image. A drafted countdown is never trusted.
 
+**Link punctuation, after Day 263.** Put a sentence's closing period or comma INSIDE the link
+text: `[RSVP for free.](url)`, not `[RSVP for free](url).` Paragraph's `/@thezao/<slug>` route
+renders a visible space between a closing link and punctuation that follows it; the `/writing/`
+route does not (measured 2026-09-20, headless browser). Punctuation inside the link renders flush
+on both. Socials link the `/writing/<slug>` form. Zaal ruled both, 2026-09-20 23:43
+(`zao-vault/decisions/grill-2026-09-20-seat-late.md`, item 3).
+
 **Artist slots, all 8 placed.** Shipped: DCoop (258), LyonsDen (259), Tom Fellenz (260). Dated: Michael Anderson Mon 21 Sep, The Crown Vics Tue 22, OPEN X Thu 24, Acadia Rising Fri 25, Grass Rug Mon 28. The first 3 new slots follow the /program running order (seat, 2026-09-19); Acadia Rising went to Fri 25 on Zaal's ruling the same day, "this week Monday to Friday". Zaal can reorder.
 
 The editorial calendar for the ZAOstock run, from `~/zao-vault/projects/zaostock-17-day-plan-2026-09-16.md`
@@ -51,7 +58,7 @@ comment, the page to re-fetch on the morning it goes out.
 | Fri 18 Sep | 261 | (Art of Ellsworth in the plan) | - | - | nothing shipped; not in the feed on 2026-09-19 |
 | Sat 19 Sep | 262 | 2 weeks out, get prepared | `2026-09-19-day-262-two-weeks-out.md` | zaostock.com/tickets, /design, /ellsworth, /acadia, /apply, /sponsor, /live | never shipped. Slipped past its window twice, and its "2 weeks out" framing expired. Superseded by Day 263. Keep the file or cut it, Zaal's call |
 | RESERVE | - | ZAOville, the July chapter, and the series | `2026-09-20-day-263-zaoville.md` | zaostock.com/zaoville, /festivals | held. Not cut. Its day number 263 is now taken, so the filename needs renaming to whatever day it runs. Fills the first artist day whose photo does not land (22, 24, 25 or 28 Sep). Its own "13 days" line needs re-checking on that day. **Day 263 as published already carries the 4-chapter series history, so this edition needs a new angle rather than a repeat** |
-| Sun 20 Sep | 263 | What ZAOstock is, the running order, and the get-ready list | `published/2026-09-20-day-263.md` | https://paragraph.com/@thezao/year-of-the-zabal-day-263-13-days-until-zaostock | shipped 2026-09-20 23:12 EDT, post id `sEEVjfXTNIFU6qKZuqsN`. Rewritten in the Paragraph editor before sending; what changed is in `published/README.md` under "Day 263 note" |
+| Sun 20 Sep | 263 | What ZAOstock is, the running order, and the get-ready list | `published/2026-09-20-day-263.md` | https://paragraph.com/@thezao/year-of-the-zabal-day-263-13-days-until-zaostock | shipped 2026-09-20 23:12 EDT, post id `sEEVjfXTNIFU6qKZuqsN`. Rewritten in the Paragraph editor before sending; what changed is in `published/README.md` under "Day 263 note". Also published as an X Article 2026-09-20 23:32 EDT, https://x.com/i/status/2101877250132193503 (Paragraph content id `8154b460-065c-4e84-b534-2e40c22db3c9`, canonical URL set to the Paragraph post) |
 | Mon 21 Sep | 264 | Artist slot: Michael Anderson | `2026-09-21-day-264-michael-anderson.md` | zaostock.com/artist/michael-anderson | drafted; page has bio and photo |
 | Tue 22 Sep | 265 | Artist slot: The Crown Vics | `2026-09-22-day-265-the-crown-vics.md` | zaostock.com/artist/the-crown-vics | text ready; bio live, no photo on the page 2026-09-19, so the photo line is out. Re-fetch that morning |
 | Wed 23 Sep | 266 | The 10 partners, and the volunteer call | `2026-09-23-day-266-partners.md` | zaostock.com/partners, /volunteer | drafted |
