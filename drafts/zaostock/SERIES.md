@@ -1,5 +1,11 @@
 # ZAOstock series - one edition a day to 3 October
 
+**Countdown lines, after Day 263.** Day 263 shipped with an exact number, "13 days", in the
+title, the first line and the cover artwork. That is true for one day only, and this run has
+already slipped twice. Every remaining edition that carries a countdown gets the number
+recomputed against `date` on the morning it goes out, in the same command that writes it, and
+the cover art re-rendered if the number is in the image. A drafted countdown is never trusted.
+
 **Artist slots, all 8 placed.** Shipped: DCoop (258), LyonsDen (259), Tom Fellenz (260). Dated: Michael Anderson Mon 21 Sep, The Crown Vics Tue 22, OPEN X Thu 24, Acadia Rising Fri 25, Grass Rug Mon 28. The first 3 new slots follow the /program running order (seat, 2026-09-19); Acadia Rising went to Fri 25 on Zaal's ruling the same day, "this week Monday to Friday". Zaal can reorder.
 
 The editorial calendar for the ZAOstock run, from `~/zao-vault/projects/zaostock-17-day-plan-2026-09-16.md`
@@ -43,9 +49,9 @@ comment, the page to re-fetch on the morning it goes out.
 | Wed 16 Sep | 259 | LyonsDen | - | https://paragraph.com/@thezao/year-of-the-zabal-day-259-1 | shipped |
 | Thu 17 Sep | 260 | Tom Fellenz | - | https://paragraph.com/@thezao/year-of-the-zabal-day-260 | shipped |
 | Fri 18 Sep | 261 | (Art of Ellsworth in the plan) | - | - | nothing shipped; not in the feed on 2026-09-19 |
-| Sat 19 Sep | 262 | 2 weeks out, get prepared: RSVP, book a room, the brand assets, volunteer, the tiers, sponsor an artist, the stream | `2026-09-19-day-262-two-weeks-out.md` | zaostock.com/tickets, /design, /ellsworth, /acadia, /apply, /sponsor, /live | drafted; v2 on Zaal's word 2026-09-19 |
-| RESERVE | - | ZAOville, the July chapter, and the series | `2026-09-20-day-263-zaoville.md` | zaostock.com/zaoville, /festivals | held. Not cut. Fills the first artist day whose photo does not land (22, 24, 25 or 28 Sep). Its own "13 days" line needs re-checking on whatever day it runs |
-| Sun 20 Sep | 263 | TODAY. The get-ready edition: RSVP, book a room, brand assets, volunteer, tiers | `IF-SLIPPED-day-263-get-prepared.md` | same sources as Day 262, re-checked 2026-09-19 14:26 | Day 262 did not ship on Sat 19, so this is the edition. Countdown says "under 2 weeks", true every day to 2 Oct, so another slip cannot make it false. ZAOville is held as the series RESERVE for any artist day whose photo does not land |
+| Sat 19 Sep | 262 | 2 weeks out, get prepared | `2026-09-19-day-262-two-weeks-out.md` | zaostock.com/tickets, /design, /ellsworth, /acadia, /apply, /sponsor, /live | never shipped. Slipped past its window twice, and its "2 weeks out" framing expired. Superseded by Day 263. Keep the file or cut it, Zaal's call |
+| RESERVE | - | ZAOville, the July chapter, and the series | `2026-09-20-day-263-zaoville.md` | zaostock.com/zaoville, /festivals | held. Not cut. Its day number 263 is now taken, so the filename needs renaming to whatever day it runs. Fills the first artist day whose photo does not land (22, 24, 25 or 28 Sep). Its own "13 days" line needs re-checking on that day. **Day 263 as published already carries the 4-chapter series history, so this edition needs a new angle rather than a repeat** |
+| Sun 20 Sep | 263 | What ZAOstock is, the running order, and the get-ready list | `published/2026-09-20-day-263.md` | https://paragraph.com/@thezao/year-of-the-zabal-day-263-13-days-until-zaostock | shipped 2026-09-20 23:12 EDT, post id `sEEVjfXTNIFU6qKZuqsN`. Rewritten in the Paragraph editor before sending; what changed is in `published/README.md` under "Day 263 note" |
 | Mon 21 Sep | 264 | Artist slot: Michael Anderson | `2026-09-21-day-264-michael-anderson.md` | zaostock.com/artist/michael-anderson | drafted; page has bio and photo |
 | Tue 22 Sep | 265 | Artist slot: The Crown Vics | `2026-09-22-day-265-the-crown-vics.md` | zaostock.com/artist/the-crown-vics | text ready; bio live, no photo on the page 2026-09-19, so the photo line is out. Re-fetch that morning |
 | Wed 23 Sep | 266 | The 10 partners, and the volunteer call | `2026-09-23-day-266-partners.md` | zaostock.com/partners, /volunteer | drafted |
