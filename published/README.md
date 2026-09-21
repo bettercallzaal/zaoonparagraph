@@ -68,6 +68,12 @@ It is not a line edit. What changed, and what the next editions should carry for
 - Cut: "Pack layers and something for rain", the supporter credit line, the Island Explorer,
   and the closing "See you on Franklin Street."
 
+After sending, 8 links in the live post had their trailing punctuation inside the link text
+(`[RSVP for free.]` and seven more). Fixed in the editor at 23:2x EDT; the file here is the
+fixed body. The same edition went out as an X Article at 23:32 EDT,
+https://x.com/i/status/2101877250132193503, with section headings added and its canonical URL
+pointed at the Paragraph post. The first X Article this publication has sent.
+
 ## The record
 
 | File | Published | Day | Title | Post id |
