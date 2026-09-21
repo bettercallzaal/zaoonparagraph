@@ -38,6 +38,13 @@
        work and not the maker.
      Rule 10: he NAMES a pick, then everyone who added to the pot votes to confirm it. Never
        "decided", "won" or "paid" at the moment of the stream.
+     BOUNTY TWO, ruled by Zaal at about 16:45 EDT 2026-09-21 in a grill, relayed by Dotfiles
+       (zao-vault decisions/grill-2026-09-21-seat-evening.md, commit 80cc0c9f): it goes up
+       TODAY and closes at 5 PM EASTERN TOMORROW, same ask as bounty one. His words: "Today"
+       and "5 pm tmmr". So bounty two is NOT a 4 pm close, and this edition does not say every
+       bounty closes at 4. Bounty one's 4 pm close is unchanged and still what this edition
+       reviews. Whether the pick for bounty two is named live at 5 is UNMEASURED; nobody has
+       said. Do not write a time for it.
      Voice: announcement. Zero Paragraph credits. -->
 
 zm
@@ -72,7 +79,9 @@ Kenny from poidh has already added to the pot. If you want the longer version of
 
 ## Next
 
-[FILL or CUT, and it is CUT unless Zaal has said bounty two is going up: "Bounty two opens tomorrow, and there is one a day from here until ZAOstock, 13 in all. Each one closes at 4 pm Eastern with the pick named live at 5." The 13 comes from the cast, which called this "day one of thirteen". Bounty two does not exist as this is drafted, and casting it is Zaal's action, so the sentence is not a fact yet. If it is cut, this section opens with the brand kit paragraph below.]
+Bounty two is already up, and it runs until 5 pm Eastern tomorrow. The ask is the same: one piece of ZAOstock media, made with the brand kit. [FILL, once Zaal has cast it, from the poidhz lane: the line "Enter bounty two." linked to its poidh URL, full stop inside the link text. If it has not been cast when this ships, cut this whole paragraph rather than promise it.]
+
+There is one bounty a day from here until ZAOstock, 13 in all.
 
 Everything you need is in the [brand kit,](https://zaostock.com/brand) from the moose by attabotty to the signage, illustrations, colours and type by Candy of CandyToyBox. Please credit them when you use their work.
 
