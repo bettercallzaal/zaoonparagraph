@@ -28,7 +28,22 @@
      When it opened: bounty 1409's own record gives createdAt 1789960269, which is 2026-09-20
        23:11 EDT (poidhz lane, 2026-09-21). So it ran about seventeen hours, most of them
        overnight. The body says "open from last night", never "from the morning".
-     Entry count this morning: 1 claim, read twice by the poidhz lane at 08:58:52 EDT (bounty
+     THE FOUR ENTRIES, poidhz lane claim report, read 2026-09-21 16:30:54 EDT from
+       claims.fetchBountyClaims merged with the bounty's /data: 4 claims from 4 distinct
+       wallets, none accepted yet. Claim 8091, "ZAOstock Oct 3 flyer", a story and a square
+       built from the moose by attabotty and Candy's cracked cement texture. Claim 8092,
+       "ZAOSTOCK BANNER", all versions submitted because the maker could not pick one. Claim
+       8093, "I made a design story", made instead of the video they ran out of time for.
+       Claim 8086, a poster, the only Farcaster entry, posted to see if it would bring an
+       audience over. The body describes each from the entrant's own words; poidh stores no
+       media type, and the lane's inferred type was wrong on 8093.
+     NOT MEASURABLE: when each claim was submitted. poidh carries no timestamp on a claim.
+       2 claims at 13:59:36, 4 at 16:30:54, so two arrived in a window that straddles the 4 pm
+       close. All four entrants' posts predate the close (X snowflake ids: 12:48:08, 15:28:41,
+       15:54:48 EDT), but that does not prove when they clicked submit. SO THE BODY SAYS "four
+       entries came in" and NEVER "before the close". Zorca can read the claim transactions
+       from Base if Zaal wants it settled.
+     Entry count earlier today: 1 claim, read twice by the poidhz lane at 08:58:52 EDT (bounty
        API and claims.fetchBountyClaims), and again from the Base contract at 12:32 EDT
        (getClaimsByBountyId(423), with a nonexistent bounty returning 0 as the control).
      STILL OUT, same as the announce draft: any pot figure; who added to the pot beyond Kenny;
@@ -59,9 +74,11 @@ Make one piece of media for ZAOstock using the brand kit. A poster, a clip, a st
 
 ## What came in
 
-[FILL after the 4 pm close, from the poidhz lane's claim list. One short paragraph in prose, not a list: how many claims came in, and what they were, described by the work. Name a maker only if Zaal has named them in the chat. If the count is 1, "One entry came in." Never "a few" for 1. No pot figure.]
+Four entries came in, from four different people.
 
-[FILL: two or three sentences on the entries themselves, from the claim list. What the piece is, what it does with the kit. Keep it to what the claim page shows.]
+One is a flyer in two sizes, a story and a square, put together from the moose and the cracked cement texture in the kit. One is a banner, submitted in every version its maker made, because they could not decide which one to use. One is a design story from someone who wanted to make a video and ran out of time. And one is a poster that went up on Farcaster rather than X, by someone who wanted to see whether it would bring an audience over from there.
+
+[FILL or CUT, Zaal's call: the four makers' handles, and links to their own posts. The poidhz lane has all four. Nobody is named here unless Zaal names them in the Paragraph chat, so this paragraph is cut by default. ZAAL: say the word and the four go in, credited, with their posts linked.]
 
 ## The pick
 
