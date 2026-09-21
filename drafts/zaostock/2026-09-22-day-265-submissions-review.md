@@ -17,6 +17,15 @@
        2026-09-22-day-265-the-crown-vics.md. It has not been moved to another day, because the
        artist order and the calendar are Zaal's call, not this lane's. ZAAL: say which day it
        moves to and the file, title and day line move together.
+     BOUNTY TWO IS CAST-READY: poidhz #162 at f9e7e1fd, rounds/daily/d02/description.md, merged.
+       Close 5:00 pm Eastern Tue 22 Sep. The pick is named live ON TWITCH at the close, so this
+       edition CAN say when the pick happens, unlike the version drafted before that landed.
+       The 5 pm close is ruled for bounty two only; days 3 to 13 default to it and are NOT
+       settled, so write no rule for them.
+       Zaal's steer for this round: video with audio is what we want most. The kit now carries
+       audio (30-second spot, and the 7 minute 39 interview of 2026-09-10), ZAOstock #289.
+     CREDITING: Zaal, 2026-09-21, "lets wait til we pick a winner and post it". Entrants are
+       credited in the winner post, not in the edition.
      THE ASK AND THE CLOSE ARE ZAAL'S WORD, RELAYED. Everything else about bounty two is
        unmeasured as this is drafted: it had not been cast. The poidhz lane sends the URL, the
        contract id and the exact times when it exists, and the claim list after the close.
@@ -47,11 +56,11 @@ Make one piece of media for ZAOstock using the brand kit. The same ask as yester
 
 ## The pick
 
-[FILL once Zaal has named a pick: the entry he named, and what he said about it. There is no announced time for this, so do not write one, and do not say it happened on a stream unless it did. Then: "Everyone who added to the pot now votes to confirm it before it pays out." Nobody has won, been decided or been paid at this point.]
+[FILL once Zaal has named a pick: the entry he named, and what he said about it. The pick is named live on Twitch at the 5 pm close, so this section is written after it happens, never before. Then: "Everyone who added to the pot now votes to confirm it before it pays out." Nobody has won, been decided or been paid at this point.]
 
 ## Day two of thirteen
 
-[The 13 comes from the cast, which called bounty one "day one of thirteen". Keep this sentence only while that is still the plan, and check it with Zaal before sending:] There is one bounty a day from here until ZAOstock, 13 in all. [The close moved: bounty one closed at 4 pm Eastern, bounty two at 5. Do not write a rule that covers every bounty unless Zaal has set one.] [FILL, one sentence, only if the poidhz lane has it: anything that changed between day one and day two, such as the ask or the number of entries. Cut the sentence if there is nothing measured to say.]
+[The 13 comes from the cast, which called bounty one "day one of thirteen". Keep this sentence only while that is still the plan, and check it with Zaal before sending:] There is one bounty a day from here until ZAOstock, 13 in all. [The close moved: bounty one closed at 4 pm Eastern with the pick an hour later, bounty two closes at 5 with the pick named at the close. Days 3 to 13 default to the 5 pm close and are not settled, so write no rule for them.] [FILL, one sentence, only if the poidhz lane has it: anything that changed between day one and day two, such as the ask or the number of entries. Cut the sentence if there is nothing measured to say.]
 
 Everything you need is in the [brand kit,](https://zaostock.com/brand) from the moose by attabotty to the signage, illustrations, colours and type by Candy of CandyToyBox. Please credit them when you use their work.
 
