@@ -70,7 +70,10 @@ It is not a line edit. What changed, and what the next editions should carry for
 
 After sending, 8 links in the live post had their trailing punctuation inside the link text
 (`[RSVP for free.]` and seven more). Fixed in the editor at 23:2x EDT; the file here is the
-fixed body. The same edition went out as an X Article at 23:32 EDT,
+fixed body. Paragraph's `.md` export writes a space between each closing link and its
+punctuation (`[RSVP for free](...) .`); the live page does not, measured in the raw HTML
+with a cache-buster at 23:4x EDT: 8 of 8 links have nothing between `</a>` and the mark. The
+file follows the page, not the export, so those 8 spaces are removed here. The same edition went out as an X Article at 23:32 EDT,
 https://x.com/i/status/2101877250132193503, with section headings added and its canonical URL
 pointed at the Paragraph post. The first X Article this publication has sent.
 
