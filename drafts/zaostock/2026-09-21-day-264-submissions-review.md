@@ -37,12 +37,25 @@
        Claim 8086, a poster, the only Farcaster entry, posted to see if it would bring an
        audience over. The body describes each from the entrant's own words; poidh stores no
        media type, and the lane's inferred type was wrong on 8093.
-     NOT MEASURABLE: when each claim was submitted. poidh carries no timestamp on a claim.
-       2 claims at 13:59:36, 4 at 16:30:54, so two arrived in a window that straddles the 4 pm
-       close. All four entrants' posts predate the close (X snowflake ids: 12:48:08, 15:28:41,
-       15:54:48 EDT), but that does not prove when they clicked submit. SO THE BODY SAYS "four
-       entries came in" and NEVER "before the close". Zorca can read the claim transactions
-       from Base if Zaal wants it settled.
+     SUBMISSION TIMES, SETTLED ON CHAIN AND THE COUNT CHANGED WITH THEM. The earlier version of
+       this note said the times were not measurable, because poidh carries no timestamp on a
+       claim in either endpoint. That was true of the API and wrong as a limit: the Zorca lane
+       read them from eth_getLogs against the poidh v3 contract
+       0x5555Fa783936C260f77385b4E153B9725feF1719 on Base via mainnet.base.org at 17:2x EDT,
+       decoded by hand, with a control (the same query over an earlier block range returned 4
+       logs across three bounties, so the filter finds claims and is not scoped to one).
+       Result: FIVE claims on the bounty, not four. The two that looked like they might have
+       straddled the close did not, at 15:31:25 and 15:58:47 EDT, both in. Onchain claim 2778 =
+       poidh claim 8094, @uniquebeing404, mined 16:59:05 EDT, which is 59 minutes AFTER the 4 pm
+       close. So it is a late entry, not a fifth contender, and the poidhz lane confirmed the
+       handle from the API independently.
+       THE BODY THEREFORE SAYS "four entries made the close" and names the fifth as late. Bare
+       "four entries" is now ambiguous rather than wrong, and bare "five" would be worse. The
+       fifth is NOT in the four descriptions below; it has no description here because its work
+       has not been read.
+       NOTE FOR WHOEVER SHIPS THIS: the poidhz lane says the rated page and the feedback
+       comments were also written when the count was four. A count measured at one moment goes
+       stale and the artefact carrying it does not know.
      Entry count earlier today: 1 claim, read twice by the poidhz lane at 08:58:52 EDT (bounty
        API and claims.fetchBountyClaims), and again from the Base contract at 12:32 EDT
        (getClaimsByBountyId(423), with a nonexistent bounty returning 0 as the control).
@@ -87,7 +100,7 @@ Make one piece of media for ZAOstock using the brand kit. A poster, a clip, a st
 
 ## What came in
 
-Four entries came in, from four different people.
+Four entries made the close, from four different people. A fifth came in an hour later.
 
 One is a flyer in two sizes, a story and a square, put together from the moose and the cracked cement texture in the kit. One is a banner, submitted in every version its maker made, because they could not decide which one to use. One is a design story from someone who wanted to make a video and ran out of time. And one is a poster that went up on Farcaster rather than X, by someone who wanted to see whether it would bring an audience over from there.
 
