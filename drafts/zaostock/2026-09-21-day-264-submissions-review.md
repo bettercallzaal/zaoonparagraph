@@ -25,6 +25,9 @@
        youtube.com/watch?v=IFG_34K7Vig (200): "BCZ YapZ Episode 19 w/ Kenny from POIDH".
        Kenny added to the pot: Zaal's word plus his Telegram DM of 2026-09-20 23:21. The DM
          itself stays private.
+     When it opened: bounty 1409's own record gives createdAt 1789960269, which is 2026-09-20
+       23:11 EDT (poidhz lane, 2026-09-21). So it ran about seventeen hours, most of them
+       overnight. The body says "open from last night", never "from the morning".
      Entry count this morning: 1 claim, read twice by the poidhz lane at 08:58:52 EDT (bounty
        API and claims.fetchBountyClaims), and again from the Base contract at 12:32 EDT
        (getClaimsByBountyId(423), with a nonexistent bounty returning 0 as the control).
@@ -45,7 +48,7 @@ year of the zabal day 264
 
 ## The ask
 
-Make one piece of media for ZAOstock using the brand kit. A poster, a clip, a story, a meme, a flyer, a 15-second pitch to camera, whatever you want. Post it publicly and claim it on the bounty. That was the whole thing, open from the morning until 4 pm Eastern.
+Make one piece of media for ZAOstock using the brand kit. A poster, a clip, a story, a meme, a flyer, a 15-second pitch to camera, whatever you want. Post it publicly and claim it on the bounty. That was the whole thing, open from last night until 4 pm Eastern today.
 
 ## What came in
 
@@ -63,13 +66,13 @@ Make one piece of media for ZAOstock using the brand kit. A poster, a clip, a st
 
 poidh stands for pics or it didn't happen. Someone posts an ask with a reward attached, anyone can answer it by doing the thing and posting the proof, and on an open bounty like this one anyone who wants the ask answered can add to the pot and gets a vote on the pick.
 
-Most promotion is paying a platform to put your post in front of people who did not ask for it. This turns that around. Almost all of the money goes to a person, not a platform, and it goes to them for making something. The ask is public, the answers are public, and the pick happens live where anyone can watch.
+Most promotion is paying a platform to put your post in front of people who did not ask for it. This turns that around. Almost all of the money goes to a person, not a platform, and it goes to them for making something. The ask is public, the answers are public, and the pick happens live where anyone can watch, and the people who paid for it get a vote.
 
 Kenny from poidh has already added to the pot. If you want the longer version of how we got here, Kenny and I went through it on [BCZ YapZ Episode 19.](https://www.youtube.com/watch?v=IFG_34K7Vig)
 
-## Tomorrow
+## Next
 
-Bounty two opens tomorrow, and there is one a day from here until ZAOstock, 13 in all. Each one closes at 4 pm Eastern with the pick named live at 5.
+[FILL or CUT, and it is CUT unless Zaal has said bounty two is going up: "Bounty two opens tomorrow, and there is one a day from here until ZAOstock, 13 in all. Each one closes at 4 pm Eastern with the pick named live at 5." The 13 comes from the cast, which called this "day one of thirteen". Bounty two does not exist as this is drafted, and casting it is Zaal's action, so the sentence is not a fact yet. If it is cut, this section opens with the brand kit paragraph below.]
 
 Everything you need is in the [brand kit,](https://zaostock.com/brand) from the moose by attabotty to the signage, illustrations, colours and type by Candy of CandyToyBox. Please credit them when you use their work.
 

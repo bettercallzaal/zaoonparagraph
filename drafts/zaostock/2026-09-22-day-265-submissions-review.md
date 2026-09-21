@@ -34,7 +34,7 @@ year of the zabal day 265
 
 [FILL from the bounty page, once bounty two exists: the ask in one or two sentences, in the same plain terms as the page itself. Then the close: "It was open until 4 pm Eastern."]
 
-[Look at the bounty.](FILL-BOUNTY-TWO-URL)
+[FILL, once bounty two exists: the line "Look at the bounty." linked to its poidh URL, with the full stop inside the link text. Written as plain text here on purpose, so the link checker is not asked to resolve a placeholder.]
 
 ## What came in
 
@@ -46,7 +46,7 @@ year of the zabal day 265
 
 ## Day two of thirteen
 
-There is one bounty a day from here until ZAOstock, 13 in all, each closing at 4 pm Eastern with the pick named live at 5. [FILL, one sentence, only if the poidhz lane has it: anything that changed between day one and day two, such as the ask or the number of entries. Cut the sentence if there is nothing measured to say.]
+[The 13 comes from the cast, which called bounty one "day one of thirteen". Keep this sentence only while that is still the plan, and check it with Zaal before sending:] There is one bounty a day from here until ZAOstock, 13 in all, each closing at 4 pm Eastern with the pick named live at 5. [FILL, one sentence, only if the poidhz lane has it: anything that changed between day one and day two, such as the ask or the number of entries. Cut the sentence if there is nothing measured to say.]
 
 Everything you need is in the [brand kit,](https://zaostock.com/brand) from the moose by attabotty to the signage, illustrations, colours and type by Candy of CandyToyBox. Please credit them when you use their work.
 
