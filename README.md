@@ -87,6 +87,8 @@ automation/check-links.sh drafts/<filename>
 # SUBTITLE comment, strips every header comment, and REFUSES (exit 1) if the
 # body still carries a [FILL], a [CHECK] or a line in capitals. A slot in a
 # paste block ends up in the post: that happened on 2026-09-21, Day 264.
+# If the caps guard ever fires on real copy, mark that one line with an HTML
+# comment reading paste-ok; the marker is stripped from the body it prints.
 # Add --clip to open it as a clipboard page as well.
 automation/make-agent-paste.sh drafts/zaostock/<filename> [--clip]
 
