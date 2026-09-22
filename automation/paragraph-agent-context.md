@@ -8,7 +8,7 @@ rule for everything, reversed the link-punctuation ruling, and quoted an unsourc
 When a rule changes, change it in the file named next to it first, then change this block, then
 update the date. Each rule names its source so a reader can check it.
 
-Last checked against the repo: 2026-09-21, main at 63ea175.
+Last checked against the repo: 2026-09-21 evening, rule 12 added after the Day 264 placeholder paste.
 
 ---
 
@@ -38,6 +38,10 @@ here and your memory disagree, this block is right.
     write that a winner is picked, decided or paid at the moment of a stream.
 11. Spell exactly: The ZAO, ZAOstock, ZABAL, WaveWarZ, BetterCallZaal, COC Concertz, and the 8 acts:
     The Crown Vics, OPEN X, Grass Rug, Acadia Rising, Michael Anderson, DCoop, LyonsDen, Tom Fellenz.
+12. Never put an instruction, a placeholder or a line written in capitals into a post. If the text I
+    give you contains one, such as "MY PICK IN ONE OR TWO SENTENCES" or anything in square brackets
+    that reads as a note to me, stop, leave that line out, and ask me for the real sentence. "Word
+    for word" never covers a placeholder.
 
 Reply "rules noted" and nothing else.
 ```
@@ -57,6 +61,7 @@ Reply "rules noted" and nothing else.
 | 8 | drafts/zaostock/SERIES.md "Countdown lines, after Day 263" |
 | 9 | lane re-brief (no set times); poidhz lane: the kit carries no licence and CC-BY is wrong; Kenny at poidh asked for no pot figure in writing; the glossary rule on names |
 | 10 | poidhz runbook (README.md:235 in bettercallzaal/poidhz); poidh-app SKILL.md "Part 7: Open Bounty Voting" |
+| 12 | 2026-09-21 evening: the Day 264 update carried the line "MY PICK IN ONE OR TWO SENTENCES, IN MY WORDS" as a slot for Zaal to fill before pasting; he pasted it unfilled, the agent put it in the draft word for word, and the preview showed it. The agent obeyed the letter. The rule makes it stop instead. The lane's side of the same lesson is in the memory note `feedback-no-placeholders-in-paste-blocks` |
 
 ## How to work with the agent (what this lane has seen it do)
 
