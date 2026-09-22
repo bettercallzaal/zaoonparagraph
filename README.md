@@ -82,6 +82,14 @@ The `.env` file is gitignored - never commit it. All scripts auto-source it if n
 automation/check-voice.sh drafts/<filename>
 automation/check-links.sh drafts/<filename>
 
+# Build the message that goes into the Paragraph agent chat, from a draft.
+# Runs both checks, pulls the title from the H1 and the subtitle from the
+# SUBTITLE comment, strips every header comment, and REFUSES (exit 1) if the
+# body still carries a [FILL], a [CHECK] or a line in capitals. A slot in a
+# paste block ends up in the post: that happened on 2026-09-21, Day 264.
+# Add --clip to open it as a clipboard page as well.
+automation/make-agent-paste.sh drafts/zaostock/<filename> [--clip]
+
 # Queue + drift: what's pushed, what's pending, and any edition that went live
 # without landing in published/. Exits non-zero on drift.
 automation/status.sh
