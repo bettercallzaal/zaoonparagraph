@@ -18,9 +18,36 @@
          2026-09-10 radio interview, 7 minutes 39 (ffprobe, Dotfiles lane).
        Bounty one: six claims, four before the 4 pm close and two after. Pick was claim 8086, a gig
          poster, submitted for the vote at 22:00:17 EDT 2026-09-21 (tx on Base, block 51626535).
+         The four-and-two split is bounty ONE only, and it came from a clean chain read. Bounty
+         two has no such split available, see below.
          THE VOTE RESOLVES WEDNESDAY 23 SEP 22:00:17 EDT, which is the evening this edition goes
          out. If it has resolved by send time, say so and say it paid; if not, say the vote runs
          until tonight. Ask the poidhz lane rather than assuming either.
+     BOUNTY TWO AS MEASURED, poidhz lane, read 2026-09-22 19:33:46 EDT from poidh's /data endpoint:
+       8 claims from 6 distinct wallets. Claim 8100 is a dead link superseded by 8107 from the same
+       wallet, so the body says eight entries from six people and does not treat 8100 as a separate
+       piece. NO PICK HAS BEEN NAMED and submitClaimForVote has NOT been sent; that is measured,
+       not inferred from silence: 1410's deadline field is null where 1409's carries a real vote
+       deadline. The bounty still reads OPEN because poidh has no on-chain close; the 5 pm close
+       lives only in the description text.
+       PER-CLAIM SUBMISSION TIMES ARE NOT MEASURED. Neither endpoint timestamps a claim, and the
+       public RPC returned 403 on 15 of 18 log ranges, so the 14 logs the lane got are a floor and
+       not a total. THEREFORE THIS EDITION SAYS NOTHING ABOUT WHO MADE THE CLOSE for bounty two.
+       Say "eight entries came in", never "before the close", unless a clean chain read lands first.
+     BOUNTY ONE, same read: the vote on claim 8086 is still running, deadline 1790215217 =
+       2026-09-23 22:00:17 EDT. Its pot has GROWN during the vote, 0.004 ETH at cast to 0.0061 now,
+       up 52 percent, so the poster wins more than was on the table when anyone entered. That is a
+       true and quotable line IF Zaal clears a figure; rule 9 keeps pot figures out by default, so
+       the percentage and the ETH both stay out unless he says otherwise.
+       Do NOT print a matching figure for bounty two: no file records what it cast at, so its growth
+       is UNRECORDED rather than zero.
+     BOUNTY THREE DOES NOT EXIST at 19:33. 1411 is cast but belongs to another issuer
+       ("Keep Kenjiquest Cooking!"), checked by issuer address rather than by the id existing, and
+       1412 is not found. So the bounty three section is CUT unless Zaal casts one.
+     PLATFORM MIX, for the socials and for Zaal rather than for the body: round one was 3 X and 3
+       Farcaster, and BOTH late entries were Farcaster. Round two is 1 X only, 1 Farcaster only, 3
+       both, 3 neither (two catbox.moe video files and one claim with no post link). Counted from
+       the links each claim actually carries.
      NAMES: nobody is named unless Zaal says so in the Paragraph chat. He has not, through Day 265.
      STILL OUT: any pot figure; who added to the pot beyond Kenny; any licence claim about the kit
        (the CC-BY line in an entrant's claim is wrong and is not repeated); set times.
@@ -36,11 +63,13 @@ year of the zabal day 266
 
 ## What came in
 
-[FILL after the close, from the poidhz lane's claim report: how many entries, and what they were, described from each entrant's own words rather than a guessed media type. Prose, not a list. If the count is 1, "One entry came in." Never "a few" for 1. Say how many made the close and how many came after it, and never write "before the close" as measured unless the lane read the claim times from chain, which is where they live.]
+Eight entries came in, from six people.
+
+[FILL from the poidhz lane's claim titles and descriptions: two or three sentences on what the pieces were, described from each entrant's own words rather than a guessed media type. At least two are video, which is what this round asked for. Say nothing about who made the 5 pm close: poidh does not timestamp a claim and the chain read came back partial, so it is unmeasured.]
 
 ## The pick
 
-[FILL once Zaal has named it: what he picked and why, in his words, describing the piece rather than the maker. Then the vote sentence: if submitClaimForVote has been sent, "That pick has gone to everyone who added to the pot, and they vote to confirm it before it pays out." If it has not, say he named a pick and the vote has not opened. Nobody has won or been paid at this point.]
+[FILL once Zaal has named a pick. As of 19:33 on the 22nd he had NOT: no claim is accepted and no vote is open on 1410. If he has still not picked by send time, this section is cut and the "What came in" section ends with a line saying the pick is coming, rather than implying one was made. Once he has: what he picked and why, in his words, describing the piece rather than the maker. Then the vote sentence: if submitClaimForVote has been sent, "That pick has gone to everyone who added to the pot, and they vote to confirm it before it pays out." If it has not, say he named a pick and the vote has not opened. Nobody has won or been paid at this point.]
 
 ## Round one is settled
 
