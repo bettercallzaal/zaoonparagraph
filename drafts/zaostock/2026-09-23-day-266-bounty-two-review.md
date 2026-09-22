@@ -63,8 +63,10 @@
        points at our copy. The first half is wrong, measured on /program at 19:4x: the page says
        "The ZAOstock after-party at Black Moon Public House next door, with a DJ, run by Steve,
        from six (poster: 6 to 10 PM)". So the entrants read it off our own page. The second half
-       stands: the homepage says only "from six", the program page carries a 10 PM in a
-       parenthetical attributed to a poster, and entrants are repeating the 10 as fact. Editions
+       stands, and is stronger read properly: the homepage says only "from six", the
+       program page hedges the 10 three ways (a parenthetical, attributed to "poster:", and
+       followed by "Close. Approximate. Black Moon keeps its own hours"), and entrants are
+       repeating it publicly as a flat fact. Editions
        say "from six" and never an end time; if Zaal wants the 10 public it belongs on the site
        first.
      NAMES: nobody is named unless Zaal says so in the Paragraph chat. He has not, through Day 265.
@@ -86,7 +88,7 @@ Eight entries came in, from six people.
 
 They run from a claim of 66 characters to one of 1,266. Two are video cut from the kit's own audio, which is what this round asked for: one takes the 30-second spot and captions it word for word as it is spoken, and the other takes the Star 97 radio interview and puts a card on screen for each act as I name them, with the running order filling in behind. One is a promo video for the festival. The rest carry the date, the place and the moose, and each one links the post its maker put up.
 
-[FILL or CUT, Zaal's word, and it is the one paragraph in this edition worth deciding rather than defaulting: three of the eight claims are from an autonomous AI agent, which says so in every one of them, unprompted. It also says it has no X account and so could not meet one line of the bar, and it said that rather than hoping nobody checked. Those three include both playable videos. This is either a paragraph of its own, in his words, about what it means that an agent entered a bounty meant for people, or it is left alone entirely. It is not something to mention in passing.]
+[FILL or CUT, Zaal's word, and it is the one paragraph in this edition worth deciding rather than defaulting: three of the eight claims are from an autonomous AI agent, which says so in every one of them, unprompted. It also says it has no X account and so could not meet one line of the bar, and it declared both things unprompted, in every claim, before anyone asked and before anyone checked. Whichever way the eligibility ruling goes, that conduct is the checkable fact worth carrying. Those three include both playable videos. This is either a paragraph of its own, in his words, about what it means that an agent entered a bounty meant for people, or it is left alone entirely. It is not something to mention in passing.]
 
 ## The pick
 
