@@ -33,6 +33,26 @@ trap 'rm -f "$VOICE_LOG" "$LINK_LOG"' EXIT
 FAIL=0
 CHECKED=0
 
+# IS THIS AN EDITION? Decided from the FILE'S CONTENT, never its name.
+#
+# Measured 2026-09-22: nine drafts failed the voice gate and three of them were
+# never editions at all - a SCAFFOLD that says of itself "this is a frame, not
+# copy", a .FACTS source trace, and a photo-post list for Zaal to post by hand.
+# The gate failed the fact sheet for containing 151 commas, which a source trace
+# is supposed to contain. published/README.md was already excluded on exactly
+# this reasoning ("the index, not an edition") and the reasoning was never
+# extended.
+#
+# NOT BY FILENAME. .SCAFFOLD and .FACTS are a convention nobody enforces, and
+# the next non-edition will not carry one. An edition is a file that carries the
+# zm opener or the ZABAL signature - the two things check-voice.sh itself
+# requires of one - so anything holding either is held to the whole gate.
+is_edition() {
+  grep -qiE '^[[:space:]]*zm[.!]?[[:space:]]*$' "$1" && return 0
+  grep -q "BetterCallZaal on behalf of the ZABAL Team" "$1" && return 0
+  return 1
+}
+
 check_links() {
   if ! "$SCRIPT_DIR/check-links.sh" "$1" > "$LINK_LOG" 2>&1; then
     echo "LINKS FAIL"
@@ -46,17 +66,31 @@ check_links() {
 echo "### queued drafts (voice + links) ###"
 echo
 QUEUED=0
+SKIPPED=0
+SKIP_LIST=""
 for FILE in "$REPO_ROOT"/drafts/*.md; do
   [ -f "$FILE" ] || continue
   QUEUED=$((QUEUED + 1))
   CHECKED=$((CHECKED + 1))
-  echo "=== ${FILE#"$REPO_ROOT"/} ==="
-  if ! "$SCRIPT_DIR/check-voice.sh" "$FILE" > "$VOICE_LOG" 2>&1; then
-    echo "VOICE FAIL"
-    grep "^FAIL" "$VOICE_LOG"
-    FAIL=1
+  REL="${FILE#"$REPO_ROOT"/}"
+  echo "=== $REL ==="
+  if is_edition "$FILE"; then
+    if ! "$SCRIPT_DIR/check-voice.sh" "$FILE" > "$VOICE_LOG" 2>&1; then
+      echo "VOICE FAIL"
+      grep "^FAIL" "$VOICE_LOG"
+      FAIL=1
+    else
+      echo "voice: ok"
+    fi
   else
-    echo "voice: ok"
+    # A SILENT SKIP IS THE SAME HAZARD AS AN EMPTY CHECK SET, wearing different
+    # clothes. This script already refuses to pass on nothing checked; every
+    # file that dodges the voice gate is named here and counted in the summary,
+    # so a real edition slipping into this list is visible in the output rather
+    # than discovered weeks later by someone reading the skip logic.
+    echo "voice: SKIPPED - no zm opener and no ZABAL signature, so this is not an edition"
+    SKIPPED=$((SKIPPED + 1))
+    SKIP_LIST="${SKIP_LIST}${REL}"$'\n'
   fi
   check_links "$FILE"
   echo
@@ -105,6 +139,16 @@ done
 
 echo "=== summary ==="
 echo "$CHECKED file(s) checked: $QUEUED queued, $PUBLISHED published."
+
+# The skip list is printed in the summary as well as inline, because the inline
+# line scrolls past in a 29-file run and the summary is what people read. If a
+# real edition ever appears here, that is the finding.
+if [ "$SKIPPED" -gt 0 ]; then
+  echo
+  echo "$SKIPPED queued file(s) skipped the voice gate (not editions - no zm opener, no ZABAL signature):"
+  printf '%s' "$SKIP_LIST" | sed 's/^/  /'
+  echo "If any of those IS an edition, the gate is not covering it. Fix the file, not this list."
+fi
 
 if [ "$CHECKED" -eq 0 ]; then
   echo "Nothing to check. That is a broken repo or a broken glob, not a pass." >&2
