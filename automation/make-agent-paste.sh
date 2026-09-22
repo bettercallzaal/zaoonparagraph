@@ -33,8 +33,23 @@ fi
 
 # Title and subtitle come from the draft's own H1 and SUBTITLE comment, never invented.
 TITLE="$(sed -n '1s/^# //p' "$FILE")"
-SUBTITLE="$(awk '/SUBTITLE \(Paragraph field/{f=1;next} f{print; if (/-->/) exit}' "$FILE" \
-  | sed 's/-->.*$//' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | tr '\n' ' ' | sed 's/[[:space:]]*$//')"
+# The subtitle may sit on the marker's own line or on the lines below it. Both are
+# read; the marker line is never assumed empty. A subtitle written as
+# "<!-- SUBTITLE (Paragraph field): the news -->" used to be skipped, and awk then
+# took the whole body as the subtitle (Dotfiles review, 2026-09-22).
+SUBTITLE="$(awk '
+  !f && /SUBTITLE \(Paragraph field/ {
+    line = $0
+    sub(/.*SUBTITLE \(Paragraph field[^)]*\)[[:space:]]*:?[[:space:]]*/, "", line)
+    if (line ~ /-->/) { sub(/-->.*/, "", line); print line; exit }
+    if (line != "") print line
+    f = 1; next
+  }
+  f {
+    line = $0
+    if (line ~ /-->/) { sub(/-->.*/, "", line); print line; exit }
+    print line
+  }' "$FILE" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | tr '\n' ' ' | sed 's/[[:space:]]*$//')"
 
 if [ -z "$TITLE" ]; then
   echo "CANNOT RUN: $FILE has no H1 title on line 1" >&2
@@ -53,7 +68,13 @@ if [ -z "$BODY" ]; then
 fi
 
 # THE GUARD. Any line the body carries that is an instruction rather than copy.
-SLOTS="$(printf '%s\n' "$BODY" | grep -nE '\[(FILL|CUT|CHECK|TODO)|[A-Z]{4,}[[:space:]]+[A-Z]{2,}' || true)"
+# The all-caps half is looser than the bracket half, so a line of real copy can trip
+# it. When that happens the fix is this marker on that line, not a looser pattern:
+#   <!-- paste-ok -->
+# which is stripped from the body below.
+SLOTS="$(printf '%s\n' "$BODY" | grep -v 'paste-ok' \
+  | grep -nE '\[(FILL|CUT|CHECK|TODO)|[A-Z]{4,}[[:space:]]+[A-Z]{2,}' || true)"
+BODY="$(printf '%s\n' "$BODY" | sed 's/[[:space:]]*<!-- paste-ok -->//')"
 if [ -n "$SLOTS" ]; then
   echo "REFUSED: the body still carries $(printf '%s\n' "$SLOTS" | wc -l | tr -d ' ') line(s) that are notes, not copy." >&2
   echo "$SLOTS" >&2
