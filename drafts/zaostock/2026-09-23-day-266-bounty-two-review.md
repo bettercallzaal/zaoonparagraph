@@ -48,6 +48,25 @@
        Farcaster, and BOTH late entries were Farcaster. Round two is 1 X only, 1 Farcaster only, 3
        both, 3 neither (two catbox.moe video files and one claim with no post link). Counted from
        the links each claim actually carries.
+     THE ELIGIBILITY QUESTION, WHICH IS ZAAL'S AND IS NOT MADE. Three of the eight claims (8100,
+       8107, 8111) are from @assay, which states in each one "Made by Assay, an autonomous AI
+       agent", and also says "I have no X account, so the X tag is the one line of the bar I could
+       not meet, said plainly". Bounty two's immutable text reads "THE BAR. Requirements, not
+       preferences. Miss one and it is not entered", and rule 6 of that bar is the X tag. So by the
+       bar as written, the two playable videos in the round are not entered, and the entrant
+       declared it rather than hoping nobody checked. Two other entrants cross-posted specifically
+       to meet that rule. ZAAL RULES: whether an autonomous agent is eligible at all, and whether
+       an entrant who cannot meet a rule is judged anyway. Until he does, this edition describes
+       what came in and does not call anything entered, eliminated or a contender.
+     THE AFTER-PARTY END TIME, a correction to the poidhz lane's note and worth keeping. It said
+       zaostock.com publishes no end time for Black Moon and that two entrants inventing "6 to 10"
+       points at our copy. The first half is wrong, measured on /program at 19:4x: the page says
+       "The ZAOstock after-party at Black Moon Public House next door, with a DJ, run by Steve,
+       from six (poster: 6 to 10 PM)". So the entrants read it off our own page. The second half
+       stands: the homepage says only "from six", the program page carries a 10 PM in a
+       parenthetical attributed to a poster, and entrants are repeating the 10 as fact. Editions
+       say "from six" and never an end time; if Zaal wants the 10 public it belongs on the site
+       first.
      NAMES: nobody is named unless Zaal says so in the Paragraph chat. He has not, through Day 265.
      STILL OUT: any pot figure; who added to the pot beyond Kenny; any licence claim about the kit
        (the CC-BY line in an entrant's claim is wrong and is not repeated); set times.
@@ -65,7 +84,9 @@ year of the zabal day 266
 
 Eight entries came in, from six people.
 
-[FILL from the poidhz lane's claim titles and descriptions: two or three sentences on what the pieces were, described from each entrant's own words rather than a guessed media type. At least two are video, which is what this round asked for. Say nothing about who made the 5 pm close: poidh does not timestamp a claim and the chain read came back partial, so it is unmeasured.]
+They run from a claim of 66 characters to one of 1,266. Two are video cut from the kit's own audio, which is what this round asked for: one takes the 30-second spot and captions it word for word as it is spoken, and the other takes the Star 97 radio interview and puts a card on screen for each act as I name them, with the running order filling in behind. One is a promo video for the festival. The rest carry the date, the place and the moose, and each one links the post its maker put up.
+
+[FILL or CUT, Zaal's word, and it is the one paragraph in this edition worth deciding rather than defaulting: three of the eight claims are from an autonomous AI agent, which says so in every one of them, unprompted. It also says it has no X account and so could not meet one line of the bar, and it said that rather than hoping nobody checked. Those three include both playable videos. This is either a paragraph of its own, in his words, about what it means that an agent entered a bounty meant for people, or it is left alone entirely. It is not something to mention in passing.]
 
 ## The pick
 
