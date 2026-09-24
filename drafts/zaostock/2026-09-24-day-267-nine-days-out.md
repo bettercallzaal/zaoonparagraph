@@ -31,8 +31,13 @@
          take the day rather than only the evening. No threshold, no indoor promise.
        NOBODY NAMED AS RUNNING ANY PART OF THE DAY. The on-air role is cut, not vacant. The
          homepage still says "our MC"; this edition does not.
-     No supporter tier figures: the page shows two and says neither buys you anything at the door,
-       which is the part that matters. Link rather than quote.
+     TIER FIGURES ARE IN, on Zaal's word 2026-09-24: "lets change this first tho to include the
+       stuff for the other tickets just list them out says which is nothing is wierd". Read off
+       zaostock.com/tickets at 06:0x EDT: Supporter $20, 50 spots, credited on the festival page;
+       Pro Ticket $50, 20 spots, same plus a 1:1 with someone on the ZAO team, arranged by
+       emailing info@thezao.com; round one goal $1,000 counting either tier; "The festival runs at
+       break-even". These match drafts/zaostock/2026-09-19-day-262-two-weeks-out.md line 58, which
+       shipped the same figures.
      Voice: announcement. -->
 
 zm
@@ -59,11 +64,17 @@ Music starts at noon and runs straight through to 6, with the acts back to back 
 
 Rain or shine, under tent cover. This is coastal Maine in October: roughly a 1-in-3 chance of rain on any given fall day, so a packable rain layer is a smart thing to have in the car either way.
 
-## What it costs, which is nothing
+## Tickets
 
-There is no gate and no wristband to buy. [RSVP anyway,](https://ticket.zaostock.com) because it is the only way we know roughly how many people to plan water, seating and shelter for, and it takes a moment.
+Nothing is checked at the parklet. There is no gate, no wristband and no ticket to show, so the only thing worth doing is the free RSVP. It tells us how much water, seating and shelter to plan for, and it takes a moment. [RSVP for free.](https://ticket.zaostock.com)
 
-There are two optional ways to chip in on the tickets page if you want to help pay for the day. Neither one gets you a better spot, an earlier entry or a different view. They fund artist fees, materials and production for a festival that charges nobody to turn up.
+If you want to help pay for the day, there are two optional tiers. Neither one buys access, an earlier entry or a better spot, because there is no better spot.
+
+Supporter is $20, with 50 spots. It covers artist fees, materials and production, and credits you as a supporter on the festival page.
+
+Pro Ticket is $50, with 20 spots. The same, plus a 1:1 with someone on the ZAO team before the event. Email info@thezao.com once you have taken it and we will schedule that.
+
+The first goal is $1,000, counting every supporter at either tier. The festival runs at break-even. [Both tiers are here.](https://zaostock.com/tickets)
 
 ## Why this one is worth the drive
 
