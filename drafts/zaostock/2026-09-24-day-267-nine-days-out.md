@@ -33,6 +33,10 @@
          homepage still says "our MC"; this edition does not.
      No supporter tier figures: the page shows two and says neither buys you anything at the door,
        which is the part that matters. Link rather than quote.
+     WEATHER CLAIM REMOVED 2026-09-24 on Zaal's word: "rain or shine under tent cover, stop
+     saying this since its not true". Nothing replaces it, because we hold no weather claim
+     that is true. The line is still on the poster and on zaostock.com/program, which is the
+     zaostock lane's and his, and Day 267 published 2026-09-24 14:06 carries it.
      Voice: announcement. -->
 
 zm
@@ -55,9 +59,7 @@ If you are making a weekend of it, early October is foliage season here and room
 
 ## What the day looks like
 
-Music starts at noon and runs straight through to 6, with the acts back to back rather than spread across a long afternoon of waiting. At 6 the street clears, and Black Moon Public House next door hosts its own evening, which is the official after-party.
-
-Rain or shine, under tent cover. This is coastal Maine in October: roughly a 1-in-3 chance of rain on any given fall day, so a packable rain layer is a smart thing to have in the car either way.
+Music starts at noon and runs straight through to 6, with the acts back to back rather than spread across a long afternoon of waiting. At 6 the street clears, and Black Moon Public House next door hosts its own evening, which is the official after-party. This is coastal Maine in October: roughly a 1-in-3 chance of rain on any given fall day, so a packable rain layer is a smart thing to have in the car either way.
 
 ## What it costs, which is nothing
 

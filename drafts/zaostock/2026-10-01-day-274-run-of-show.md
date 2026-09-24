@@ -14,8 +14,11 @@
      The plan row says "stream destinations named only if the test ran". Nothing is named here.
      If Zaal confirms a passed test before 10-01, the platform goes into the stream sentence and
      nowhere else.
-     RE-FETCH /program ON THE MORNING OF 10-01; a changed order changes the 4th paragraph. -->
-
+     RE-FETCH /program ON THE MORNING OF 10-01; a changed order changes the 4th paragraph.      WEATHER CLAIM REMOVED 2026-09-24 on Zaal's word: "rain or shine under tent cover, stop
+     saying this since its not true". Nothing replaces it, because we hold no weather claim
+     that is true. The line is still on the poster and on zaostock.com/program, which is the
+     zaostock lane's and his, and Day 267 published 2026-09-24 14:06 carries it.
+-->
 zm
 
 year of the zabal day 274
@@ -36,7 +39,7 @@ Then it moves next door. The ZAOstock after-party is at Black Moon Public House,
 
 If you cannot be in Ellsworth, the stream plays at [zaostock.com/live](https://zaostock.com/live) from 12 to 6 Eastern, with no sign-up.
 
-Free, all ages, rain or shine under tent cover.
+Free and all ages.
 
 The program: [zaostock.com/program](https://zaostock.com/program)
 

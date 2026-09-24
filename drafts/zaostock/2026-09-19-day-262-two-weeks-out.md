@@ -45,7 +45,7 @@ year of the zabal day 262
 
 ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6. It is part of Art of Ellsworth, during Maine Craft Weekend.
 
-It is free, all ages, and it runs rain or shine under tent cover from Wallace Events. There is no gate and no wristband to buy. So being prepared is mostly small things, and here they are.
+It is free and all ages. There is no gate and no wristband to buy. So being prepared is mostly small things, and here they are.
 
 RSVP. It is free and it takes a moment. It is not a ticket you show at a door, because there is no door. It tells us how much water, seating and shelter to plan for. If you are coming, or think you might, tell us at [ticket.zaostock.com](https://ticket.zaostock.com).
 
