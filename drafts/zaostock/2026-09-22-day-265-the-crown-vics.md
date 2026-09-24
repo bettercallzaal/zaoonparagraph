@@ -1,4 +1,4 @@
-# Year of the ZABAL - Day 265
+# Year of the ZABAL - Day 268: The Crown Vics
 
 <!-- SUBTITLE (Paragraph field, not body):
      The Crown Vics open ZAOstock. A Maine rock 'n' roll dance band, first on the Franklin Street stage at noon on October 3. -->
@@ -18,9 +18,14 @@
      does not assert it. The page gives no city, no member names, no links and no handles, so
      the body has none. None were looked up elsewhere. -->
 
+<!-- BATCH 2026-09-25: Zaal ruled "publish them all tmmr", so all 8 artist editions publish on
+     Friday 25 September, which is day 268. The old per-act day number (265) is gone from the
+     body and the title: eight editions cannot carry eight different day numbers on one day.
+     Countdown on that date: Oct 3 minus Sep 25 = 8. -->
+
 zm
 
-year of the zabal day 265
+year of the zabal day 268
 
 The Crown Vics are playing ZAOstock, and they are playing first.
 

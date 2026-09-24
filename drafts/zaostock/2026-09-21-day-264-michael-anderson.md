@@ -1,4 +1,4 @@
-# Year of the ZABAL - Day 264
+# Year of the ZABAL - Day 268: Michael Anderson
 
 <!-- SUBTITLE (Paragraph field, not body):
      Michael Anderson is playing ZAOstock. Solo piano from Bar Harbor, 5th on the Franklin Street stage on October 3. -->
@@ -19,9 +19,14 @@
      Days 258 to 260 stay as shipped. The line now says the lineup is public, which /program shows.
      Not in the body: that he brings his own keyboard (the plan says so; his page does not). -->
 
+<!-- BATCH 2026-09-25: Zaal ruled "publish them all tmmr", so all 8 artist editions publish on
+     Friday 25 September, which is day 268. The old per-act day number (264) is gone from the
+     body and the title: eight editions cannot carry eight different day numbers on one day.
+     Countdown on that date: Oct 3 minus Sep 25 = 8. -->
+
 zm
 
-year of the zabal day 264
+year of the zabal day 268
 
 Michael Anderson is playing ZAOstock.
 

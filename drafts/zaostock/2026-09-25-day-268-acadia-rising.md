@@ -1,4 +1,4 @@
-# Year of the ZABAL - Day 268
+# Year of the ZABAL - Day 268: Acadia Rising
 
 <!-- SUBTITLE (Paragraph field, not body):
      Acadia Rising is playing ZAOstock. Original flute and hand percussion from Ellsworth, 4th on the Franklin Street stage on October 3. -->
@@ -22,9 +22,20 @@
      Maine, improvisation, genre "World Rhythms / Global Fusion", city "Ellsworth, Maine",
      "Act 4 of 8", the 2 links), /program (4th in the order).
      The page does not say how many players or name anyone, so the body does neither and uses
+     THE FACEBOOK LINK IS PLAIN TEXT, NOT A LINK, from 2026-09-24. check-links.sh reports it DEAD
+     and facebook.com returns 400 to a browser user agent from here while returning 200 to a bare
+     curl, so the platform's answer depends on who asks and we cannot verify it. The lineup API
+     carries no links field for this act at all. Rather than publish a link we cannot stand behind
+     or drop a handle the act gave us, the handle is printed and not linked. Instagram checks 200
+     and stays a link.
      no pronoun for the act. Links copied from the page: facebook.com/AcadiaRising,
      instagram.com/acadia.rising. NOT curl-checked: both platforms block anonymous fetches, so a
      200 or a block proves nothing either way. Zaal clicks both before send. -->
+
+<!-- BATCH 2026-09-25: Zaal ruled "publish them all tmmr", so all 8 artist editions publish on
+     Friday 25 September, which is day 268. The old per-act day number (268) is gone from the
+     body and the title: eight editions cannot carry eight different day numbers on one day.
+     Countdown on that date: Oct 3 minus Sep 25 = 8. -->
 
 zm
 
@@ -44,7 +55,7 @@ Acadia Rising plays 4th.
 
 The page: [zaostock.com/artist/acadia-rising](https://zaostock.com/artist/acadia-rising)
 
-On Facebook: [facebook.com/AcadiaRising](https://facebook.com/AcadiaRising)
+On Facebook: facebook.com/AcadiaRising
 
 On Instagram: [instagram.com/acadia.rising](https://instagram.com/acadia.rising)
 
