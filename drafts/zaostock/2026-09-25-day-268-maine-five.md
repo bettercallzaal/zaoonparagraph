@@ -27,6 +27,9 @@
      for the zaostock lane and him. Nothing in this edition says it, and no weather claim replaces
      it, because we do not have one that is true.
      Countdown: Oct 3 minus Sep 25 = 8. Recompute with `date` before sending.
+     SECTION HEADING: "The ZAO musicians", on Zaal's word 2026-09-24: "please dont say the other 3
+       please dont say that if antrthing say the ZAO Musicians". Do not call them the other three,
+       the remaining three, or anything that frames them as what is left over.
      No stream, no platform, nobody named in a production role. Ryan Miller appears only as OPEN X's
      vocalist, which is on their own page. -->
 
@@ -76,7 +79,7 @@ In his own words: "I find it very important to connect with my audience."
 
 [zaostock.com/artist/michael-anderson](https://zaostock.com/artist/michael-anderson)
 
-## The other three
+## The ZAO musicians
 
 Coming in from the DMV, DCoop plays 6th, blending classic hip hop with reggae, rock, punk, tribal, country, EDM and R&B. [Read his edition.](https://paragraph.com/@thezao/year-of-the-zabal-day-258)
 
