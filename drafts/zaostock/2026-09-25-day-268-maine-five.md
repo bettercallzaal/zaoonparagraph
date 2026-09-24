@@ -78,7 +78,11 @@ In his own words: "I find it very important to connect with my audience."
 
 ## The other three
 
-The remaining three acts travel in, and each already has an edition of their own. [DCoop](https://paragraph.com/@thezao/year-of-the-zabal-day-258) comes from the DMV, [LyonsDen](https://paragraph.com/@thezao/year-of-the-zabal-day-259-1) from the Onondaga Reservation, and [Tom Fellenz](https://paragraph.com/@thezao/year-of-the-zabal-day-260) from the SF Bay Area.
+Coming in from the DMV, DCoop plays 6th, blending classic hip hop with reggae, rock, punk, tribal, country, EDM and R&B. [Read his edition.](https://paragraph.com/@thezao/year-of-the-zabal-day-258)
+
+Coming in from the Onondaga Reservation, LyonsDen plays 7th, a Native American self-produced independent artist working where reggae roots, hip-hop grit, blues soul, R&B and EDM collide. [Read his edition.](https://paragraph.com/@thezao/year-of-the-zabal-day-259-1)
+
+Coming in from the SF Bay Area, Tom Fellenz closes the day, a solo acoustic guitar instrumentalist whose originals draw on 70s and 80s progressive rock, smooth jazz and acoustic folk. [Read his edition.](https://paragraph.com/@thezao/year-of-the-zabal-day-260)
 
 ## The day
 
