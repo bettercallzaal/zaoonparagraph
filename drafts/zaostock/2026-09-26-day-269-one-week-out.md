@@ -23,13 +23,19 @@
      RE-FETCH /program ON THE MORNING OF 09-26: if the order or a genre line changed, this moves.
      Count check: 8 acts named, numbered 1 to 8 in prose. -->
 
+<!-- ORDINAL RULED 2026-09-25: Zaal, asked directly, chose "Say 9th Annual". The site carries
+     "9th Annual Art of Ellsworth" on /, /ellsworth and every artist page, and five published
+     editions already say it, so the earlier "use neither number" brief is superseded. The only
+     source is our own site, which is not outside confirmation; if Cara ever contradicts it, this
+     is the line that changes. -->
+
 zm
 
 year of the zabal day 269
 
 ZAOstock is 1 week out, and this is the running order.
 
-ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6. It is part of Art of Ellsworth, during Maine Craft Weekend.
+ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6. It is part of the 9th Annual Art of Ellsworth, during Maine Craft Weekend.
 
 Music starts at noon with a short welcome on the mic. Then 8 independent acts play back to back on the parklet stage, and between sets the MC keeps the day moving with the story of the event and a word from the partners.
 
