@@ -21,8 +21,11 @@
      sound" and that bio is identical on both surfaces. Every other act's genre here was measured
      the same as on its artist page at 18:10 EDT.
      RE-FETCH /program ON THE MORNING OF 09-26: if the order or a genre line changed, this moves.
-     Count check: 8 acts named, numbered 1 to 8 in prose. -->
-
+     Count check: 8 acts named, numbered 1 to 8 in prose.      WEATHER CLAIM REMOVED 2026-09-24 on Zaal's word: "rain or shine under tent cover, stop
+     saying this since its not true". Nothing replaces it, because we hold no weather claim
+     that is true. The line is still on the poster and on zaostock.com/program, which is the
+     zaostock lane's and his, and Day 267 published 2026-09-24 14:06 carries it.
+-->
 zm
 
 year of the zabal day 269
@@ -43,7 +46,7 @@ We are not publishing set times. The order is the order, and on the day things c
 
 At 6 the street clears and the ZAOstock after-party starts next door at Black Moon Public House, with a DJ, from 6.
 
-It is free, all ages, rain or shine under tent cover. While you are downtown, eat at the places around you and buy something from the shop you walk past. Part of why this is on Franklin Street is to show what a day like this does for the businesses already there.
+It is free, all ages, While you are downtown, eat at the places around you and buy something from the shop you walk past. Part of why this is on Franklin Street is to show what a day like this does for the businesses already there.
 
 The program: [zaostock.com/program](https://zaostock.com/program)
 
