@@ -16,8 +16,16 @@
      last 3 acts of the day" rather than naming a group. Zaal then ruled "Just move dcoop" and the
      zaostock lane moved him; MEASURED by curl at 18:08 EDT the same day, "Closing" on the
      homepage is DCoop, LyonsDen, Tom Fellenz, and /program's running order is unchanged. So the
-     body's phrase is now exactly the Closing block and needs no edit. The word "headliners" is
-     still nowhere on the site; if Zaal wants it, it goes in the opening line.
+     RULED 2026-09-25, Zaal, asked directly and answered "Call them headliners". So the opening
+     line now says they headline and then says they are the last 3 acts, which keeps the checkable
+     fact next to the billing. The site change he ordered has landed: measured by curl on
+     2026-09-25, the homepage "Closing" block is DCoop, LyonsDen and Tom Fellenz, and DCoop is no
+     longer under "The afternoon". The WORD headliners is still nowhere on zaostock.com, so the
+     edition uses a word the site does not; that is a site gap for the zaostock lane, not a
+     contradiction, since both describe the same three acts in the same order.
+     AND THE PARAGRAPH DRAFT FOR THIS EDITION IS STALE. Day 270 exists as draft
+     xHtZh4wxCfpvK7SgWpxE, created before this ruling, and the API cannot edit a draft. It has to
+     be recreated from this file before 27 Sep or it will publish the old opening line.
      Links are the artists' own, copied from their pages and from Days 258 and 260 as published:
      dot.cards/dcoope2, fellenz.net. LyonsDen's page lists no link. -->
 
@@ -25,9 +33,9 @@ zm
 
 year of the zabal day 270
 
-DCoop, LyonsDen and Tom Fellenz are the last 3 acts of the day at ZAOstock.
+DCoop, LyonsDen and Tom Fellenz headline ZAOstock. They are the last 3 acts of the day.
 
-ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6. It is part of Art of Ellsworth, during Maine Craft Weekend.
+ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6. It is part of the 9th Annual Art of Ellsworth, during Maine Craft Weekend.
 
 Each of them has had an edition of their own. This is the 3 of them together, because the back half of the afternoon is worth planning your day around.
 
