@@ -23,9 +23,10 @@
      longer under "The afternoon". The WORD headliners is still nowhere on zaostock.com, so the
      edition uses a word the site does not; that is a site gap for the zaostock lane, not a
      contradiction, since both describe the same three acts in the same order.
-     AND THE PARAGRAPH DRAFT FOR THIS EDITION IS STALE. Day 270 exists as draft
-     xHtZh4wxCfpvK7SgWpxE, created before this ruling, and the API cannot edit a draft. It has to
-     be recreated from this file before 27 Sep or it will publish the old opening line.
+     PARAGRAPH DRAFT RECREATED 2026-09-26 12:5x EDT from this file as U5So1pNBX7QuROn3xFJe, with
+     the headline opening line and the 9th Annual ordinal, sign-off escaped so it is not a bullet.
+     It SUPERSEDES xHtZh4wxCfpvK7SgWpxE, which predates both rulings and still opens "the last 3
+     acts of the day". The old one is left in place until Zaal says to delete it. Cover: none yet.
      Links are the artists' own, copied from their pages and from Days 258 and 260 as published:
      dot.cards/dcoope2, fellenz.net. LyonsDen's page lists no link. -->
 
