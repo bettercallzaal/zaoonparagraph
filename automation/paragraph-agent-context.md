@@ -8,7 +8,7 @@ rule for everything, reversed the link-punctuation ruling, and quoted an unsourc
 When a rule changes, change it in the file named next to it first, then change this block, then
 update the date. Each rule names its source so a reader can check it.
 
-Last checked against the repo: 2026-09-21 evening, rule 12 added after the Day 264 placeholder paste.
+Last checked against the repo: 2026-09-26, rules 13 to 16 added from Zaal's rulings of 24 and 25 September.
 
 ---
 
@@ -42,6 +42,19 @@ here and your memory disagree, this block is right.
     give you contains one, such as "MY PICK IN ONE OR TWO SENTENCES" or anything in square brackets
     that reads as a note to me, stop, leave that line out, and ask me for the real sentence. "Word
     for word" never covers a placeholder.
+13. Weather: never write "rain or shine", "under tent cover", or that the day moves indoors. The
+    only weather line that exists is "Layers and rain gear. It is Maine in October and the street
+    is open to the sky, and we do not cancel for weather."
+14. Say "the 9th Annual Art of Ellsworth". The three acts who travel in, DCoop, LyonsDen and Tom
+    Fellenz, headline ZAOstock and are the last 3 acts of the day; as a group they are "the ZAO
+    musicians", never "the other three" or "the remaining three".
+15. Places: The Crown Vics are from the Ellsworth and Bangor area. OPEN X have no hometown in any
+    post until I give you one; their own site says "fresh from the emerging music scene of Maine"
+    and that is all you may say. Grass Rug are Portland, Acadia Rising are Ellsworth, Michael
+    Anderson is Bar Harbor; DCoop comes in from the DMV, LyonsDen from the Onondaga Reservation,
+    Tom Fellenz from the SF Bay Area.
+16. The stream is at zaostock.com/live. Never name the platform in a post and never write a stream
+    key anywhere. The lineup poster is at zaostock.com/brand.
 
 Reply "rules noted" and nothing else.
 ```
@@ -62,6 +75,10 @@ Reply "rules noted" and nothing else.
 | 9 | lane re-brief (no set times); poidhz lane: the kit carries no licence and CC-BY is wrong; Kenny at poidh asked for no pot figure in writing; the glossary rule on names |
 | 10 | poidhz runbook (README.md:235 in bettercallzaal/poidhz); poidh-app SKILL.md "Part 7: Open Bounty Voting" |
 | 12 | 2026-09-21 evening: the Day 264 update carried the line "MY PICK IN ONE OR TWO SENTENCES, IN MY WORDS" as a slot for Zaal to fill before pasting; he pasted it unfilled, the agent put it in the draft word for word, and the preview showed it. The agent obeyed the letter. The rule makes it stop instead. The lane's side of the same lesson is in the memory note `feedback-no-placeholders-in-paste-blocks` |
+| 13 | Zaal 2026-09-24: "rain or shine under tent cover, stop saying this since its not true". The replacement line is the one merged to zaostock.com (ZAOstock #303); their tests forbid any indoor claim because Black Moon's occupancy was never given and the insurance covers the outdoor day only |
+| 14 | Zaal 2026-09-25, asked directly in the lane: "Say 9th Annual" and "Call them headliners". Zaal 2026-09-24: "please dont say the other 3 please dont say that if antrthing say the ZAO Musicians" |
+| 15 | Zaal 2026-09-25: "they are both ellsworth / bangor area dont write it down for open x i need to confirm but crown vics are". The lineup API carries no city for either; the other six cities are from the acts' own pages, as published in Day 268 |
+| 16 | Zaal 2026-09-25 via Dotfiles: the stream is Twitch channel zaofestivals embedded on /live, and the URL people are told is /live because it survives a platform change. Poster live at /brand after ZAOstock #307 |
 
 ## How to work with the agent (what this lane has seen it do)
 
