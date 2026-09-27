@@ -10,8 +10,8 @@
 # reported 351 clicks across 28 posts, the most recent that morning. The number
 # we had been planning around did not survive its first contact with the data.
 #
-# It also did not vindicate the email. Per edition, 419 sends, 17 to 25 percent
-# opened, and ZERO TO TWO unique clickers. Both facts matter and only the query
+# It also did not vindicate the email. Per edition, a list in the low hundreds, 17 to
+# 25 percent opened, and ZERO TO TWO unique clickers. Both facts matter and only the query
 # gives you both: the rate was wrong, and the channel is still thin.
 #
 # The endpoint takes `sql`, not `query`. A `query` key returns
