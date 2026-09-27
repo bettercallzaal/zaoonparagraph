@@ -1,7 +1,10 @@
 # Year of the ZABAL - Day 270
 
 <!-- SUBTITLE (Paragraph field, not body):
-     DCoop, LyonsDen and Tom Fellenz close ZAOstock. 3 artists from 3 places, on 1 stage in Ellsworth on October 3. -->
+     DCoop, LyonsDen and Tom Fellenz headline ZAOstock. 3 artists from 3 places, on 1 stage in Ellsworth.
+     RULED 2026-09-27 10:28, Zaal via the Vault lane (zao-vault decisions/grill-2026-09-27-orchestrator-batch-2.md,
+     6f20a05a): the draft that publishes is HnY5n3UGS0fhbO2OCguC, with Cara Romano's approved sentence and
+     this subtitle. QDUUU4PJnTQqzrMoMxTg is SUPERSEDED, kept unpublished, not deleted. -->
 
 <!-- Send: Sun 27 Sep 2026, Zaal's tap. Voice: announcement. Zero Paragraph credits.
      Day number: 2026-09-27 = day 270.
@@ -42,7 +45,7 @@ year of the zabal day 270
 
 DCoop, LyonsDen and Tom Fellenz headline ZAOstock. They are the last 3 acts of the day.
 
-ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6, with North Creek. It is part of the 9th Annual Art of Ellsworth, during Maine Craft Weekend.
+ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6, with North Creek. It is the first independent music event of the 9th Annual Art of Ellsworth, Maine Craft Weekend.
 
 Each of them has had an edition of their own. This is the 3 of them together, because the back half of the afternoon is worth planning your day around.
 

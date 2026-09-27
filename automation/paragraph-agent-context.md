@@ -42,9 +42,10 @@ here and your memory disagree, this block is right.
     give you contains one, such as "MY PICK IN ONE OR TWO SENTENCES" or anything in square brackets
     that reads as a note to me, stop, leave that line out, and ask me for the real sentence. "Word
     for word" never covers a placeholder.
-13. Weather: never write "rain or shine", "under tent cover", or that the day moves indoors. The
-    only weather line that exists is "Layers and rain gear. It is Maine in October and the street
-    is open to the sky, and we do not cancel for weather."
+13. Weather: never write "rain or shine", "under tent cover", or that the day moves indoors. Make
+    no weather promise of any kind in a new edition or post. Close on an invitation instead, in
+    the plain sense of "see you there". The wording already on zaostock.com stays where it is
+    and is not copied into new editions.
 14. Say "the 9th Annual Art of Ellsworth". The three acts who travel in, DCoop, LyonsDen and Tom
     Fellenz, headline ZAOstock and are the last 3 acts of the day; as a group they are "the ZAO
     musicians", never "the other three" or "the remaining three".
@@ -82,6 +83,7 @@ Reply "rules noted" and nothing else.
 | 10 | poidhz runbook (README.md:235 in bettercallzaal/poidhz); poidh-app SKILL.md "Part 7: Open Bounty Voting" |
 | 12 | 2026-09-21 evening: the Day 264 update carried the line "MY PICK IN ONE OR TWO SENTENCES, IN MY WORDS" as a slot for Zaal to fill before pasting; he pasted it unfilled, the agent put it in the draft word for word, and the preview showed it. The agent obeyed the letter. The rule makes it stop instead. The lane's side of the same lesson is in the memory note `feedback-no-placeholders-in-paste-blocks` |
 | 13 | Zaal 2026-09-24: "rain or shine under tent cover, stop saying this since its not true". The replacement line is the one merged to zaostock.com (ZAOstock #303); their tests forbid any indoor claim because Black Moon's occupancy was never given and the insurance covers the outdoor day only |
+| 13 (2026-09-27) | Zaal 2026-09-27 10:28, typed, via the Vault lane, decisions/grill-2026-09-27-orchestrator-batch-2.md: "stop saying it just have it where it is and sya see you there type thigns". Read as: no weather line in new copy, the site is left alone, published editions are not backfilled, new editions close on an invitation. The earlier permitted line ("Layers and rain gear...") is retired from new editions; that part is the lane's reading, the narrowest one that fits both ways his sentence can be taken |
 | 14 | Zaal 2026-09-25, asked directly in the lane: "Say 9th Annual" and "Call them headliners". Zaal 2026-09-24: "please dont say the other 3 please dont say that if antrthing say the ZAO Musicians" |
 | 15 | Zaal 2026-09-25: "they are both ellsworth / bangor area dont write it down for open x i need to confirm but crown vics are". The lineup API carries no city for either; the other six cities are from the acts' own pages, as published in Day 268 |
 | 16 | Zaal 2026-09-25 via Dotfiles: the stream is Twitch channel zaofestivals embedded on /live, and the URL people are told is /live because it survives a platform change. Poster live at /brand after ZAOstock #307 |
