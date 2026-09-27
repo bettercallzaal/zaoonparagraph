@@ -73,10 +73,17 @@ def main():
     url = PUB + slug
     title = p.get("title") or pid
 
-    base = sorted(glob.glob(os.path.join(ROOT, "drafts/socials/*.socials.md")))
-    if not base: die("CANNOT RUN: no drafts/socials/*.socials.md found")
-    stem = base[-1][: -len(".socials.md")]
-    socials = sections(open(base[-1]).read())
+    # The socials file is chosen by the DAY NUMBER in the post's own title, never by "newest".
+    # On 2026-09-27 Day 271's socials were written while Day 270 was still unpublished; newest-wins
+    # would have paired Day 270's URL with Day 271's copy.
+    m = re.search(r"Day (\d{1,3})\b", title)
+    if not m: die("REFUSED: no 'Day N' in the post title %r, so the socials cannot be matched" % title, 1)
+    day = m.group(1)
+    base = sorted(glob.glob(os.path.join(ROOT, "drafts/socials/*-day-%s.socials.md" % day)))
+    if not base: die("REFUSED: no drafts/socials/*-day-%s.socials.md for this edition" % day, 1)
+    if len(base) > 1: die("REFUSED: %d socials files for day %s, expected one: %s" % (len(base), day, base), 1)
+    stem = base[0][: -len(".socials.md")]
+    socials = sections(open(base[0]).read())
     if len(socials) != 6: die("REFUSED: expected 6 numbered channels, found %d" % len(socials), 1)
 
     blocks = []
