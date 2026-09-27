@@ -23,6 +23,12 @@
      longer under "The afternoon". The WORD headliners is still nowhere on zaostock.com, so the
      edition uses a word the site does not; that is a site gap for the zaostock lane, not a
      contradiction, since both describe the same three acts in the same order.
+     NORTH CREEK ADDED 2026-09-27 morning: zaostock.com/program says the Black Moon evening is "with North
+     Creek, hosted by Black Moon, from six", settled 7 Sep from Steve's mail and relayed by the seat. One
+     clause, so U5So1pNBX7QuROn3xFJe is superseded and the draft is recreated once more; the new id is
+     recorded here: QDUUU4PJnTQqzrMoMxTg, created 2026-09-27 morning, no cover yet. The Sunday 4 Oct Acadia tour is NOT in: nothing holds
+     it (no time, place or headcount, vault card #195) and the seat's rule is Zaal confirms first.
+     LyonsDen already reads "LyonsDen Rez Muzik" in the body.
      PARAGRAPH DRAFT RECREATED 2026-09-26 12:5x EDT from this file as U5So1pNBX7QuROn3xFJe, with
      the headline opening line and the 9th Annual ordinal, sign-off escaped so it is not a bullet.
      It SUPERSEDES xHtZh4wxCfpvK7SgWpxE, which predates both rulings and still opens "the last 3
@@ -36,7 +42,7 @@ year of the zabal day 270
 
 DCoop, LyonsDen and Tom Fellenz headline ZAOstock. They are the last 3 acts of the day.
 
-ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6. It is part of the 9th Annual Art of Ellsworth, during Maine Craft Weekend.
+ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6, with North Creek. It is part of the 9th Annual Art of Ellsworth, during Maine Craft Weekend.
 
 Each of them has had an edition of their own. This is the 3 of them together, because the back half of the afternoon is worth planning your day around.
 
