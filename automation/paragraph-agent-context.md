@@ -8,7 +8,7 @@ rule for everything, reversed the link-punctuation ruling, and quoted an unsourc
 When a rule changes, change it in the file named next to it first, then change this block, then
 update the date. Each rule names its source so a reader can check it.
 
-Last checked against the repo: 2026-09-26, rules 13 to 16 added from Zaal's rulings of 24 and 25 September.
+Last checked against the repo: 2026-09-27, rules 17 and 18 added and rule 15 updated (OPEN X: Down East Maine, Zaal 27 Sep 10:5x).
 
 ---
 
@@ -48,13 +48,16 @@ here and your memory disagree, this block is right.
 14. Say "the 9th Annual Art of Ellsworth". The three acts who travel in, DCoop, LyonsDen and Tom
     Fellenz, headline ZAOstock and are the last 3 acts of the day; as a group they are "the ZAO
     musicians", never "the other three" or "the remaining three".
-15. Places: The Crown Vics are from the Ellsworth and Bangor area. OPEN X have no hometown in any
-    post until I give you one; their own site says "fresh from the emerging music scene of Maine"
-    and that is all you may say. Grass Rug are Portland, Acadia Rising are Ellsworth, Michael
-    Anderson is Bar Harbor; DCoop comes in from the DMV, LyonsDen from the Onondaga Reservation,
-    Tom Fellenz from the SF Bay Area.
+15. Places: The Crown Vics are from the Ellsworth and Bangor area. OPEN X are from Down East Maine,
+    written exactly that way. Grass Rug are Portland, Acadia Rising are Ellsworth, Michael Anderson
+    is Bar Harbor; DCoop comes in from the DMV, LyonsDen from the Onondaga Reservation, Tom Fellenz
+    from the SF Bay Area. LyonsDen is written "LyonsDen Rez Muzik" where his name is introduced.
 16. The stream is at zaostock.com/live. Never name the platform in a post and never write a stream
     key anywhere. The lineup poster is at zaostock.com/brand.
+17. Never announce a live moment, a pre-party, a stream or a call-in unless my message in this chat
+    gives you the exact URL it airs at. No URL from me means the sentence does not exist.
+18. Never put a subscriber count, a send count, an open or click figure, or any member number into
+    a post, a subtitle or a social. Those are read from the warehouse by the lane and stay there.
 
 Reply "rules noted" and nothing else.
 ```
@@ -79,6 +82,9 @@ Reply "rules noted" and nothing else.
 | 14 | Zaal 2026-09-25, asked directly in the lane: "Say 9th Annual" and "Call them headliners". Zaal 2026-09-24: "please dont say the other 3 please dont say that if antrthing say the ZAO Musicians" |
 | 15 | Zaal 2026-09-25: "they are both ellsworth / bangor area dont write it down for open x i need to confirm but crown vics are". The lineup API carries no city for either; the other six cities are from the acts' own pages, as published in Day 268 |
 | 16 | Zaal 2026-09-25 via Dotfiles: the stream is Twitch channel zaofestivals embedded on /live, and the URL people are told is /live because it survives a platform change. Poster live at /brand after ZAOstock #307 |
+| 15 (OPEN X) | Zaal 2026-09-27 10:5x, via the seat, decisions/grill-2026-09-27-seat-morning.md: "Just type down east Maine". The ZAOstock lane wrote it to the artists table the same morning. LyonsDen display name per grill 26 Sep 12:3x |
+| 17 | 2026-09-26: Day 269 announced a 4 pm pre-party with no URL anywhere in the vault or repo; four drafts later Zaal ruled "we didnt stream to stwitch we only have the x space" and the section was cut. A live moment without a written URL is a sentence that will be wrong |
+| 18 | 2026-09-27, the seat: zaoonparagraph PR #86's body carried the send count in a public repo; the standing rule is never quote a member count. The lane reads them with automation/analytics.sh and they go nowhere public |
 
 ## How to work with the agent (what this lane has seen it do)
 
