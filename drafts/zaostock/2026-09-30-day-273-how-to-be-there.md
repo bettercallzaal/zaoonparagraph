@@ -25,15 +25,33 @@
      source is our own site, which is not outside confirmation; if Cara ever contradicts it, this
      is the line that changes. -->
 
+<!-- REBUILT 2026-09-27 14:32 EDT, three days ahead, under Zaal's standing grant of 27 Sep, because he is phone-only
+     from Monday and the covers have to land before he goes. Re-read the same hour at HTTP 200:
+     /live, /tickets, /ellsworth, /program.
+     CHANGED AGAINST THE 19 SEP TEXT:
+     1. "with North Creek" added to the Black Moon line, from /program.
+     2. The day line carries Cara Romano's approved sentence, rule 19.
+     3. PARKING follows /ellsworth as read today: no parking on Franklin Street, two free lots named.
+     4. "water, seating and shelter" is now "water and seating". Rule 13, 27 Sep: no weather line
+        in new copy, and shelter reads as one.
+     5. Closes on an invitation. No countdown in the body.
+     STILL TRUE ON /live TODAY: "This page is where the stream plays", the full window, no sign-up, no
+     account or app, the watch party and host-one-yourself wording, the Telegram line. The page counts
+     "Four ways in"; the body keeps 3 and folds hosting into the 3rd, as before.
+     SEEN ON /live AND NOT OURS TO FIX: it still carries a line about a pre-party stream on Saturday
+     26 September. Zaal ruled on 26 Sep that there was no such stream. Told the Zaostock lane.
+     THE STREAM PLATFORM IS NOT NAMED, rule 16. RE-FETCH /live ON THE MORNING OF 09-30. -->
+<!-- PARAGRAPH DRAFT: 7uPHlYdriOnC1Zlo9P5y, status draft, no cover, created by the lane. The 19 Sep era draft Rv8C1btgOFryHw1vGSyY is SUPERSEDED, kept unpublished, not deleted. -->
+
 zm
 
 year of the zabal day 273
 
 There are 3 ways to be at ZAOstock on Saturday, and 2 of them do not need you to be in Maine.
 
-ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6. It is part of the 9th Annual Art of Ellsworth, during Maine Craft Weekend.
+ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6, with North Creek. It is the first independent music event of the 9th Annual Art of Ellsworth, Maine Craft Weekend.
 
-The 1st way is the real thing. Walk up to the Franklin Street Parklet any time from noon. It is free and all ages. There is no gate, no ticket is checked and there is no wristband to buy. There is a public lot and free street parking near the parklet. If you RSVP it helps us plan water, seating and shelter, but turn up either way.
+The 1st way is the real thing. Walk up to the Franklin Street Parklet any time from noon. It is free and all ages. There is no gate, no ticket is checked and there is no wristband to buy. Park for free in the Franklin Street Parking Lot or in the lot at Ellsworth City Hall, both a short walk away. If you RSVP it helps us plan water and seating, but turn up either way.
 
 The 2nd way is the stream. It plays at [zaostock.com/live](https://zaostock.com/live) for the full window, 12 to 6 Eastern. No sign-up, no account, no app. Bookmark the page now and open it on Saturday. If the picture stops, the Telegram chat at [telegram.thezao.com](https://telegram.thezao.com) is where we say what is happening and when it is back.
 
@@ -46,5 +64,7 @@ In person: [zaostock.com/ellsworth](https://zaostock.com/ellsworth)
 Online: [zaostock.com/live](https://zaostock.com/live)
 
 RSVP is free at [ticket.zaostock.com](https://ticket.zaostock.com) so we know how many people to plan for. If you want to put something behind the day you can do that at [zaostock.com/tickets](https://zaostock.com/tickets).
+
+See you there, on the street or on the stream.
 
 - BetterCallZaal on behalf of the ZABAL Team
