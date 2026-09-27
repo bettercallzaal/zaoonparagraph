@@ -8,7 +8,7 @@ rule for everything, reversed the link-punctuation ruling, and quoted an unsourc
 When a rule changes, change it in the file named next to it first, then change this block, then
 update the date. Each rule names its source so a reader can check it.
 
-Last checked against the repo: 2026-09-27, rules 17 and 18 added and rule 15 updated (OPEN X: Down East Maine, Zaal 27 Sep 10:5x).
+Last checked against the repo: 2026-09-27, rules 17 to 19 added and rule 15 updated (OPEN X: Down East Maine, Zaal 27 Sep 10:5x).
 
 ---
 
@@ -58,6 +58,9 @@ here and your memory disagree, this block is right.
     gives you the exact URL it airs at. No URL from me means the sentence does not exist.
 18. Never put a subscriber count, a send count, an open or click figure, or any member number into
     a post, a subtitle or a social. Those are read from the warehouse by the lane and stay there.
+19. You may say ZAOstock is "the first independent music event of the 9th Annual Art of Ellsworth,
+    Maine Craft Weekend", in those words. You may point readers to the Heart of Ellsworth YouTube
+    video when I give you its link. Never call Heart of Ellsworth a partner or a sponsor.
 
 Reply "rules noted" and nothing else.
 ```
@@ -85,6 +88,7 @@ Reply "rules noted" and nothing else.
 | 15 (OPEN X) | Zaal 2026-09-27 10:5x, via the seat, decisions/grill-2026-09-27-seat-morning.md: "Just type down east Maine". The ZAOstock lane wrote it to the artists table the same morning. LyonsDen display name per grill 26 Sep 12:3x |
 | 17 | 2026-09-26: Day 269 announced a 4 pm pre-party with no URL anywhere in the vault or repo; four drafts later Zaal ruled "we didnt stream to stwitch we only have the x space" and the section was cut. A live moment without a written URL is a sentence that will be wrong |
 | 18 | 2026-09-27, the seat: zaoonparagraph PR #86's body carried the send count in a public repo; the standing rule is never quote a member count. The lane reads them with automation/analytics.sh and they go nowhere public |
+| 19 | Cara Romano of Heart of Ellsworth, by email, 2026-09-27 04:26: Zaal asked "Is it possible for me to add that we are the first independent music event of the 9th annual art of ellsworth maine craft fair weekend?" and she replied "Sure!". Record: zao-vault inbox/cara-romano-approval-first-independent-music-event-2026-09-27.md. The approval covers that one sentence and pointing to their video; it does not make them a partner or sponsor. It is also the first time anyone outside our own site has let "9th annual" stand, which rule 14 rested on |
 
 ## How to work with the agent (what this lane has seen it do)
 
