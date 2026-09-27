@@ -57,6 +57,41 @@ def sections(md):
         out[int(m.group(1))] = (m.group(2).strip(), body)
     return out
 
+URL_RE = re.compile(r"https?://\S+")
+TRAILING = ".,!?;:)]}'\""
+
+def x_length(body):
+    """Length as X counts it: every link is 23, everything else is itself.
+
+    Punctuation glued to the end of a link is not part of the link. "see https://a.b/c." is a
+    23 character link and a full stop, so it counts 24, not 23. The first version of this
+    matched the punctuation into the link and undercounted by one; a review of #98 built a post
+    this scored 280 that X counts 281.
+    """
+    n, last = 0, 0
+    for m in URL_RE.finditer(body):
+        link = m.group(0).rstrip(TRAILING)
+        if not link[link.index("://") + 3:]:
+            continue                                    # "https://" and nothing after it is text
+        n += len(body[last:m.start()]) + 23
+        last = m.start() + len(link)
+    return n + len(body[last:])
+
+def firefly(body, url):
+    """Put the edition URL in the Firefly post and measure it the way X does.
+
+    If the draft carries the program link, the edition URL takes the place of the first one. If
+    it does not, the edition URL goes on the end. Until 2026-09-27 a draft with no program link
+    was refused, and every Firefly post written for Days 270 to 273 had none, so the script
+    would have refused all four on the day they published.
+    """
+    prog = "https://zaostock.com/program"
+    if prog in body:
+        body = body.replace(prog, url, 1)
+    else:
+        body = body.rstrip() + "\n\n" + url
+    return body, x_length(body)
+
 def draft_block(md):
     m = re.search(r'^## Draft.*?\n(.*?)(?=^## |\Z)', md, re.S | re.M)
     return m.group(1).strip() if m else None
@@ -89,14 +124,11 @@ def main():
     blocks = []
     for n in sorted(socials):
         name, body = socials[n]
-        if n == 1:                                      # Firefly: swap the link, do not add one
-            body = body.replace("https://zaostock.com/program", url)
-            if url not in body: die("REFUSED: Firefly had no program link to swap", 1)
-            if len(body) > FIREFLY_CAP:
-                name += " - %d characters raw, over the %d cap; a link counts as 23 on X, so this is %d there" % (
-                    len(body), FIREFLY_CAP, len(body) - len(url) + 23)
-            else:
-                name += " - %d characters" % len(body)
+        if n == 1:
+            body, on_x = firefly(body, url)
+            if on_x > FIREFLY_CAP:
+                die("REFUSED: Firefly is %d characters on X, over the %d cap" % (on_x, FIREFLY_CAP), 1)
+            name += " - %d characters raw, %d on X where every link counts as 23" % (len(body), on_x)
         elif n == 2:                                    # X group chat: no link by design
             pass
         else:                                           # the rest end on the edition link
