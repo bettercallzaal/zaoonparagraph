@@ -57,6 +57,23 @@ def sections(md):
         out[int(m.group(1))] = (m.group(2).strip(), body)
     return out
 
+def firefly(body, url):
+    """Put the edition URL in the Firefly post and measure it the way X does.
+
+    If the draft carries the program link, the edition URL takes its place. If it does not, the
+    edition URL goes on the end. Until 2026-09-27 a draft with no program link was refused, and
+    every Firefly post written for Days 270 to 273 had none, so the script would have refused
+    all four on the day they published. Found while fixing a review comment on #97, before any
+    of them went out. Returns the body and its length on X, where every link counts as 23.
+    """
+    prog = "https://zaostock.com/program"
+    if prog in body:
+        body = body.replace(prog, url)
+    else:
+        body = body.rstrip() + "\n\n" + url
+    on_x = len(re.sub(r"https?://\S+", "x" * 23, body))
+    return body, on_x
+
 def draft_block(md):
     m = re.search(r'^## Draft.*?\n(.*?)(?=^## |\Z)', md, re.S | re.M)
     return m.group(1).strip() if m else None
@@ -89,14 +106,11 @@ def main():
     blocks = []
     for n in sorted(socials):
         name, body = socials[n]
-        if n == 1:                                      # Firefly: swap the link, do not add one
-            body = body.replace("https://zaostock.com/program", url)
-            if url not in body: die("REFUSED: Firefly had no program link to swap", 1)
-            if len(body) > FIREFLY_CAP:
-                name += " - %d characters raw, over the %d cap; a link counts as 23 on X, so this is %d there" % (
-                    len(body), FIREFLY_CAP, len(body) - len(url) + 23)
-            else:
-                name += " - %d characters" % len(body)
+        if n == 1:
+            body, on_x = firefly(body, url)
+            if on_x > FIREFLY_CAP:
+                die("REFUSED: Firefly is %d characters on X, over the %d cap" % (on_x, FIREFLY_CAP), 1)
+            name += " - %d characters raw, %d on X where every link counts as 23" % (len(body), on_x)
         elif n == 2:                                    # X group chat: no link by design
             pass
         else:                                           # the rest end on the edition link
