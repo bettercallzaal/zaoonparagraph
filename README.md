@@ -92,6 +92,13 @@ automation/check-links.sh drafts/<filename>
 # Add --clip to open it as a clipboard page as well.
 automation/make-agent-paste.sh drafts/zaostock/<filename> [--clip]
 
+# What the newsletter actually did, from Paragraph's analytics warehouse rather
+# than the in-app dashboard. The dashboard said 0.00% CTR for weeks; the tables
+# behind it said 351 clicks. Both were misleading on their own, so this prints
+# unique CLICKERS as well as clicks: 0 to 2 per edition out of 419 sends.
+# --sql "SELECT ..." runs one ad-hoc query. The endpoint takes `sql`, not `query`.
+automation/analytics.sh [--sql "SELECT ..."]
+
 # Queue + drift: what's pushed, what's pending, and any edition that went live
 # without landing in published/. Exits non-zero on drift.
 automation/status.sh
