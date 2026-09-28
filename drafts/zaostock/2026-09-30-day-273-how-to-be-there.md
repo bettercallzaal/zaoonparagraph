@@ -42,8 +42,6 @@
      26 September. Zaal ruled on 26 Sep that there was no such stream. Told the Zaostock lane.
      THE STREAM PLATFORM IS NOT NAMED, rule 16. RE-FETCH /live ON THE MORNING OF 09-30. -->
 <!-- PARAGRAPH DRAFT: 7uPHlYdriOnC1Zlo9P5y, status draft, no cover, created by the lane. The 19 Sep era draft Rv8C1btgOFryHw1vGSyY is SUPERSEDED, kept unpublished, not deleted. -->
-<!-- ADDED 2026-09-28 14:21 EDT on Zaal's word: "Bring the family, there's giant Jenga on the parklet between sets." He rented giant Jenga from the Ellsworth library on 28 Sep; the event is
-     tagged Family Friendly. The source is Zaal, not the site. The Paragraph draft needs the same line. -->
 
 zm
 
@@ -54,8 +52,6 @@ There are 3 ways to be at ZAOstock on Saturday, and 2 of them do not need you to
 ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6, with North Creek. It is the first independent music event of the 9th Annual Art of Ellsworth, Maine Craft Weekend.
 
 The 1st way is the real thing. Walk up to the Franklin Street Parklet any time from noon. It is free and all ages. There is no gate, no ticket is checked and there is no wristband to buy. Park for free in the Franklin Street Parking Lot or in the lot at Ellsworth City Hall, both a short walk away. If you RSVP it helps us plan water and seating, but turn up either way.
-
-Bring the family, there's giant Jenga on the parklet between sets.
 
 The 2nd way is the stream. It plays at [zaostock.com/live](https://zaostock.com/live) for the full window, 12 to 6 Eastern. No sign-up, no account, no app. Bookmark the page now and open it on Saturday. If the picture stops, the Telegram chat at [telegram.thezao.com](https://telegram.thezao.com) is where we say what is happening and when it is back.
 
