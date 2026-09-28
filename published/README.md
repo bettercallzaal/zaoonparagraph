@@ -120,6 +120,7 @@ Subtitles, cover images and live URLs:
 | 259 | LyonsDen is playing ZAOstock | https://paragraph.com/@thezao/year-of-the-zabal-day-259-1 |
 | 260 | Tom Fellenz is playing ZAOstock | https://paragraph.com/@thezao/year-of-the-zabal-day-260 |
 | 263 | What ZAOstock is, the running order, and how to get ready for October 3 in Maine | https://paragraph.com/@thezao/year-of-the-zabal-day-263-13-days-until-zaostock |
+| 271 | On Saturday we told the story of ZAO Festivals out loud, on a space hosted by Thy Revolution. 4 events, 3 cities before this one, and what we are bringing to Ellsworth. | https://paragraph.com/@thezao/year-of-the-zabal-day-271 |
 
 Post ids are also in `automation/post-ids.json`, keyed by the file path here.
 
