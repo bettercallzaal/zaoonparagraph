@@ -1,5 +1,17 @@
 # Year of the ZABAL - Day 270
 
+<!-- DAY 270 WAS SKIPPED. Recorded 2026-09-27 21:13 EDT. Zaal, Sunday 27 Sep 2026 evening, his words:
+     "im not doing 270 today ill do 271 tommorrow" (relayed by the Vault lane, zao-vault
+     decisions/day-270-skipped-271-monday.md, c603a369), after he typed in the Paragraph lane
+     "lets not post this today and just wait". It joins Day 269 as skipped. The series keeps its
+     numbering and resumes at Day 271 on Monday 28 Sep.
+     NOTHING WAS DELETED. Paragraph drafts HnY5n3UGS0fhbO2OCguC (the one he ruled that morning),
+     QDUUU4PJnTQqzrMoMxTg, U5So1pNBX7QuROn3xFJe and xHtZh4wxCfpvK7SgWpxE are all unpublished.
+     THIS TEXT IS REUSABLE: the body counts no days, so it can go out on a later day under a new
+     day number if he wants the headliners edition back. ONE FACT TO CHECK FIRST: the body says
+     DCoop "co-hosted ZAOville with us in July". In the 26 Sep X Space Zaal said DCoop organized
+     his own event and the team drove down to help. His ruling is needed before this line ships. -->
+
 <!-- SUBTITLE (Paragraph field, not body):
      DCoop, LyonsDen and Tom Fellenz headline ZAOstock. 3 artists from 3 places, on 1 stage in Ellsworth.
      RULED 2026-09-27 10:28, Zaal via the Vault lane (zao-vault decisions/grill-2026-09-27-orchestrator-batch-2.md,
