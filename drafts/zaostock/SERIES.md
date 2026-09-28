@@ -70,7 +70,7 @@ comment, the page to re-fetch on the morning it goes out.
 | Fri 25 Sep | 268 | Artist slot: Acadia Rising | `2026-09-25-day-268-acadia-rising.md` | zaostock.com/artist/acadia-rising | text ready; dated on Zaal's ruling 2026-09-19 (the week of 21 to 25 Sep). Bio live, no photo on the page 2026-09-19; Zaal is asking Sen for it Sun 20 Sep: re-fetch that morning. The stream edition planned for this day stays blocked; Day 273 covers how to watch |
 | Sat 26 Sep | 269 | 1 week out: the running order, no set times | `2026-09-26-day-269-one-week-out.md` | zaostock.com/program | drafted |
 | Sun 27 Sep | 270 | The last 3 acts: DCoop, LyonsDen, Tom Fellenz | `2026-09-27-day-270-headliners.md` | the 3 artist pages | drafted; "headliners" wording is Zaal's call (see file header) |
-| Mon 28 Sep | 271 | Artist slot: Grass Rug | `2026-09-28-day-271-grass-rug.md` | zaostock.com/artist/grass-rug | text ready; bio live, no photo on the page 2026-09-19, so the photo line is out. Photo due 20 Sep per the zaostock lane: re-fetch that morning |
+| Mon 28 Sep | 271 | The history of ZAO Festivals (replaced the Grass Rug slot) | `2026-09-28-day-271-history.md` | zaostock.com/festivals | PUBLISHED 28 Sep, https://paragraph.com/@thezao/year-of-the-zabal-day-271. Grass Rug moved to socials as unslotted-grass-rug (#101) |
 | Tue 29 Sep | 272 | The place: getting there, parking, what to pack | `2026-09-29-day-272-the-place.md` | zaostock.com/ellsworth | drafted |
 | Wed 30 Sep | 273 | 3 ways to be there, in person or online | `2026-09-30-day-273-how-to-be-there.md` | zaostock.com/live | drafted |
 | Thu 1 Oct | 274 | How Saturday runs | `2026-10-01-day-274-run-of-show.md` | zaostock.com/program | drafted |
