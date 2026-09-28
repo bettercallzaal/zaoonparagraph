@@ -40,6 +40,13 @@
      was skipped; the cover and the socials carry the 5 days, the body cannot go wrong if it publishes late.
      PARAGRAPH DRAFT: wLLGg6Tz1J14vzABQBJE, created 2026-09-27, no cover. -->
 
+<!-- 2026-09-27 21:37 EDT: GRASS RUG LOST ITS DAY. Zaal, typed in the lane 27 Sep evening: "lets think of soemthing
+     else for 271 not grass rug", then chose the history of ZAO Festivals for Day 271. The same
+     evening, via his grill: "lets not do more artist previews now lets post on all the socials".
+     So this text goes out as social posts, not as an edition. File renamed from
+     2026-09-28-day-271-grass-rug.md. Paragraph draft wLLGg6Tz1J14vzABQBJE is SUPERSEDED, kept
+     unpublished, not deleted. -->
+
 zm
 
 year of the zabal day 271
