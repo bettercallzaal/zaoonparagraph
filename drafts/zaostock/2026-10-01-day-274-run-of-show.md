@@ -25,13 +25,18 @@
      source is our own site, which is not outside confirmation; if Cara ever contradicts it, this
      is the line that changes. -->
 
+<!-- 2026-09-27 21:23 EDT: two facts corrected in the repo text ahead of Wednesday's build. "with a DJ" is now
+     "with North Creek", from /program as read today, and the day line carries Cara Romano's approved
+     sentence. THE PARAGRAPH DRAFT IS STILL BUILT ON WEDNESDAY after /program is re-read; the old
+     draft rZaDQjTx9KwnS34LLSEv is stale. -->
+
 zm
 
 year of the zabal day 274
 
 This is how Saturday runs.
 
-ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6. It is part of the 9th Annual Art of Ellsworth, during Maine Craft Weekend.
+ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6, with North Creek. It is the first independent music event of the 9th Annual Art of Ellsworth, Maine Craft Weekend.
 
 Music starts at noon. There is a 5-minute welcome on the mic, and then the first band plays.
 
@@ -41,7 +46,7 @@ There is 1 venue at a time. Nothing plays in 2 rooms at once, so you never have 
 
 Tom Fellenz closes the outdoor block. Music ends, and at 6 the street clears.
 
-Then it moves next door. The ZAOstock after-party is at Black Moon Public House, with a DJ, from 6. Black Moon is open through the day as well, right beside the parklet.
+Then it moves next door. The ZAOstock after-party is at Black Moon Public House, with North Creek, from 6. Black Moon is open through the day as well, right beside the parklet.
 
 If you cannot be in Ellsworth, the stream plays at [zaostock.com/live](https://zaostock.com/live) from 12 to 6 Eastern, with no sign-up.
 

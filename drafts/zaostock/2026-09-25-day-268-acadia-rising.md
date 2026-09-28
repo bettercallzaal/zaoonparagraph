@@ -26,13 +26,21 @@
      instagram.com/acadia.rising. NOT curl-checked: both platforms block anonymous fetches, so a
      200 or a block proves nothing either way. Zaal clicks both before send. -->
 
+<!-- REFRESHED 2026-09-27 21:23 EDT for board item 65 (artist previews). UNSLOTTED: this edition has no send day.
+     Its old day number is taken, so the day line in the body carries a CHECK marker that the lane
+     replaces when Zaal gives it a day. No Paragraph draft exists for this text. Zaal publishes.
+     Re-read the same hour at HTTP 200: the act's own page and /program. Every fact in the body is
+     on one of the two. Rulings applied: North Creek in the Black Moon line, Cara Romano's approved
+     sentence (rule 19), no weather line (rule 13), no countdown, no "Nth act we are publishing",
+     closes on an invitation. -->
+
 zm
 
-year of the zabal day 268
+year of the zabal day [CHECK: the day number, set when Zaal gives this a day]
 
 Acadia Rising is playing ZAOstock.
 
-ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6. It is part of Art of Ellsworth, during Maine Craft Weekend.
+ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6, with North Creek. It is the first independent music event of the 9th Annual Art of Ellsworth, Maine Craft Weekend.
 
 Acadia Rising is one of the 8, and the hometown act. The project is based in Ellsworth.
 
@@ -51,5 +59,7 @@ On Instagram: [instagram.com/acadia.rising](https://instagram.com/acadia.rising)
 The running order: [zaostock.com/program](https://zaostock.com/program)
 
 RSVP is free at [ticket.zaostock.com](https://ticket.zaostock.com) so we know how many people to plan for. If you want to put something behind the day you can do that at [zaostock.com/tickets](https://zaostock.com/tickets).
+
+See you on Franklin Street.
 
 - BetterCallZaal on behalf of the ZABAL Team
