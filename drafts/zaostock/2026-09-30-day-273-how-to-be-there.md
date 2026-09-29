@@ -1,7 +1,7 @@
 # Year of the ZABAL - Day 273
 
 <!-- SUBTITLE (Paragraph field, not body):
-     Tuesday in review, and 3 ways to be at ZAOstock on Saturday: on Franklin Street, on zaostock.com/live, or at a watch party.
+     Tuesday in review, and 3 ways to be at ZAOstock on Saturday: on Franklin Street, on zaostock.com/live, or at a watch party. -->
 
 <!-- Send: Wed 30 Sep 2026, Zaal's tap. Voice: announcement. Zero Paragraph credits.
      Day number: 2026-09-30 = day 273.
@@ -67,7 +67,7 @@ ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street
 
 ## Tuesday
 
-Day 272 went out, with [Monday's conversation on Beyond the NFT](https://paragraph.com/@thezao/year-of-the-zabal-day-272). And the tickets page got a Give section. You can put something behind the day by card, from $1, or through Giveth, with no ticket needed, and [zaostock.com/donate](https://zaostock.com/donate) now goes straight there. Every gift goes to the day itself: artist pay, sound and stage, and materials.
+Day 272 went out, with [Monday's conversation on Beyond the NFT](https://paragraph.com/@thezao/year-of-the-zabal-day-272). And the tickets page got a Give section. You can put something behind the day by card or through Giveth, with no ticket needed, and [zaostock.com/donate](https://zaostock.com/donate) now goes straight there. Every gift goes to the day itself: artist pay, sound and stage, and materials.
 
 ## 3 ways to be there
 
