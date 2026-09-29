@@ -71,7 +71,7 @@ comment, the page to re-fetch on the morning it goes out.
 | Sat 26 Sep | 269 | 1 week out: the running order, no set times | `2026-09-26-day-269-one-week-out.md` | zaostock.com/program | drafted |
 | Sun 27 Sep | 270 | The last 3 acts: DCoop, LyonsDen, Tom Fellenz | `2026-09-27-day-270-headliners.md` | the 3 artist pages | drafted; "headliners" wording is Zaal's call (see file header) |
 | Mon 28 Sep | 271 | The history of ZAO Festivals (replaced the Grass Rug slot) | `2026-09-28-day-271-history.md` | zaostock.com/festivals | PUBLISHED 28 Sep, https://paragraph.com/@thezao/year-of-the-zabal-day-271. Grass Rug moved to socials as unslotted-grass-rug (#101) |
-| Tue 29 Sep | 272 | The place: getting there, parking, what to pack | `2026-09-29-day-272-the-place.md` | zaostock.com/ellsworth | drafted |
+| Tue 29 Sep | 272 | Monday in review: Beyond the NFT, set times up, getting there (was: The place) | `2026-09-29-day-272-the-place.md` | zaostock.com/ellsworth, /program | PUBLISHED 29 Sep, https://paragraph.com/@thezao/year-of-the-zabal-day-272 |
 | Wed 30 Sep | 273 | 3 ways to be there, in person or online | `2026-09-30-day-273-how-to-be-there.md` | zaostock.com/live | drafted |
 | Thu 1 Oct | 274 | How Saturday runs | `2026-10-01-day-274-run-of-show.md` | zaostock.com/program | drafted |
 | Fri 2 Oct | 275 | Tomorrow | `2026-10-02-day-275-tomorrow.md` | zaostock.com/, /program | drafted |
