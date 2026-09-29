@@ -1,7 +1,7 @@
 # Year of the ZABAL - Day 273
 
 <!-- SUBTITLE (Paragraph field, not body):
-     3 ways to be at ZAOstock on Saturday: on Franklin Street, on zaostock.com/live, or at a watch party. And you can host one. -->
+     Tuesday in review, and 3 ways to be at ZAOstock on Saturday: on Franklin Street, on zaostock.com/live, or at a watch party.
 
 <!-- Send: Wed 30 Sep 2026, Zaal's tap. Voice: announcement. Zero Paragraph credits.
      Day number: 2026-09-30 = day 273.
@@ -52,13 +52,24 @@
         passes (grill 28 Sep afternoon item 3).
      Everything else is still true: the full window, no sign-up, no account or app, the watch party and host-one wording,
      and 'Four ways in' (the body keeps 3). Paragraph draft updated via MCP; preview checked. -->
+<!-- TUESDAY RECAP ADDED 2026-09-29 16:43 EDT on Zaal's 'i like this lets do it' (grill-2026-09-29-grill-morning item 33). Only what was
+     checked the same hour went in: Day 272 live (200); /donate 307 to /tickets#give; /tickets shows a Give section with
+     $1/$20/$50 card gifts and Giveth, and 'Every gift goes to the day itself: artist pay, sound and stage, and the materials'.
+     Left out: the artist-page city and link claim (my check hit the site header on every page, which means the check
+     could not tell, not that the claim is true), the Timo pilot and the desk bot (internal). -->
 zm
 
 year of the zabal day 273
 
-There are 3 ways to be at ZAOstock on Saturday, and 2 of them do not need you to be in Maine.
+Tuesday in review, then the 3 ways to be at ZAOstock on Saturday. 2 of them do not need you to be in Maine.
 
 ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6, with North Creek. It is the first independent music event of the 9th Annual Art of Ellsworth, Maine Craft Weekend.
+
+## Tuesday
+
+Day 272 went out, with [Monday's conversation on Beyond the NFT](https://paragraph.com/@thezao/year-of-the-zabal-day-272). And the tickets page got a Give section. You can put something behind the day by card, from $1, or through Giveth, with no ticket needed, and [zaostock.com/donate](https://zaostock.com/donate) now goes straight there. Every gift goes to the day itself: artist pay, sound and stage, and materials.
+
+## 3 ways to be there
 
 The 1st way is the real thing. Walk up to the Franklin Street Parklet any time from noon. It is free and all ages, and no ticket is checked at the parklet. Park for free in the Franklin Street Parking Lot or in the lot at Ellsworth City Hall, both a short walk away. If you RSVP it helps us plan numbers, but turn up either way.
 
