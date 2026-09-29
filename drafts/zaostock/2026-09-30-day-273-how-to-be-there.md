@@ -43,6 +43,15 @@
      THE STREAM PLATFORM IS NOT NAMED, rule 16. RE-FETCH /live ON THE MORNING OF 09-30. -->
 <!-- PARAGRAPH DRAFT: 7uPHlYdriOnC1Zlo9P5y, status draft, no cover, created by the lane. The 19 Sep era draft Rv8C1btgOFryHw1vGSyY is SUPERSEDED, kept unpublished, not deleted. -->
 
+<!-- RE-ALIGNED 2026-09-29 14:44 EDT against the site, read by curl the same hour: /live, /tickets, /ellsworth, /program.
+     1. /live NO LONGER carries the Telegram 'if the picture stops' line. Replaced with the page's own offline note
+        ('Nothing playing? ... that is expected ... not a broken player').
+     2. /tickets says 'No ticket is checked at the parklet' and that the RSVP 'helps us plan numbers'. 'No gate', 'no
+        wristband' and 'water and seating' are not on the site any more, so they are out.
+     3. /live now names Twitch. The body STILL does not name the platform: rule 16 holds until the Fri 2 Oct stream test
+        passes (grill 28 Sep afternoon item 3).
+     Everything else is still true: the full window, no sign-up, no account or app, the watch party and host-one wording,
+     and 'Four ways in' (the body keeps 3). Paragraph draft updated via MCP; preview checked. -->
 zm
 
 year of the zabal day 273
@@ -51,9 +60,9 @@ There are 3 ways to be at ZAOstock on Saturday, and 2 of them do not need you to
 
 ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6, with North Creek. It is the first independent music event of the 9th Annual Art of Ellsworth, Maine Craft Weekend.
 
-The 1st way is the real thing. Walk up to the Franklin Street Parklet any time from noon. It is free and all ages. There is no gate, no ticket is checked and there is no wristband to buy. Park for free in the Franklin Street Parking Lot or in the lot at Ellsworth City Hall, both a short walk away. If you RSVP it helps us plan water and seating, but turn up either way.
+The 1st way is the real thing. Walk up to the Franklin Street Parklet any time from noon. It is free and all ages, and no ticket is checked at the parklet. Park for free in the Franklin Street Parking Lot or in the lot at Ellsworth City Hall, both a short walk away. If you RSVP it helps us plan numbers, but turn up either way.
 
-The 2nd way is the stream. It plays at [zaostock.com/live](https://zaostock.com/live) for the full window, 12 to 6 Eastern. No sign-up, no account, no app. Bookmark the page now and open it on Saturday. If the picture stops, the Telegram chat at [telegram.thezao.com](https://telegram.thezao.com) is where we say what is happening and when it is back.
+The 2nd way is the stream. It plays at [zaostock.com/live](https://zaostock.com/live) for the full window, 12 to 6 Eastern. No sign-up, no account, no app. Bookmark the page now and open it on Saturday. Outside that window the page shows nothing playing, and that is expected, not a broken player.
 
 The 3rd way is a watch party. There is no single format. 1 channel carries clean event audio, and every host takes that audio and does their own thing over it, in their own room, for their own people. The full list of places to watch goes out on the day. And you can host one yourself. Nobody has to ask. Tell us it is happening and it goes on the list.
 
