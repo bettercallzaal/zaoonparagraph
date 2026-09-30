@@ -64,8 +64,7 @@
      THE NUMBERS ARE NOT IN THE BODY, on purpose (memory: no placeholders in paste blocks). The body reads complete without
      them. If Zaal sends Going/Interested counts, insert ONE sentence as the third paragraph, after '...beats any poster.':
        'N people have tapped Going and M are interested so far. Let's double it by Saturday.'
-     OPEN, relayed to Zaal by the vault lane: 'artist pay' or the site's 'artist fees'. Until he answers, the line says 'the
-     artists', which is true under either.
+     RULED: 'artist fees', matching /tickets. Zaal via the vault lane: 'Keep it in'. No figures.
      Facebook event checked 200 the same hour; its contents are login-walled, so nothing is claimed about what is on it. -->
 zm
 
@@ -81,7 +80,7 @@ ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street
 
 ## Tuesday
 
-Day 272 went out, with [Monday's conversation on Beyond the NFT](https://paragraph.com/@thezao/year-of-the-zabal-day-272). And the tickets page got a Give section. You can put something behind the day by card or through Giveth, with no ticket needed, and [zaostock.com/donate](https://zaostock.com/donate) now goes straight there. Every gift goes to the day itself: the artists, sound and stage, and materials.
+Day 272 went out, with [Monday's conversation on Beyond the NFT](https://paragraph.com/@thezao/year-of-the-zabal-day-272). And the tickets page got a Give section. You can put something behind the day by card or through Giveth, with no ticket needed, and [zaostock.com/donate](https://zaostock.com/donate) now goes straight there. Every gift goes to the day itself: artist fees, sound and stage, and materials.
 
 ## 3 ways to be there
 
