@@ -30,6 +30,12 @@
      sentence. THE PARAGRAPH DRAFT IS STILL BUILT ON WEDNESDAY after /program is re-read; the old
      draft rZaDQjTx9KwnS34LLSEv is stale. -->
 
+<!-- FIXED 2026-09-30 13:34 EDT from IMan's review, desk #20 (30 Sep 02:25 CAT): set times ARE public on /program since 28 Sep (ZAOstock
+     #375), so the 'not publishing set times' line is replaced; act 7 is 'LyonsDen Rez Muzik' (grill 29 Sep, 2c2a346b item 4).
+     After-party line updated to /program as read the same hour: doors 6, music 7 to 10 with North Creek, Treelock & HiDef,
+     Sam Savage and Oven Baked Beats DJ Aquavantes. The old 24 Sep Paragraph draft rZaDQjTx9KwnS34LLSEv was archived
+     29 Sep on Zaal's 'archive all'; a fresh draft is created from this text (id recorded below). -->
+<!-- PARAGRAPH DRAFT: 6QClWHMi00qbTPOT0Jte, created 30 Sep via the MCP, status draft, no cover. Supersedes rZaDQjTx9KwnS34LLSEv (archived). -->
 zm
 
 year of the zabal day 274
@@ -40,13 +46,13 @@ ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street
 
 Music starts at noon. There is a 5-minute welcome on the mic, and then the first band plays.
 
-From there it is 8 acts back to back on 1 stage: The Crown Vics, OPEN X, Grass Rug, Acadia Rising, Michael Anderson, DCoop, LyonsDen, Tom Fellenz. They play in that order. Between sets the MC keeps the day moving, with the story of the event and a word from the partners.
+From there it is 8 acts back to back on 1 stage: The Crown Vics, OPEN X, Grass Rug, Acadia Rising, Michael Anderson, DCoop, LyonsDen Rez Muzik, Tom Fellenz. They play in that order. Between sets the MC keeps the day moving, with the story of the event and a word from the partners.
 
-There is 1 venue at a time. Nothing plays in 2 rooms at once, so you never have to choose. We are not publishing set times, and on the day things can shift by a few minutes. Come at noon and stay.
+There is 1 venue at a time. Nothing plays in 2 rooms at once, so you never have to choose. Set times are on [zaostock.com/program](https://zaostock.com/program). On the day things can shift by a few minutes, so come at noon and stay.
 
 Tom Fellenz closes the outdoor block. Music ends, and at 6 the street clears.
 
-Then it moves next door. The ZAOstock after-party is at Black Moon Public House, with North Creek, from 6. Black Moon is open through the day as well, right beside the parklet.
+Then it moves next door. The ZAOstock after-party is at Black Moon Public House, hosted by Black Moon: doors from 6, and music from 7 to 10 with North Creek, Treelock & HiDef, Sam Savage and Oven Baked Beats DJ Aquavantes. Black Moon is open through the day as well, right beside the parklet.
 
 If you cannot be in Ellsworth, the stream plays at [zaostock.com/live](https://zaostock.com/live) from 12 to 6 Eastern, with no sign-up.
 
