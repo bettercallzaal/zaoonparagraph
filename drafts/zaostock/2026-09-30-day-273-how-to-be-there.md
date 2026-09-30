@@ -1,7 +1,7 @@
 # Year of the ZABAL - Day 273
 
 <!-- SUBTITLE (Paragraph field, not body):
-     Tuesday in review, and 3 ways to be at ZAOstock on Saturday: on Franklin Street, on zaostock.com/live, or at a watch party. -->
+     One thing to do today: tap Going on the ZAOstock Facebook event and invite 3 people. Plus Tuesday in review, and 3 ways to be there. -->
 
 <!-- Send: Wed 30 Sep 2026, Zaal's tap. Voice: announcement. Zero Paragraph credits.
      Day number: 2026-09-30 = day 273.
@@ -57,34 +57,38 @@
      $1/$20/$50 card gifts and Giveth, and 'Every gift goes to the day itself: artist pay, sound and stage, and the materials'.
      Left out: the artist-page city and link claim (my check hit the site header on every page, which means the check
      could not tell, not that the claim is true), the Timo pilot and the desk bot (internal). -->
+<!-- FACEBOOK EDITION 2026-09-30 13:44 EDT. Zaal in this pane: 'i wanna upgrade what this newsletter says lets brainstorm potential ideas
+     and rewrite the next day to something around the facebook event'. Angle: option 1 of the brainstorm, 'tap Going and
+     invite 3', not overruled. Relay from the vault lane: 'hold til bus ride home but lets start updating it and getting it
+     ready to publish'. So this is NOT published; Zaal publishes on the bus.
+     THE NUMBERS ARE NOT IN THE BODY, on purpose (memory: no placeholders in paste blocks). The body reads complete without
+     them. If Zaal sends Going/Interested counts, insert ONE sentence as the third paragraph, after '...beats any poster.':
+       'N people have tapped Going and M are interested so far. Let's double it by Saturday.'
+     OPEN, relayed to Zaal by the vault lane: 'artist pay' or the site's 'artist fees'. Until he answers, the line says 'the
+     artists', which is true under either.
+     Facebook event checked 200 the same hour; its contents are login-walled, so nothing is claimed about what is on it. -->
 zm
 
 year of the zabal day 273
 
-Tuesday in review, then the 3 ways to be at ZAOstock on Saturday. 2 of them do not need you to be in Maine.
+There is one thing to do today, and it takes a minute. Open [the ZAOstock event on Facebook](https://www.facebook.com/events/28051455107809318), tap Going, and invite 3 people who should be on Franklin Street on Saturday.
+
+Most of Ellsworth is on Facebook, not on the apps where The ZAO usually talks. The event is how word gets around town. Every Going shows up in someone's feed, and an invite from a friend beats any poster.
+
+Not on Facebook? The same goes for [Luma](https://ticket.zaostock.com). RSVP there and send the link to 3 people.
 
 ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6, with North Creek. It is the first independent music event of the 9th Annual Art of Ellsworth, Maine Craft Weekend.
 
 ## Tuesday
 
-Day 272 went out, with [Monday's conversation on Beyond the NFT](https://paragraph.com/@thezao/year-of-the-zabal-day-272). And the tickets page got a Give section. You can put something behind the day by card or through Giveth, with no ticket needed, and [zaostock.com/donate](https://zaostock.com/donate) now goes straight there. Every gift goes to the day itself: artist pay, sound and stage, and materials.
+Day 272 went out, with [Monday's conversation on Beyond the NFT](https://paragraph.com/@thezao/year-of-the-zabal-day-272). And the tickets page got a Give section. You can put something behind the day by card or through Giveth, with no ticket needed, and [zaostock.com/donate](https://zaostock.com/donate) now goes straight there. Every gift goes to the day itself: the artists, sound and stage, and materials.
 
 ## 3 ways to be there
 
-The 1st way is the real thing. Walk up to the Franklin Street Parklet any time from noon. It is free and all ages, and no ticket is checked at the parklet. Park for free in the Franklin Street Parking Lot or in the lot at Ellsworth City Hall, both a short walk away. If you RSVP it helps us plan numbers, but turn up either way.
+You can be on the street: walk up to the Franklin Street Parklet any time from noon. It is free and all ages, no ticket is checked, and there are two free lots a short walk away, the Franklin Street Parking Lot and the lot at Ellsworth City Hall. You can be on the stream: it plays at [zaostock.com/live](https://zaostock.com/live) from 12 to 6 Eastern, with no sign-up, no account and no app, and outside that window the page shows nothing playing, which is expected. Or you can be at a watch party, where a host takes the clean event audio and does their own thing over it for their own people. You can host one yourself. Nobody has to ask. Tell us it is happening and it goes on the list that goes out on the day.
 
-The 2nd way is the stream. It plays at [zaostock.com/live](https://zaostock.com/live) for the full window, 12 to 6 Eastern. No sign-up, no account, no app. Bookmark the page now and open it on Saturday. Outside that window the page shows nothing playing, and that is expected, not a broken player.
+If you are part of The ZAO and you cannot travel, the stream and the watch parties are for you. 8 independent artists are playing a street in Downeast Maine because this community built the day, and you should get to hear it.
 
-The 3rd way is a watch party. There is no single format. 1 channel carries clean event audio, and every host takes that audio and does their own thing over it, in their own room, for their own people. The full list of places to watch goes out on the day. And you can host one yourself. Nobody has to ask. Tell us it is happening and it goes on the list.
-
-If you are part of The ZAO and you cannot travel, the 2nd and 3rd ways are for you. 8 independent artists are playing a street in Downeast Maine because this community built the day, and you should get to hear it.
-
-In person: [zaostock.com/ellsworth](https://zaostock.com/ellsworth)
-
-Online: [zaostock.com/live](https://zaostock.com/live)
-
-RSVP is free at [ticket.zaostock.com](https://ticket.zaostock.com) so we know how many people to plan for. If you want to put something behind the day you can do that at [zaostock.com/tickets](https://zaostock.com/tickets).
-
-See you there, on the street or on the stream.
+Tap Going, invite 3, and see you there, on the street or on the stream.
 
 - BetterCallZaal on behalf of the ZABAL Team
