@@ -35,6 +35,7 @@
      After-party line updated to /program as read the same hour: doors 6, music 7 to 10 with North Creek, Treelock & HiDef,
      Sam Savage and Oven Baked Beats DJ Aquavantes. The old 24 Sep Paragraph draft rZaDQjTx9KwnS34LLSEv was archived
      29 Sep on Zaal's 'archive all'; a fresh draft is created from this text (id recorded below). -->
+<!-- PARAGRAPH DRAFT: 6QClWHMi00qbTPOT0Jte, created 30 Sep via the MCP, status draft, no cover. Supersedes rZaDQjTx9KwnS34LLSEv (archived). -->
 zm
 
 year of the zabal day 274
