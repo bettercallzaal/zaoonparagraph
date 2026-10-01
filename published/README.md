@@ -122,6 +122,8 @@ Subtitles, cover images and live URLs:
 | 263 | What ZAOstock is, the running order, and how to get ready for October 3 in Maine | https://paragraph.com/@thezao/year-of-the-zabal-day-263-13-days-until-zaostock |
 | 271 | On Saturday we told the story of ZAO Festivals out loud, on a space hosted by Thy Revolution. 4 events, 3 cities before this one, and what we are bringing to Ellsworth. | https://paragraph.com/@thezao/year-of-the-zabal-day-271 |
 | 272 | Monday in review: Zaal and Tom Fellenz on Beyond the NFT, the set times are up, and 4 days to go. | https://paragraph.com/@thezao/year-of-the-zabal-day-272 |
+| 273 | One thing to do today: tap Going on the ZAOstock Facebook event and invite 3 people. Plus Tuesday in review, and 3 ways to be there. | https://paragraph.com/@thezao/year-of-the-zabal-day-273 |
+| 274 | Live on Star 97.7 this morning, the round 8 bounty is open, and ZAOstock is two days out. | https://paragraph.com/@thezao/year-of-the-zabal-day-274 |
 
 Post ids are also in `automation/post-ids.json`, keyed by the file path here.
 

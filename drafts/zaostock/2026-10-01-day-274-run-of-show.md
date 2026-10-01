@@ -36,30 +36,24 @@
      Sam Savage and Oven Baked Beats DJ Aquavantes. The old 24 Sep Paragraph draft rZaDQjTx9KwnS34LLSEv was archived
      29 Sep on Zaal's 'archive all'; a fresh draft is created from this text (id recorded below). -->
 <!-- PARAGRAPH DRAFT: 6QClWHMi00qbTPOT0Jte, created 30 Sep via the MCP, status draft, no cover. Supersedes rZaDQjTx9KwnS34LLSEv (archived). -->
+<!-- SUPERSEDED BODY: Day 274 went out as the radio and bounty edition; the body below is copied from the live post, Thu 01 Oct 2026 15:11 EDT. -->
+
 zm
 
 year of the zabal day 274
 
-This is how Saturday runs.
+The first time I heard our ad on Star 97.7 I was in the car on the way to buy groceries. This morning I was in their studio, live with Paul and Mike, two days out from ZAOstock, talking about what's happening on Franklin Street on Saturday.
 
-ZAOstock is a free music festival on Saturday, October 3, on the Franklin Street Parklet in downtown Ellsworth, Maine. 1 stage, 8 acts, from 12 to 6. At 6 the street clears, and Black Moon Public House next door hosts its own evening from 6, with North Creek. It is the first independent music event of the 9th Annual Art of Ellsworth, Maine Craft Weekend.
+Huge thank you to Star 97.7. They're our radio partner for ZAOstock, and having local radio get behind a first-year festival in a small town means a lot. They gave us real time on air, not just a mention.
 
-Music starts at noon. There is a 5-minute welcome on the mic, and then the first band plays.
+We streamed the whole thing. You can watch [the full slot on Twitch](https://www.twitch.tv/videos/2888849470) , about 33 minutes, or just [hear what went out on the radio](https://zaostock.com/brand/audio/zaostock-radio-update-2026-10-01.mp3) .
 
-From there it is 8 acts back to back on 1 stage: The Crown Vics, OPEN X, Grass Rug, Acadia Rising, Michael Anderson, DCoop, LyonsDen Rez Muzik, Tom Fellenz. They play in that order. Between sets the MC keeps the day moving, with the story of the event and a word from the partners.
+And now you can do something with it. [The round 8 bounty is live on poidh](https://poidh.xyz/base/bounty/1460) : cut that radio session into one Instagram reel. Vertical, under 90 seconds, captions on, Star 97.7 credited on screen. Best cut wins the pot. It closes Friday at 5 PM ET, so you've got a day. Everything you need, the audio, the transcript and the stream, is linked in the bounty.
 
-There is 1 venue at a time. Nothing plays in 2 rooms at once, so you never have to choose. Set times are on [zaostock.com/program](https://zaostock.com/program). On the day things can shift by a few minutes, so come at noon and stay.
+Two days out. ZAOstock is Saturday, October 3, noon to six, on the Franklin Street Parklet in downtown Ellsworth, Maine. 8 acts, free, all ages. Everything's at [zaostock.com](https://zaostock.com) .
 
-Tom Fellenz closes the outdoor block. Music ends, and at 6 the street clears.
+Can't make it to Maine? It streams at [zaostock.com/live](https://zaostock.com/live) from noon Eastern on Saturday.
 
-Then it moves next door. The ZAOstock after-party is at Black Moon Public House, hosted by Black Moon: doors from 6, and music from 7 to 10 with North Creek, Treelock & HiDef, Sam Savage and Oven Baked Beats DJ Aquavantes. Black Moon is open through the day as well, right beside the parklet.
-
-If you cannot be in Ellsworth, the stream plays at [zaostock.com/live](https://zaostock.com/live) from 12 to 6 Eastern, with no sign-up.
-
-Free and all ages.
-
-The program: [zaostock.com/program](https://zaostock.com/program)
-
-RSVP is free at [ticket.zaostock.com](https://ticket.zaostock.com) so we know how many people to plan for. If you want to put something behind the day you can do that at [zaostock.com/tickets](https://zaostock.com/tickets).
+See you there.
 
 - BetterCallZaal on behalf of the ZABAL Team
