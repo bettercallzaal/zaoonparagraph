@@ -124,6 +124,7 @@ Subtitles, cover images and live URLs:
 | 272 | Monday in review: Zaal and Tom Fellenz on Beyond the NFT, the set times are up, and 4 days to go. | https://paragraph.com/@thezao/year-of-the-zabal-day-272 |
 | 273 | One thing to do today: tap Going on the ZAOstock Facebook event and invite 3 people. Plus Tuesday in review, and 3 ways to be there. | https://paragraph.com/@thezao/year-of-the-zabal-day-273 |
 | 274 | Live on Star 97.7 this morning, the round 8 bounty is open, and ZAOstock is two days out. | https://paragraph.com/@thezao/year-of-the-zabal-day-274 |
+| 275 | ZAOstock is today, and you don't have to be in Maine. Host a watch party, even for one hour, and tell us which. | https://paragraph.com/@thezao/year-of-the-zabal-day-275 |
 
 Post ids are also in `automation/post-ids.json`, keyed by the file path here.
 
