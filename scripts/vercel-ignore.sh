@@ -27,29 +27,25 @@ BUILD_PATHS=(
   vercel.json scripts/vercel-ignore.sh
 )
 
-# 1. Make the previous deploy's SHA reachable. The clone is shallow, so the
-#    SHA is usually absent; fetch just that object before giving up on it.
+# 1. Diff base: the previous deploy's SHA, fetched if the shallow clone lacks
+#    it. No previous SHA, or one still unreachable after the fetch, BUILDS.
+#    There is deliberately no fallback to HEAD^: when the last deploy was
+#    several commits back, HEAD^ misses the earlier ones, so a page change
+#    followed by a draft in one push would skip (review of ZAODEVZ/ZAOstock
+#    #474, which had the same fallback).
 PREV="${VERCEL_GIT_PREVIOUS_SHA:-}"
-if [ -n "$PREV" ] && ! git cat-file -e "$PREV" 2>/dev/null; then
-  git fetch --depth=1 origin "$PREV" 2>/dev/null || true
-fi
-
-# 2. Diff base: the previous deploy's SHA when reachable, else this commit's
-#    parent (deepen by one if the shallow clone lacks it). Only when NO base
-#    exists do we fall through to the safe default of building.
-BASE=""
-if [ -n "$PREV" ] && git cat-file -e "$PREV" 2>/dev/null; then
-  BASE="$PREV"
-else
-  git rev-parse --verify -q HEAD^ >/dev/null 2>&1 || git fetch --deepen=1 origin 2>/dev/null || true
-  if git rev-parse --verify -q HEAD^ >/dev/null 2>&1; then
-    BASE="HEAD^"
-  fi
-fi
-if [ -z "$BASE" ]; then
-  echo "[vercel-ignore] no diff base reachable (prev=${PREV:-unset}) -> BUILD (safe default)"
+if [ -z "$PREV" ]; then
+  echo "[vercel-ignore] no previous deploy sha -> BUILD (safe default)"
   exit 1
 fi
+if ! git cat-file -e "$PREV" 2>/dev/null; then
+  git fetch --depth=1 origin "$PREV" 2>/dev/null || true
+fi
+if ! git cat-file -e "$PREV" 2>/dev/null; then
+  echo "[vercel-ignore] previous deploy sha $PREV is not reachable -> BUILD (safe default)"
+  exit 1
+fi
+BASE="$PREV"
 
 # 3. Build only if a served file changed since the base. git diff --quiet
 #    exits 0 (no change -> SKIP), 1 (changed -> BUILD), or 128 on an error,

@@ -26,24 +26,28 @@ expect() { # expect <label> <want> <repo> [VERCEL_GIT_PREVIOUS_SHA]
   else FAIL=$((FAIL+1)); echo "FAIL $1 (want $2, got $got)"; fi
 }
 
-r=$(new_repo draft);     change "$r" drafts/a.md;            expect "draft-only change skips"            0 "$r"
-r=$(new_repo pub);       change "$r" published/new.md;       expect "published-only change skips"        0 "$r"
-r=$(new_repo readme);    change "$r" README.md;              expect "root markdown change skips"         0 "$r"
-r=$(new_repo nested);    change "$r" drafts/page.html;       expect "html inside drafts/ skips"          0 "$r"
-r=$(new_repo index);     change "$r" index.html;             expect "index.html change builds"           1 "$r"
-r=$(new_repo rootpage);  change "$r" about.html;             expect "new root page builds"               1 "$r"
-r=$(new_repo assets);    change "$r" assets/logo.svg;        expect "assets/ change builds"              1 "$r"
-r=$(new_repo cfg);       change "$r" vercel.json;            expect "vercel.json change builds"          1 "$r"
-r=$(new_repo self);      change "$r" scripts/vercel-ignore.sh; expect "ignore script change builds"      1 "$r"
-r=$(new_repo mixed);     change "$r" drafts/a.md; change "$r" index.html; expect "mixed commit builds"   1 "$r"
-r=$(new_repo nobase);                                        expect "no diff base builds"                1 "$r"
+r=$(new_repo draft); p=$(git -C "$r" rev-parse HEAD); change "$r" drafts/a.md; expect "draft-only change skips" 0 "$r" "$p"
+r=$(new_repo pub); p=$(git -C "$r" rev-parse HEAD); change "$r" published/new.md; expect "published-only change skips" 0 "$r" "$p"
+r=$(new_repo readme); p=$(git -C "$r" rev-parse HEAD); change "$r" README.md; expect "root markdown change skips" 0 "$r" "$p"
+r=$(new_repo nested); p=$(git -C "$r" rev-parse HEAD); change "$r" drafts/page.html; expect "html inside drafts/ skips" 0 "$r" "$p"
+r=$(new_repo index); p=$(git -C "$r" rev-parse HEAD); change "$r" index.html; expect "index.html change builds" 1 "$r" "$p"
+r=$(new_repo rootpage); p=$(git -C "$r" rev-parse HEAD); change "$r" about.html; expect "new root page builds" 1 "$r" "$p"
+r=$(new_repo assets); p=$(git -C "$r" rev-parse HEAD); change "$r" assets/logo.svg; expect "assets/ change builds" 1 "$r" "$p"
+r=$(new_repo cfg); p=$(git -C "$r" rev-parse HEAD); change "$r" vercel.json; expect "vercel.json change builds" 1 "$r" "$p"
+r=$(new_repo self); p=$(git -C "$r" rev-parse HEAD); change "$r" scripts/vercel-ignore.sh; expect "ignore script change builds" 1 "$r" "$p"
+r=$(new_repo mixed); p=$(git -C "$r" rev-parse HEAD); change "$r" drafts/a.md; change "$r" index.html; expect "mixed commit builds" 1 "$r" "$p"
+r=$(new_repo nobase);                                        expect "no previous deploy sha builds"      1 "$r"
 # Previous deploy SHA reachable: index changed two commits back, then a draft.
 r=$(new_repo prev); p=$(git -C "$r" rev-parse HEAD)
 change "$r" index.html; change "$r" drafts/a.md;              expect "change since previous deploy builds" 1 "$r" "$p"
 r=$(new_repo prevskip); p=$(git -C "$r" rev-parse HEAD)
 change "$r" drafts/a.md; change "$r" published/b.md;         expect "drafts since previous deploy skip"  0 "$r" "$p"
-# Unreachable previous SHA falls back to the parent commit.
-r=$(new_repo badprev); change "$r" drafts/a.md;              expect "unreachable prev falls back, skips" 0 "$r" 0123456789abcdef0123456789abcdef01234567
+# Unreachable previous SHA builds: no HEAD^ fallback, which can miss earlier commits.
+r=$(new_repo badprev); change "$r" drafts/a.md;              expect "unreachable prev builds"           1 "$r" 0123456789abcdef0123456789abcdef01234567
+
+# The case the HEAD^ fallback got wrong: last deploy unreachable, then a page
+# change followed by a draft in one push. HEAD^ sees only the draft.
+r=$(new_repo codethendraft); change "$r" index.html; change "$r" drafts/a.md; expect "page then draft, unreachable prev, builds" 1 "$r" 0123456789abcdef0123456789abcdef01234567
 
 echo "passed $PASS, failed $FAIL"
 [ "$FAIL" = 0 ]
