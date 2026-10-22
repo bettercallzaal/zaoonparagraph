@@ -87,6 +87,17 @@ When he does, re-pull the body (cache-busted) and replace this file. The same ed
 https://x.com/i/status/2101877250132193503, with section headings added and its canonical URL
 pointed at the Paragraph post. The first X Article this publication has sent.
 
+## Backfill note (2026-10-22)
+
+Days 285, 291, 292 and 294 shipped with no record here (`zao-newsletter-published-check`
+read 4 editions behind on 2026-10-22). Recovered the same way as the earlier backfills, by the
+board-burn lane for card 10490: the body from `paragraph.com/@thezao/<slug>.md`, the post id
+and publish time from `public.api.paragraph.com/api/v1/publications/DB7iU1HMVzTT9bI4ec6X/posts/slug/<slug>`.
+Both routes were checked against Day 236 first: same post id as this table, same body line for
+line. Day 291 went out at 20:07 ET on 18 Oct, so Paragraph's page shows 19 Oct (UTC). Days 276
+to 284 and 286 to 290 are not in this folder either; they are not in the year-of-the-zabal
+series the check reads, or were never published, and this note does not claim which.
+
 ## The record
 
 | File | Published | Day | Title | Post id |
@@ -103,6 +114,10 @@ pointed at the Paragraph post. The first X Article this publication has sent.
 | `2026-09-16-day-259.md` | 2026-09-16 | 259 | Year of the ZABAL - Day 259 | `5r1z6VkqvtK9Fz4saC00` |
 | `2026-09-17-day-260.md` | 2026-09-17 | 260 | Year of the ZABAL - Day 260 | `xhbNYMu1HV3h4q0MB1g3` |
 | `2026-09-20-day-263.md` | 2026-09-20 | 263 | Year of the ZABAL - Day 263: 13 days until ZAOstock | `sEEVjfXTNIFU6qKZuqsN` |
+| `2026-10-12-day-285.md` | 2026-10-12 | 285 | Year of the ZABAL - Day 285 | `q6topo228P3u2qMZ4eQz` |
+| `2026-10-18-day-291.md` | 2026-10-18 | 291 | Year of the ZABAL - Day 291 | `ctHGfHAI5T0bMIPVNPJP` |
+| `2026-10-19-day-292.md` | 2026-10-19 | 292 | Year of the ZABAL - Day 292 | `exbjQ7w53pSHvIh8ZXws` |
+| `2026-10-21-day-294.md` | 2026-10-21 | 294 | Year of the ZABAL - Day 294 | `dxmyiD4ddmGQCiRCLKBN` |
 
 Subtitles, cover images and live URLs:
 
@@ -125,6 +140,10 @@ Subtitles, cover images and live URLs:
 | 273 | One thing to do today: tap Going on the ZAOstock Facebook event and invite 3 people. Plus Tuesday in review, and 3 ways to be there. | https://paragraph.com/@thezao/year-of-the-zabal-day-273 |
 | 274 | Live on Star 97.7 this morning, the round 8 bounty is open, and ZAOstock is two days out. | https://paragraph.com/@thezao/year-of-the-zabal-day-274 |
 | 275 | ZAOstock is today, and you don't have to be in Maine. Host a watch party, even for one hour, and tell us which. | https://paragraph.com/@thezao/year-of-the-zabal-day-275 |
+| 285 | Two fractal groups tonight, 11 people. A second session runs Tuesday at noon Eastern. | https://paragraph.com/@thezao/year-of-the-zabal-day-285 |
+| 291 | Fractal 120 is tomorrow, Monday, October 19, at 6 PM Eastern in The ZAO Discord. Free, and first-timers are welcome. | https://paragraph.com/@thezao/year-of-the-zabal-day-291 |
+| 292 | This week in The ZAO: Fractal 120 tonight at 6 PM Eastern, and a WaveWarZ battle Sunday at 8 PM Eastern. | https://paragraph.com/@thezao/year-of-the-zabal-day-292 |
+| 294 | Three artists made something for me, and it all dropped on WaveZStation on Tuesday. | https://paragraph.com/@thezao/year-of-the-zabal-day-294 |
 
 Post ids are also in `automation/post-ids.json`, keyed by the file path here.
 
