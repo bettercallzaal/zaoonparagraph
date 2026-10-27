@@ -118,6 +118,8 @@ series the check reads, or were never published, and this note does not claim wh
 | `2026-10-18-day-291.md` | 2026-10-18 | 291 | Year of the ZABAL - Day 291 | `ctHGfHAI5T0bMIPVNPJP` |
 | `2026-10-19-day-292.md` | 2026-10-19 | 292 | Year of the ZABAL - Day 292 | `exbjQ7w53pSHvIh8ZXws` |
 | `2026-10-21-day-294.md` | 2026-10-21 | 294 | Year of the ZABAL - Day 294 | `dxmyiD4ddmGQCiRCLKBN` |
+| `2026-10-26-day-299.md` | 2026-10-26 | 299 | Year of the ZABAL - Day 299 | `roh5NGCEzKZ3P7lZrBcp` |
+| `2026-10-27-day-300.md` | 2026-10-27 | 300 | Year of the ZABAL - Day 300 | `IKqb5K5rrF8wyKRL7sgF` |
 
 Subtitles, cover images and live URLs:
 
@@ -144,6 +146,8 @@ Subtitles, cover images and live URLs:
 | 291 | Fractal 120 is tomorrow, Monday, October 19, at 6 PM Eastern in The ZAO Discord. Free, and first-timers are welcome. | https://paragraph.com/@thezao/year-of-the-zabal-day-291 |
 | 292 | This week in The ZAO: Fractal 120 tonight at 6 PM Eastern, and a WaveWarZ battle Sunday at 8 PM Eastern. | https://paragraph.com/@thezao/year-of-the-zabal-day-292 |
 | 294 | Three artists made something for me, and it all dropped on WaveZStation on Tuesday. | https://paragraph.com/@thezao/year-of-the-zabal-day-294 |
+| 299 | Fractal 121 is live tonight at 6 PM Eastern. And WaveWarZ just passed 1,000 SOL traded. | https://paragraph.com/@thezao/year-of-the-zabal-day-299 |
+| 300 | Four new songs went up on WaveZStation this week. Back any of them for whatever you want, from $1. | https://paragraph.com/@thezao/year-of-the-zabal-day-300 |
 
 Post ids are also in `automation/post-ids.json`, keyed by the file path here.
 
