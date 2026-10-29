@@ -9,7 +9,7 @@ The edition itself is written and fact-checked outside the agent, then entered i
 - an X article, posted by Paragraph to @bettercallzaal (Day 299 and Day 300 both went out this way);
 - a LinkedIn post, drafted by the agent. Posting it through the agent failed on 2026-10-26 and 2026-10-27 with "account couldn't be selected", even after reconnecting, so it was posted by hand.
 
-The full paragraph.com/@thezao/<slug> link goes in the body of every social version, LinkedIn included.
+The full paragraph.com/@thezao/<slug> link goes in the body of every social version except LinkedIn. Since 2026-10-29 (Zaal, option B) LinkedIn carries its links in the first comment, not the body. See docs/paragraph-platform-surfaces.md.
 
 ## Rules
 

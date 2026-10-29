@@ -120,6 +120,8 @@ series the check reads, or were never published, and this note does not claim wh
 | `2026-10-21-day-294.md` | 2026-10-21 | 294 | Year of the ZABAL - Day 294 | `dxmyiD4ddmGQCiRCLKBN` |
 | `2026-10-26-day-299.md` | 2026-10-26 | 299 | Year of the ZABAL - Day 299 | `roh5NGCEzKZ3P7lZrBcp` |
 | `2026-10-27-day-300.md` | 2026-10-27 | 300 | Year of the ZABAL - Day 300 | `IKqb5K5rrF8wyKRL7sgF` |
+| `2026-10-28-day-301.md` | 2026-10-28 | 301 | Year of the ZABAL - Day 301 | `taHZgG3or6T0hg8Kvo2x` |
+| `2026-10-29-day-302.md` | 2026-10-29 | 302 | Year of the ZABAL - Day 302 | `bMEwOOhvPdiRrxDNHJ9b` |
 
 Subtitles, cover images and live URLs:
 
@@ -148,6 +150,8 @@ Subtitles, cover images and live URLs:
 | 294 | Three artists made something for me, and it all dropped on WaveZStation on Tuesday. | https://paragraph.com/@thezao/year-of-the-zabal-day-294 |
 | 299 | Fractal 121 is live tonight at 6 PM Eastern. And WaveWarZ just passed 1,000 SOL traded. | https://paragraph.com/@thezao/year-of-the-zabal-day-299 |
 | 300 | Four new songs went up on WaveZStation this week. Back any of them for whatever you want, from $1. | https://paragraph.com/@thezao/year-of-the-zabal-day-300 |
+| 301 | Builders day. My agents restarted twice before sunrise and a check I built got blocked. | https://paragraph.com/@thezao/year-of-the-zabal-day-301 |
+| 302 | Artist day. Meet Legit, whose Clearer Picture went up on WaveZStation last week. | https://paragraph.com/@thezao/year-of-the-zabal-day-302 |
 
 Post ids are also in `automation/post-ids.json`, keyed by the file path here.
 
