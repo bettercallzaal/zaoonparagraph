@@ -25,8 +25,11 @@ Nothing here was run against the publication except where it says so.
 - **LinkedIn link placement.** When a LinkedIn post is made from a Paragraph article,
   Paragraph puts the article link in the first comment, not the post body, because
   LinkedIn shows posts with links to fewer people.
-  - Our standing rule is that every social carries the full link in the text. That
-    rule conflicts with this default, and Zaal has not ruled on it.
+  - **Zaal ruled on 2026-10-29 (option B):** every LinkedIn post carries its links in
+    the first comment, not the body. Other platforms keep the link in the body.
+  - The content API has no field for the first comment. Its LinkedIn body is `text`
+    only. So the first comment is added in the Paragraph app before Publish, or on
+    LinkedIn right after.
 
 ## Sources
 
@@ -190,7 +193,7 @@ with Schedule approves it.
 1. `create-post-content-bucket` on the published post.
 2. `create-content` with that `bucketId`:
    - `x_article`: `body.title` is the headline. The `canonicalUrl` must also appear as a markdown link inside the body.
-   - `linkedin`: `text` carries the full paragraph.com link, per our rule.
+   - `linkedin`: `text` has NO link. It ends with a line pointing to the first comment, and the links go in that comment.
    - `tweet`: the X post, with the full link.
    - The Farcaster cast, the group chats, Telegram, Discord and Facebook still come from the `/socials` clipboard.
 3. Zaal opens app.paragraph.com, then Content, then the post's row. There he reviews
@@ -209,7 +212,7 @@ All three are drafts.
 
 ## Open questions for Zaal
 
-- **LinkedIn link:** in the body, which is our rule, or in the first comment, which is
-  Paragraph's default for posts made from an article?
+- **LinkedIn first comment:** does Paragraph add the article-link comment itself to an
+  API-made draft grouped with the post? Untested. Check the draft in the app.
 - **CLI:** install it, using `PARAGRAPH_API_KEY` per command so no key is stored on
   disk? Or keep the MCP only?
