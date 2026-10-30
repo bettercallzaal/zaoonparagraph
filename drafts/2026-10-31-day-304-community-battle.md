@@ -8,9 +8,9 @@ year of the zabal day 304
 
 Today is WaveWarZ day.
 
-## The community battle
+## Two crews
 
-On Sunday night, October 18, two crews met in a WaveWarZ community battle: WaveWarriorZ against MB Wif HitMakerZ. About 14 SOL traded across three rounds, and WaveWarriorZ took all three.
+On Sunday night, October 18, two crews met in a WaveWarZ battle: WaveWarriorZ against MB Wif HitMakerZ. About 14 SOL traded across three rounds, and WaveWarriorZ took all three.
 
 ## How it went
 
