@@ -22,7 +22,7 @@ Use `mcp__claude-in-chrome__*` on Zaal's logged-in Chrome, in a new tab.
 3. **Check it.** Screenshot and read the label before downloading.
 4. **Download one page (proved).** Share, Download, PNG, then **This page (1)**. The panel defaults to **All**, so zoom in and confirm the selection before pressing Download.
 5. **Check the file.** Look in `~/Downloads` for a file newer than step 4, and open it to read the number. Canva's "Completed" toast does not prove a file landed.
-6. **Put it on the draft (NOT proved).** Zaal's tap, or cite his word for this edition before doing it. Open the draft and locate the cover's file input with `find`. Pass the path to `mcp__claude-in-chrome__file_upload`. Do not click Upload, because that opens a native picker you cannot see. Reload and confirm the cover persisted.
+6. **Put it on the draft (NOT proved).** Only after Zaal's tap, or his word for this edition: open the draft and locate the cover's file input with `find`. Pass the path to `mcp__claude-in-chrome__file_upload`. Do not click Upload, because that opens a native picker you cannot see. Reload and confirm the cover persisted.
 7. **Close your tab.**
 
 ## What still needs Zaal
