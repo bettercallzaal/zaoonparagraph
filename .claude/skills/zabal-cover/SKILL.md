@@ -10,7 +10,7 @@ First run: Day 304, 2026-10-31, on Zaal's ask. Everything below is marked by whe
 ## Inputs
 
 - **Day number:** the day of the year of the edition's date, not today's: `date -j -f %Y-%m-%d <edition-date> +%-j`. An edition finalised the evening before carries tomorrow's number. Never typed from memory.
-- **Design:** ZABAL Daily Designs (11 pages, 900 x 600). Zaal changed sharing to "can view" on 2026-10-31 (vault `decisions/seat-2026-10-31-canva-share-link.md`), so the cover edit runs under his own Canva login in his Chrome, not through a link. Whether the old link now opens view-only was not confirmed: a logged-out test hit Canva's bot wall. Treat any share link as a secret. If one is needed it lives only in `~/.zao/private/canva-zabal.env`, chmod 600, saved by Zaal with `zao-env save canva-zabal` under the key `CANVA_ZABAL_DESIGN_URL`. Never write it in this repo, a PR, a status file or a message.
+- **Design:** ZABAL Daily Designs (11 pages, 900 x 600). Zaal changed sharing to "can view" on 2026-10-31, so the cover edit runs under his own Canva login in his Chrome, not through a link. Whether the old link now opens view-only was not confirmed: a logged-out test hit Canva's bot wall. Treat any share link as a secret. If one is needed, Zaal saves it with `zao-env save canva-zabal` under the key `CANVA_ZABAL_DESIGN_URL`. Never write it in this repo, a PR, a status file or a message.
 - **Draft:** the edition's editor link on app.paragraph.com, not paragraph.com.
 
 ## Steps
