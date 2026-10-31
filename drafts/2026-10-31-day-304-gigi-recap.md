@@ -20,7 +20,7 @@ She joined X in November 2025 to keep an archive of the songs and dances she lov
 
 For a long time she stayed a listener. Hurricane kept calling her up to take a mic, and she kept saying no, because she could hear the rhythm the speakers had and did not know where she fit.
 
-When the AI tournament started she decided she should judge. She does not play an instrument, but she was a dancer for years and she knows how a track feels. Her first battle as a judge was Canon against Geek Myth, and she told them one of the songs ran too long.
+When the AI tournament started she decided she should judge. She does not play an instrument, but she was a dancer for years and she knows how a track feels. In one of her first battles as a judge she told the artists one of the songs ran too long.
 
 They pushed back, and a couple of Spaces later they were still talking about it. That is when she realized people were really listening to her.
 
