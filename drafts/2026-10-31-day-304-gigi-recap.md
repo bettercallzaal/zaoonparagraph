@@ -42,7 +42,7 @@ Independent artists mostly do everything alone. Gigi shows what one friend who s
 
 I asked what keeps her coming back, and she said "the music and humor mainly and the people of course."
 
-The full conversation is about 38 minutes: [https://www.youtube.com/watch?v=YdR6G8uex00](https://www.youtube.com/watch?v=YdR6G8uex00)
+The full conversation is about 38 minutes: [https://bczyapz.com/22](https://bczyapz.com/22)
 
 Find Gigi on X at [@gigi_gw_](https://x.com/gigi_gw_).
 
