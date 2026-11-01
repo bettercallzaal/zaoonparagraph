@@ -4,46 +4,26 @@ zm
 
 year of the zabal day 305
 
-tomorrow is zao fractal one twenty two.
+Tomorrow is ZAO Fractal 122, Monday, November 2 at 6 PM Eastern in The ZAO Discord. It is free and anyone can come.
 
-monday november second. six pm eastern. in the zao discord.
+## Get ready
 
-free. anyone can come.
+Every Monday we meet, each of us shares what we did for The ZAO that week, and our group ranks it together. So the only prep is one question: what did you do for The ZAO this week?
 
-the only prep is one question.
+Write it down before you join, even if it feels small. Yesterday's edition was about Gigi, who does not play an instrument. Her feedback on battles kept coming up in later Spaces. You do not have to be a musician to have something to share.
 
-what did you do for the zao this week
+## When to come
 
-write it down before you join. even if it feels small.
+Monday, November 2, 6 PM Eastern: Fractal 122. Join here: https://discord.thezao.com
 
-every monday we meet. each of us shares what we did. our group ranks it together.
+RSVP: https://luma.com/yk6gei6f
 
-yesterday i wrote about gigi. she does not play an instrument. she judged anyway. her feedback kept coming up in later spaces.
+Tuesday, November 3, noon Eastern: Session 2, if Monday does not work for you. RSVP: https://luma.com/76eims17
 
-you do not have to be a musician to have something to share.
+US clocks went back last night. If you are outside the US, 6 PM Eastern is now 23:00 UTC, an hour later than last week.
 
-join here
+Gigi's story: https://paragraph.com/@thezao/year-of-the-zabal-day-304
 
-https://discord.thezao.com
-
-rsvp
-
-https://luma.com/yk6gei6f
-
-monday does not work for you
-
-session two is tuesday november third. noon eastern.
-
-https://luma.com/76eims17
-
-us clocks went back last night. six pm eastern is now eleven pm utc. that is an hour later than last week if you are outside the us.
-
-gigi's story
-
-https://paragraph.com/@thezao/year-of-the-zabal-day-304
-
-how the zao fractal works
-
-https://fractal.thezao.com
+How The ZAO Fractal works: https://fractal.thezao.com
 
 - BetterCallZaal on behalf of the ZABAL Team
