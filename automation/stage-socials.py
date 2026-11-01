@@ -27,12 +27,15 @@ def die(msg, code=2):
 def env_key():
     key = os.environ.get("PARAGRAPH_API_KEY")
     if key: return key
-    for p in (os.path.join(ROOT, ".env"), os.path.expanduser("~/Documents/repos/zaoonparagraph/.env")):
+    # A worktree has no .env of its own. PARAGRAPH_ENV_FILE points at one, so no machine's
+    # home directory has to sit in this public repo.
+    extra = os.environ.get("PARAGRAPH_ENV_FILE")
+    for p in [os.path.join(ROOT, ".env")] + ([os.path.expanduser(extra)] if extra else []):
         if os.path.isfile(p):
             for line in open(p):
                 m = re.match(r'\s*(?:export\s+)?PARAGRAPH_API_KEY\s*=\s*"?([^"\s]+)"?', line)
                 if m: return m.group(1)
-    die("CANNOT RUN: no PARAGRAPH_API_KEY in the environment or in .env")
+    die("CANNOT RUN: no PARAGRAPH_API_KEY in the environment or in .env. From a worktree, set PARAGRAPH_ENV_FILE to a .env that has it.")
 
 def get_post(pid):
     # A bare urllib User-Agent gets a 403 from this API where curl does not, so it is set
@@ -59,6 +62,15 @@ def sections(md):
 
 URL_RE = re.compile(r"https?://\S+")
 TRAILING = ".,!?;:)]}'\""
+# What counts as a link in a LinkedIn body. LinkedIn links a bare domain too, so a scheme is
+# not required. Anything with a path counts; with no path, only common endings do, so a
+# sentence that runs on after a full stop does not. A brand like Cal.com is refused as well.
+ANY_LINK_RE = re.compile(
+    r"(?:https?://|www\.)\S+"
+    r"|\b[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}/\S*"
+    r"|\b[\w-]+(?:\.[\w-]+)*\.(?:com|org|net|io|xyz|co|fm|app|ai|gg|me|tv)\b",
+    re.I,
+)
 
 def x_length(body):
     """Length as X counts it: every link is 23, everything else is itself.
@@ -129,7 +141,9 @@ def main():
             if on_x > FIREFLY_CAP:
                 die("REFUSED: Firefly is %d characters on X, over the %d cap" % (on_x, FIREFLY_CAP), 1)
             # Zaal, 2026-10-13: edition X posts go out from Paragraph only. So this one is
-            # Farcaster only in Firefly, or the same post lands on X twice.
+            # Farcaster only in Firefly, or the same post lands on X twice. The 280 cap above
+            # stays on purpose: one wrong toggle in Firefly sends this text to X too, so it
+            # has to still fit there. Lifting it is Zaal's call.
             name += " - FARCASTER ONLY in Firefly, %d characters raw, %d on X where every link counts as 23" % (len(body), on_x)
         elif n == 2:                                    # X group chat: no link by design
             pass
@@ -145,7 +159,7 @@ def main():
         if suffix == ".linkedin.md":
             # Zaal, 2026-10-29, option B: LinkedIn carries its links in the first comment,
             # never in the body.
-            if URL_RE.search(b):
+            if ANY_LINK_RE.search(b):
                 die("REFUSED: the LinkedIn draft has a link in its body. Links go in the first comment.", 1)
             blocks.append((label, b.rstrip()))
             blocks.append(("7b. LinkedIn first comment", url))
