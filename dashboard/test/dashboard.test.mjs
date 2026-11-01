@@ -302,7 +302,7 @@ test('the voice check runs the real gate and reports it', async () => {
   assert.equal(bad.status, 200);
   const failed = await runJob(cookie, base, 'voice', { path: f.path, mode: 'daily' });
   assert.equal(failed.state, 'failed');
-  assert.match(failed.output, /FAIL {2}zero commas/);
+  assert.match(failed.output, /FAIL {2}zero exclamation marks/);
   const back = await (await call(cookie, base, '/api/file?path=drafts/2026-07-19-day-200.md')).json();
   assert.equal((await call(cookie, base, '/api/file', 'PUT', { path: f.path, content: GOOD, hash: back.hash })).status, 200);
 });
