@@ -137,6 +137,24 @@ PY
   echo
 done
 
+echo "### social fact check self-test ###"
+echo
+if python3 -I "$SCRIPT_DIR/test-check-social-facts.py"; then
+  echo
+else
+  FAIL=1
+  echo
+fi
+
+echo "### record edition self-test ###"
+echo
+if python3 -I "$SCRIPT_DIR/test-record-edition.py"; then
+  echo
+else
+  FAIL=1
+  echo
+fi
+
 echo "### voice gate self-test ###"
 echo
 if "$SCRIPT_DIR/test-check-voice.sh"; then

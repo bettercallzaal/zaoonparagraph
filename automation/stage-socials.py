@@ -2,7 +2,9 @@
 """stage-socials.py - the moment an edition publishes, turn the drafted socials into one
 clipboard page with the real URL in them.
 
-    python3 automation/stage-socials.py <post-id> [--dry-run]
+    python3 automation/stage-socials.py <post-id> [--dry-run | --json]
+
+--json prints the checked blocks for the dashboard and writes no clipboard page.
 
 Why this exists. The socials are written before the edition publishes, so they cannot carry
 its URL, and a slot saying "PUT THE URL HERE" inside a block Zaal pastes ends up pasted
@@ -14,7 +16,7 @@ not published yet. One command between "published" and "ready to post".
 Exit 0 the page is written. Exit 1 the post is not ready or a rule did not apply.
 Exit 2 the check could not run.
 """
-import json, os, re, subprocess, sys, urllib.request, html, glob
+import json, os, re, subprocess, sys, urllib.request, html, glob, importlib.util
 
 API = "https://public.api.paragraph.com/api/v1/posts/"
 PUB = "https://paragraph.com/@thezao/"
@@ -40,7 +42,9 @@ def env_key():
 def get_post(pid):
     # A bare urllib User-Agent gets a 403 from this API where curl does not, so it is set
     # explicitly. Measured 2026-09-25: Python-urllib/3.x 403, this string 200.
-    req = urllib.request.Request(API + pid, headers={
+    # includeContent=true returns the body, which the fact check needs. Without it
+    # this API answers with the title and status only (measured 2026-11-01).
+    req = urllib.request.Request(API + pid + "?includeContent=true", headers={
         "Authorization": "Bearer " + env_key(),
         "User-Agent": "zaoonparagraph-stage-socials/1.0",
         "Accept": "application/json",
@@ -109,7 +113,7 @@ def draft_block(md):
     return m.group(1).strip() if m else None
 
 def main():
-    if len(sys.argv) < 2: die("usage: stage-socials.py <post-id> [--dry-run]")
+    if len(sys.argv) < 2: die("usage: stage-socials.py <post-id> [--dry-run | --json]")
     pid, dry = sys.argv[1], "--dry-run" in sys.argv[2:]
     p = get_post(pid)
     if not p.get("id"): die("REFUSED: no post %s. A deleted draft answers with nulls." % pid, 1)
@@ -169,6 +173,24 @@ def main():
     for name, body in blocks:
         if re.search(r'\[(FILL|CUT|CHECK|TODO)', body) or "—" in body:
             die("REFUSED: %s carries a slot or an em dash" % name, 1)
+
+    # Every number, handle, quote and link in a social must be in the live edition.
+    # On 2026-10-31 an agent-made X post misdated a quote; nothing caught it.
+    edition_md = p.get("markdown") or ""
+    if not edition_md.strip():
+        die("CANNOT RUN: the API returned no body for %s, so the fact check cannot run" % pid)
+    fspec = importlib.util.spec_from_file_location(
+        "social_facts", os.path.join(os.path.dirname(os.path.abspath(__file__)), "check-social-facts.py"))
+    social_facts = importlib.util.module_from_spec(fspec); fspec.loader.exec_module(social_facts)
+    checked, missing = social_facts.check(title + "\n" + edition_md, blocks)
+    if checked == 0:
+        die("CANNOT RUN: the fact check found no facts in the socials, so it checked nothing")
+    if missing:
+        die("REFUSED: the fact check failed\n  " + "\n  ".join(missing), 1)
+
+    if "--json" in sys.argv[2:]:
+        print(json.dumps({"title": title, "url": url, "blocks": [{"name": n, "body": b} for n, b in blocks]}))
+        return
 
     if dry:
         for name, body in blocks:

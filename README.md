@@ -54,6 +54,14 @@ What each part is for now:
 The rest of the bash commands below are documented as that fallback, not as the
 daily habit.
 
+## The desk: the terminal jobs on one page
+
+`dashboard/` is an owner-only page over the scripts below: see drafts and published days,
+edit, preview, run the checks, attach or generate the cover, push, schedule or publish, record
+the day, stage socials, read analytics, save to GitHub. It spawns the same scripts and adds no
+dependency. Dry run unless `DASHBOARD_LIVE=1`. Start it with `node dashboard/server.mjs`, and
+read [dashboard/README.md](dashboard/README.md) first.
+
 ## Stack
 
 - Shell scripts (bash 4+) for automation - no npm, no build
@@ -118,6 +126,12 @@ automation/set-thumbnail.sh <post-id> <raw-github-url>
 # Move a published edition from drafts/ to published/ and sync post IDs
 automation/archive-issue.sh drafts/<filename>
 
+# Put a live edition in the record: file, post id, both README tables. --dry-run writes nothing.
+python3 automation/record-edition.py <post-id> [--dry-run]
+
+# Publish, schedule, unschedule or test-email one post. --dry-run prints the request.
+automation/publish-post.sh <post-id> --publish|--schedule <unix-ms>|--unschedule|--test-email [--newsletter] [--dry-run]
+
 # Full health check: voice on queued drafts, links everywhere, tracked post id
 # on every published edition. Nothing to check counts as a failure.
 automation/test-all.sh
@@ -160,7 +174,7 @@ See `research/2026-07-10-headless-paragraph-experiment.md` for a working proof t
 
 - **Paragraph API key**: NEVER commit it. The `.env` file must stay gitignored. Keys are injected at runtime only.
 - **Voice checks**: every issue opens with "zm", no emojis, no em dashes, no exclamation marks in a daily, single signoff. Since 2026-11-01 the daily default is the recent style, with sentence case and commas; `--strict` checks the old all-lowercase, zero-comma style. The scripts enforce this - they refuse to push on voice failure unless `--force` is passed.
-- **Publishing is gated**: create-draft.sh pushes to Paragraph as a draft (never published). Actual publication happens in Paragraph's UI only - this repo has zero auto-publish.
+- **Publishing is gated**: create-draft.sh pushes to Paragraph as a draft (never published). The only script that can publish is `automation/publish-post.sh`: it needs an action flag and `CONFIRM_POST_ID`, and the desk puts a typed confirm in front of it. Nothing in this repo publishes on its own.
 - **Post ID tracking**: automation/post-ids.json tracks which drafts map to which Paragraph post IDs, so `update-draft.sh` can edit in place without duplicates. Keep it in sync when publishing or archiving.
 
 ## Workflow example (the bash fallback, not the current habit)
