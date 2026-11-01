@@ -57,16 +57,16 @@ sys.argv = ["stage-socials.py", "madeupid", "--dry-run"]
 stage.main()
 """
 
-def edition(root, firefly_body):
+def edition(root, firefly_body, linkedin_body="ZM. text."):
     d = os.path.join(root, "drafts", "socials"); os.makedirs(d)
     chans = ["## 1. Firefly\n\n%s\n" % firefly_body] + ["## %d. Channel\n\nZM. text.\n" % n for n in range(2, 7)]
     open(os.path.join(d, "2026-01-01-day-999.socials.md"), "w").write("# t\n\n" + "\n".join(chans))
-    for suf in (".linkedin.md", ".x-article.md"):
-        open(os.path.join(d, "2026-01-01-day-999" + suf), "w").write("# t\n\n## Draft\n\nZM. text.\n")
+    for suf, body in ((".linkedin.md", linkedin_body), (".x-article.md", "ZM. text.")):
+        open(os.path.join(d, "2026-01-01-day-999" + suf), "w").write("# t\n\n## Draft\n\n%s\n" % body)
 
-def run_main(firefly_body, status="published"):
+def run_main(firefly_body, status="published", linkedin_body="ZM. text."):
     with tempfile.TemporaryDirectory() as root:
-        edition(root, firefly_body)
+        edition(root, firefly_body, linkedin_body)
         r = subprocess.run([sys.executable, "-c", RUNNER % (SCRIPT, root, status)],
                            capture_output=True, text=True)
     return r.returncode, r.stdout, r.stderr
@@ -96,6 +96,58 @@ def part2():
     check("a draft is refused, exit", code, 1)
     check("and stderr says REFUSED", "REFUSED" in err, True)
 
+def row(out, name):
+    return next((l for l in out.splitlines() if l.startswith(name)), "")
+
+def part2b():
+    print("-- part 2b: Zaal's rulings, in the real main()")
+    code, out, err = run_main("ZM. short post.")
+    check("Firefly is labelled Farcaster only", "FARCASTER ONLY" in row(out, "Firefly"), True)
+    check("the LinkedIn body has no edition link", "link=False" in row(out, "7. LinkedIn"), True)
+    check("the first comment carries it", "link=True" in row(out, "7b. LinkedIn first comment"), True)
+    check("the X Article keeps its link", "link=True" in row(out, "8. X Article"), True)
+    code, out, err = run_main("ZM. short post.", linkedin_body="ZM. read it https://example.com/a")
+    check("a link in the LinkedIn body is refused, exit", code, 1)
+    check("and stderr says first comment", "first comment" in err, True)
+
+def key_in(root, env):
+    """env_key() with this ROOT and environment; the key, or None if it refused."""
+    saved_root, saved_env = stage.ROOT, dict(os.environ)
+    stage.ROOT = root
+    for name in ("PARAGRAPH_API_KEY", "PARAGRAPH_ENV_FILE"):
+        os.environ.pop(name, None)
+    os.environ.update(env)
+    real_stderr, sys.stderr = sys.stderr, open(os.devnull, "w")
+    try:
+        return stage.env_key()
+    except SystemExit:
+        return None
+    finally:
+        sys.stderr.close(); sys.stderr = real_stderr
+        stage.ROOT = saved_root
+        os.environ.clear(); os.environ.update(saved_env)
+
+def part2c():
+    print("-- part 2c: where the key comes from, and what counts as a LinkedIn link")
+    with tempfile.TemporaryDirectory() as root, tempfile.TemporaryDirectory() as other:
+        check("nothing set, it refuses", key_in(root, {}), None)
+        check("the environment wins", key_in(root, {"PARAGRAPH_API_KEY": "fromenv"}), "fromenv")
+        extra = os.path.join(other, "some.env")
+        open(extra, "w").write('export PARAGRAPH_API_KEY="fromfile"\n')
+        check("PARAGRAPH_ENV_FILE is read", key_in(root, {"PARAGRAPH_ENV_FILE": extra}), "fromfile")
+        check("a wrong PARAGRAPH_ENV_FILE refuses",
+              key_in(root, {"PARAGRAPH_ENV_FILE": os.path.join(other, "missing.env")}), None)
+        open(os.path.join(root, ".env"), "w").write("PARAGRAPH_API_KEY=fromrepo\n")
+        check("the repo .env is read", key_in(root, {}), "fromrepo")
+    for bad in ("read it at paragraph.com/@thezao/day-1", "see thezao.com", "www.thezao.com",
+                "https://thezao.com", "go to wavewarz.info/battles."):
+        code, out, err = run_main("ZM. short post.", linkedin_body="ZM. " + bad)
+        check("refused in LinkedIn: %s" % bad, code, 1)
+    for fine in ("We shipped. Then we rested.", "It ended.Then it began", "Version 3.5 of 10",
+                 "and/or that"):
+        code, out, err = run_main("ZM. short post.", linkedin_body="ZM. " + fine)
+        check("allowed in LinkedIn: %s" % fine, code, 0)
+
 def part3():
     print("-- part 3: every socials file in the repo")
     files = sorted(glob.glob(os.path.join(stage.ROOT, "drafts/socials/*-day-*.socials.md")))
@@ -113,6 +165,6 @@ def part3():
     print("%d files checked" % len(files))
 
 if __name__ == "__main__":
-    part1(); part2(); part3()
+    part1(); part2(); part2b(); part2c(); part3()
     print("\n%d failed: %s" % (len(FAILS), FAILS) if FAILS else "\nall passed")
     sys.exit(1 if FAILS else 0)
