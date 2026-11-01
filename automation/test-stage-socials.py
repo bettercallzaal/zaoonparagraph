@@ -52,7 +52,7 @@ spec = importlib.util.spec_from_file_location("stage", %r)
 stage = importlib.util.module_from_spec(spec); spec.loader.exec_module(stage)
 stage.ROOT = %r
 stage.get_post = lambda pid: {"id": pid, "status": %r, "slug": "a-made-up-edition",
-                              "title": "Year of the ZABAL - Day 999"}
+                              "title": "Year of the ZABAL - Day 999", "markdown": %r}
 sys.argv = ["stage-socials.py", "madeupid", "--dry-run"]
 stage.main()
 """
@@ -64,10 +64,14 @@ def edition(root, firefly_body, linkedin_body="ZM. text."):
     for suf, body in ((".linkedin.md", linkedin_body), (".x-article.md", "ZM. text.")):
         open(os.path.join(d, "2026-01-01-day-999" + suf), "w").write("# t\n\n## Draft\n\n%s\n" % body)
 
-def run_main(firefly_body, status="published", linkedin_body="ZM. text."):
+# The made-up edition carries every fact the made-up channels use, so the fact check
+# passes unless a case means it to fail.
+EDITION_MD = "zm\n\nhttps://zaostock.com/live and version 3.5 of 10\n"
+
+def run_main(firefly_body, status="published", linkedin_body="ZM. text.", markdown=EDITION_MD):
     with tempfile.TemporaryDirectory() as root:
         edition(root, firefly_body, linkedin_body)
-        r = subprocess.run([sys.executable, "-c", RUNNER % (SCRIPT, root, status)],
+        r = subprocess.run([sys.executable, "-c", RUNNER % (SCRIPT, root, status, markdown)],
                            capture_output=True, text=True)
     return r.returncode, r.stdout, r.stderr
 
@@ -148,6 +152,18 @@ def part2c():
         code, out, err = run_main("ZM. short post.", linkedin_body="ZM. " + fine)
         check("allowed in LinkedIn: %s" % fine, code, 0)
 
+def part2d():
+    print("-- part 2d: the fact check, in the real main()")
+    code, out, err = run_main("ZM. 200 builders shipped.")
+    check("an invented number is refused, exit", code, 1)
+    check("and stderr names it", "'200' is not in the edition" in err, True)
+    code, out, err = run_main("ZM. ask @nobody_here")
+    check("an unknown handle is refused, exit", code, 1)
+    code, out, err = run_main("ZM. short post.", markdown="")
+    check("no edition body cannot run, exit", code, 2)
+    code, out, err = run_main("ZM. 10 of them.")
+    check("a number that is in the edition stages, exit", code, 0)
+
 def part3():
     print("-- part 3: every socials file in the repo")
     files = sorted(glob.glob(os.path.join(stage.ROOT, "drafts/socials/*-day-*.socials.md")))
@@ -165,6 +181,6 @@ def part3():
     print("%d files checked" % len(files))
 
 if __name__ == "__main__":
-    part1(); part2(); part2b(); part2c(); part3()
+    part1(); part2(); part2b(); part2c(); part2d(); part3()
     print("\n%d failed: %s" % (len(FAILS), FAILS) if FAILS else "\nall passed")
     sys.exit(1 if FAILS else 0)
