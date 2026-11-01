@@ -102,7 +102,7 @@ def row(out, name):
 def part2b():
     print("-- part 2b: Zaal's rulings, in the real main()")
     code, out, err = run_main("ZM. short post.")
-    check("Firefly is labelled Farcaster only", "FARCASTER ONLY" in row(out, "1. "), True)
+    check("Firefly is labelled Farcaster only", "FARCASTER ONLY" in row(out, "Firefly"), True)
     check("the LinkedIn body has no edition link", "link=False" in row(out, "7. LinkedIn"), True)
     check("the first comment carries it", "link=True" in row(out, "7b. LinkedIn first comment"), True)
     check("the X Article keeps its link", "link=True" in row(out, "8. X Article"), True)
