@@ -42,4 +42,8 @@ gigi's story
 
 https://paragraph.com/@thezao/year-of-the-zabal-day-304
 
+how the zao fractal works
+
+https://fractal.thezao.com
+
 - BetterCallZaal on behalf of the ZABAL Team
