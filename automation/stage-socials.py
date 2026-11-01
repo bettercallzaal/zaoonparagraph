@@ -27,7 +27,7 @@ def die(msg, code=2):
 def env_key():
     key = os.environ.get("PARAGRAPH_API_KEY")
     if key: return key
-    for p in (os.path.join(ROOT, ".env"), os.path.expanduser("~/Desktop/repos/zaoonparagraph/.env")):
+    for p in (os.path.join(ROOT, ".env"), os.path.expanduser("~/Documents/repos/zaoonparagraph/.env")):
         if os.path.isfile(p):
             for line in open(p):
                 m = re.match(r'\s*(?:export\s+)?PARAGRAPH_API_KEY\s*=\s*"?([^"\s]+)"?', line)
@@ -128,7 +128,9 @@ def main():
             body, on_x = firefly(body, url)
             if on_x > FIREFLY_CAP:
                 die("REFUSED: Firefly is %d characters on X, over the %d cap" % (on_x, FIREFLY_CAP), 1)
-            name += " - %d characters raw, %d on X where every link counts as 23" % (len(body), on_x)
+            # Zaal, 2026-10-13: edition X posts go out from Paragraph only. So this one is
+            # Farcaster only in Firefly, or the same post lands on X twice.
+            name += " - FARCASTER ONLY in Firefly, %d characters raw, %d on X where every link counts as 23" % (len(body), on_x)
         elif n == 2:                                    # X group chat: no link by design
             pass
         else:                                           # the rest end on the edition link
@@ -140,7 +142,15 @@ def main():
         if not os.path.isfile(path): die("CANNOT RUN: missing %s" % path)
         b = draft_block(open(path).read())
         if not b: die("REFUSED: no '## Draft' block in %s" % path, 1)
-        blocks.append((label, b.rstrip() + "\n\n" + url))
+        if suffix == ".linkedin.md":
+            # Zaal, 2026-10-29, option B: LinkedIn carries its links in the first comment,
+            # never in the body.
+            if URL_RE.search(b):
+                die("REFUSED: the LinkedIn draft has a link in its body. Links go in the first comment.", 1)
+            blocks.append((label, b.rstrip()))
+            blocks.append(("7b. LinkedIn first comment", url))
+        else:
+            blocks.append((label, b.rstrip() + "\n\n" + url))
 
     for name, body in blocks:
         if re.search(r'\[(FILL|CUT|CHECK|TODO)', body) or "—" in body:

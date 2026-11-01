@@ -57,16 +57,16 @@ sys.argv = ["stage-socials.py", "madeupid", "--dry-run"]
 stage.main()
 """
 
-def edition(root, firefly_body):
+def edition(root, firefly_body, linkedin_body="ZM. text."):
     d = os.path.join(root, "drafts", "socials"); os.makedirs(d)
     chans = ["## 1. Firefly\n\n%s\n" % firefly_body] + ["## %d. Channel\n\nZM. text.\n" % n for n in range(2, 7)]
     open(os.path.join(d, "2026-01-01-day-999.socials.md"), "w").write("# t\n\n" + "\n".join(chans))
-    for suf in (".linkedin.md", ".x-article.md"):
-        open(os.path.join(d, "2026-01-01-day-999" + suf), "w").write("# t\n\n## Draft\n\nZM. text.\n")
+    for suf, body in ((".linkedin.md", linkedin_body), (".x-article.md", "ZM. text.")):
+        open(os.path.join(d, "2026-01-01-day-999" + suf), "w").write("# t\n\n## Draft\n\n%s\n" % body)
 
-def run_main(firefly_body, status="published"):
+def run_main(firefly_body, status="published", linkedin_body="ZM. text."):
     with tempfile.TemporaryDirectory() as root:
-        edition(root, firefly_body)
+        edition(root, firefly_body, linkedin_body)
         r = subprocess.run([sys.executable, "-c", RUNNER % (SCRIPT, root, status)],
                            capture_output=True, text=True)
     return r.returncode, r.stdout, r.stderr
@@ -96,6 +96,20 @@ def part2():
     check("a draft is refused, exit", code, 1)
     check("and stderr says REFUSED", "REFUSED" in err, True)
 
+def row(out, name):
+    return next((l for l in out.splitlines() if l.startswith(name)), "")
+
+def part2b():
+    print("-- part 2b: Zaal's rulings, in the real main()")
+    code, out, err = run_main("ZM. short post.")
+    check("Firefly is labelled Farcaster only", "FARCASTER ONLY" in row(out, "1. "), True)
+    check("the LinkedIn body has no edition link", "link=False" in row(out, "7. LinkedIn"), True)
+    check("the first comment carries it", "link=True" in row(out, "7b. LinkedIn first comment"), True)
+    check("the X Article keeps its link", "link=True" in row(out, "8. X Article"), True)
+    code, out, err = run_main("ZM. short post.", linkedin_body="ZM. read it https://example.com/a")
+    check("a link in the LinkedIn body is refused, exit", code, 1)
+    check("and stderr says first comment", "first comment" in err, True)
+
 def part3():
     print("-- part 3: every socials file in the repo")
     files = sorted(glob.glob(os.path.join(stage.ROOT, "drafts/socials/*-day-*.socials.md")))
@@ -113,6 +127,6 @@ def part3():
     print("%d files checked" % len(files))
 
 if __name__ == "__main__":
-    part1(); part2(); part3()
+    part1(); part2(); part2b(); part3()
     print("\n%d failed: %s" % (len(FAILS), FAILS) if FAILS else "\nall passed")
     sys.exit(1 if FAILS else 0)
