@@ -137,6 +137,15 @@ PY
   echo
 done
 
+echo "### voice gate self-test ###"
+echo
+if "$SCRIPT_DIR/test-check-voice.sh"; then
+  echo
+else
+  FAIL=1
+  echo
+fi
+
 echo "=== summary ==="
 echo "$CHECKED file(s) checked: $QUEUED queued, $PUBLISHED published."
 

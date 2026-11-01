@@ -122,6 +122,8 @@ series the check reads, or were never published, and this note does not claim wh
 | `2026-10-27-day-300.md` | 2026-10-27 | 300 | Year of the ZABAL - Day 300 | `IKqb5K5rrF8wyKRL7sgF` |
 | `2026-10-28-day-301.md` | 2026-10-28 | 301 | Year of the ZABAL - Day 301 | `taHZgG3or6T0hg8Kvo2x` |
 | `2026-10-29-day-302.md` | 2026-10-29 | 302 | Year of the ZABAL - Day 302 | `bMEwOOhvPdiRrxDNHJ9b` |
+| `2026-10-30-day-303.md` | 2026-10-30 | 303 | Year of the ZABAL - Day 303 | `Cc9VxTLyCifiWFU7yxah` |
+| `2026-10-31-day-304.md` | 2026-10-31 | 304 | Year of the ZABAL - Day 304 | `O92qHVhCVfCD92qSeM2I` |
 
 Subtitles, cover images and live URLs:
 
@@ -152,6 +154,8 @@ Subtitles, cover images and live URLs:
 | 300 | Four new songs went up on WaveZStation this week. Back any of them for whatever you want, from $1. | https://paragraph.com/@thezao/year-of-the-zabal-day-300 |
 | 301 | Builders day. My agents restarted twice before sunrise and a check I built got blocked. | https://paragraph.com/@thezao/year-of-the-zabal-day-301 |
 | 302 | Artist day. Meet Legit, whose Clearer Picture went up on WaveZStation last week. | https://paragraph.com/@thezao/year-of-the-zabal-day-302 |
+| 303 | Today at 6 pm ET on BCZ Yapz: meet Gigi, who judges WaveWarZ battles and matches songs to art. | https://paragraph.com/@thezao/year-of-the-zabal-day-303 |
+| 304 | Gigi is not from the crypto space and she is not a musician. Here is how she ended up judging WaveWarZ battles. | https://paragraph.com/@thezao/year-of-the-zabal-day-304 |
 
 Post ids are also in `automation/post-ids.json`, keyed by the file path here.
 

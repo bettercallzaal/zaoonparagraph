@@ -32,6 +32,19 @@ if [ ! -f "$FILE" ]; then
   exit 1
 fi
 
+# Every check below reads the body only. HTML comments are draft notes and record
+# headers, not copy: the "!" in "<!--" alone failed every file carrying one, so all
+# 6 records from Day 299 to Day 304 read as breaking the exclamation rule when none
+# has an exclamation mark in its body. An unclosed comment is left in and counted.
+BODY=$(mktemp)
+trap 'rm -f "$BODY"' EXIT
+python3 - "$FILE" > "$BODY" <<'PY' || { echo "could not read $FILE" >&2; exit 2; }
+import re, sys
+text = open(sys.argv[1], encoding="utf-8", errors="replace").read()
+sys.stdout.write(re.sub(r"<!--.*?-->", "", text, flags=re.S))
+PY
+FILE="$BODY"
+
 FAIL=0
 
 check() {

@@ -1,6 +1,6 @@
 # zaoonparagraph
 
-**The ZAO newsletter on Paragraph** - drafting, editing, publishing to Paragraph, and distribution all in one place. 400+ editions of daily build-in-public documentation across three series (Year of the ZAO, Year of the ZABAL, ZTalent), with 78 paid supporters.
+**The ZAO newsletter on Paragraph** - drafting, editing, publishing to Paragraph, and distribution all in one place. 400+ editions of daily build-in-public documentation across three series (Year of the ZAO, Year of the ZABAL, ZTalent).
 
 ## Status (2026-08-25)
 
