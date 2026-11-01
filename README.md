@@ -159,7 +159,7 @@ See `research/2026-07-10-headless-paragraph-experiment.md` for a working proof t
 ### Important caveats
 
 - **Paragraph API key**: NEVER commit it. The `.env` file must stay gitignored. Keys are injected at runtime only.
-- **Voice checks**: All lowercase, no commas in titles, every issue opens with "zm.", no emojis, no em dashes, single signoff. The scripts enforce this - they refuse to push on voice failure unless `--force` is passed.
+- **Voice checks**: every issue opens with "zm", no emojis, no em dashes, no exclamation marks in a daily, single signoff. Since 2026-11-01 the daily default is the recent style, with sentence case and commas; `--strict` checks the old all-lowercase, zero-comma style. The scripts enforce this - they refuse to push on voice failure unless `--force` is passed.
 - **Publishing is gated**: create-draft.sh pushes to Paragraph as a draft (never published). Actual publication happens in Paragraph's UI only - this repo has zero auto-publish.
 - **Post ID tracking**: automation/post-ids.json tracks which drafts map to which Paragraph post IDs, so `update-draft.sh` can edit in place without duplicates. Keep it in sync when publishing or archiving.
 
@@ -181,8 +181,7 @@ since Day 194 in July.
 
 ## Voice rules (non-negotiable)
 
-- All lowercase. No title case.
-- No commas in titles. Sparse punctuation overall.
+- The recent style, the default since 2026-11-01: sentence case and real punctuation are fine. The old all-lowercase, zero-comma style is `check-voice.sh --strict`.
 - Every issue opens with "zm." (ZAO morning briefing signature).
 - No emojis. No em dashes (use plain hyphens).
 - Single signoff: "BetterCallZaal on behalf of the ZABAL Team."

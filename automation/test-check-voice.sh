@@ -15,11 +15,11 @@ FAILED=0
 WORDS="one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty twentyone twentytwo twentythree twentyfour twentyfive twentysix twentyseven twentyeight twentynine thirty thirtyone thirtytwo thirtythree thirtyfour thirtyfive thirtysix thirtyseven thirtyeight thirtynine forty"
 SIG="- BetterCallZaal on behalf of the ZABAL Team"
 
-# expect <0|1> <name> <file body>
+# expect <0|1> <name> <file body> [gate flag]
 expect() {
-  local want="$1" name="$2" body="$3"
+  local want="$1" name="$2" body="$3" flag="${4:-}"
   printf '%s\n' "$body" > "$TMP/case.md"
-  "$SCRIPT_DIR/check-voice.sh" "$TMP/case.md" > /dev/null 2>&1
+  "$SCRIPT_DIR/check-voice.sh" $flag "$TMP/case.md" > /dev/null 2>&1
   local got=$?
   if [ "$got" -eq "$want" ]; then
     echo "ok    $name"
@@ -34,13 +34,13 @@ expect 0 "clean body passes" "zm
 $WORDS
 
 $SIG"
-expect 0 "comma and exclamation in a comment do not count" "<!-- note, with a comma! -->
+expect 0 "comma and exclamation in a comment do not count, strict" "<!-- note, with a comma! -->
 
 zm
 
 $WORDS
 
-$SIG"
+$SIG" --strict
 expect 0 "multi-line comment does not count" "<!-- line one, here
 line two! -->
 
@@ -48,12 +48,22 @@ zm
 
 $WORDS
 
-$SIG"
-expect 1 "comma in the body fails" "zm
+$SIG" --strict
+expect 1 "comma in the body fails under --strict" "zm
 
 $WORDS, more
 
+$SIG" --strict
+expect 0 "comma and a clock time pass in the default" "zm
+
+$WORDS, more at 6 PM
+
 $SIG"
+expect 1 "a clock time fails under --strict" "zm
+
+$WORDS more at 6 PM
+
+$SIG" --strict
 expect 1 "exclamation in the body fails" "zm
 
 $WORDS!
@@ -70,7 +80,7 @@ zm
 
 $WORDS
 
-$SIG"
+$SIG" --strict
 
 if [ "$FAILED" -ne 0 ]; then
   echo "voice gate self-test FAILED" >&2
