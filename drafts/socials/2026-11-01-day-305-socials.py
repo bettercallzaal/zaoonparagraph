@@ -38,7 +38,7 @@ xpost = f"""ZM
 
 zao fractal 122 is monday at 6 pm eastern. free, in the zao discord.
 
-bring one thing you did for the zao this week. your group ranks it together.
+bring one thing you did for the zao this week. our group ranks it together.
 
 {URL}"""
 
@@ -47,11 +47,11 @@ x_article = f"""ZM
 
 ZAO Fractal 122 is Monday, November 2 at 6 PM Eastern in The ZAO Discord. It is free and anyone can come.
 
-Every Monday we meet, each of us shares what we did for The ZAO that week, and our group ranks it together. So the only prep is one question: what did you do for The ZAO this week? Write it down before you join, even if it feels small.
+We have met every week since July 2024. Each of us shares what we did for The ZAO, and our group ranks it together. The ranking earns Respect, which you cannot buy or sell. It only measures what you contributed.
 
-You do not have to be a musician to have something to share. Yesterday's edition was about Gigi, who does not play an instrument and judges WaveWarZ battles anyway.
+The only prep is one question: what did you do for The ZAO this week? Write it down before you join, even if it feels small.
 
-If Monday does not work, Session 2 is Tuesday, November 3 at noon Eastern: [RSVP]({RSVP2})
+If Monday does not work, Session 2 is Tuesday at noon Eastern: [RSVP]({RSVP2})
 
 US clocks went back, so 6 PM Eastern is now 23:00 UTC.
 
@@ -61,11 +61,9 @@ Today's edition: [Year of the ZABAL - Day 305]({URL})"""
 
 linkedin = """ZM
 
-Every Monday The ZAO, a community of independent artists, meets to share what each of us did for the community that week. Small groups rank the work together.
+The ZAO, a community of independent artists, has met every week since July 2024. Each of us shares what we did for the community, and our group ranks it together. The ranking earns Respect, which you cannot buy or sell.
 
 Fractal 122 is Monday, November 2 at 6 PM Eastern. It is free and anyone can come. The only prep is one question: what did you do for the community this week?
-
-You do not have to be a musician to have something to share.
 
 The newsletter, the RSVP and how the fractal works are linked in the first comment."""
 
@@ -90,7 +88,7 @@ session 2 is tuesday at noon eastern if monday does not work: {RSVP2}
 
 facebook = """ZM
 
-Every Monday my music community meets online to share what each of us did that week, and small groups rank it together. This Monday is number 122, at 6 PM Eastern. It is free and anyone can come, musician or not."""
+My music community has met online every week since July 2024. Each of us shares what we did, and our group ranks it together. This Monday is number 122, at 6 PM Eastern. It is free and anyone can come."""
 facebook_link = "https://www.facebook.com/sharer/sharer.php?" + urllib.parse.urlencode({"u": URL})
 
 x_gc = f"""ZM
