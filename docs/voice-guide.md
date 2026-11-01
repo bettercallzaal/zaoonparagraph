@@ -13,7 +13,9 @@ this file only holds judgment calls those cannot encode.
 
 - Announcement vs daily voice is decided BEFORE drafting: a piece carrying a
   deadline, decision, or number that matters is an announcement - sentence case,
-  numerals, real punctuation. The lowercase zero-comma staccato is daily-only.
+  numerals, real punctuation. Since 2026-11-01 the daily also uses the recent
+  style, with sentence case and commas: Zaal's question on it went unanswered and
+  its default stands. The lowercase zero-comma staccato is `check-voice.sh --strict`.
   (Cost six rewrite passes on the Day 223 edition to learn.)
 - The subtitle carries the news; the archive is the strongest receipt; name
   people over ranking them.

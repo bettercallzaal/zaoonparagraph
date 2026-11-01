@@ -10,22 +10,32 @@
 
 set -uo pipefail
 
-# Two voices, two rule sets. The lowercase zero-comma staccato is DAILY-only;
-# an announcement uses sentence case, numerals, real punctuation and headings.
-# Running an announcement through the daily rules is how the Day 223 edition
-# cost six rewrite passes. Default stays daily.
+# Three modes.
+#   daily (default)  the recent style: sentence case, commas, numerals and clock
+#                    times are fine. Still no exclamation marks, and the 40-480
+#                    word band. This became the default on 2026-11-01: Zaal's
+#                    question on the voice went unanswered and its default, the
+#                    recent style, stands (grill ruling, 1 Nov). Every
+#                    published daily from Day 299 on uses commas, and the old
+#                    default failed all of them.
+#   --strict         the old lowercase zero-comma staccato, kept for the day it
+#                    comes back. Running an edition through the wrong rules is
+#                    how Day 223 cost six rewrite passes.
+#   --announcement   real punctuation, a deadline time, 250-900 words.
 MODE="daily"
+STRICT=0
 ARGS=()
 for a in "$@"; do
   case "$a" in
     --announcement|-a) MODE="announcement" ;;
     --daily|-d)        MODE="daily" ;;
+    --strict|-s)       MODE="daily"; STRICT=1 ;;
     *)                 ARGS+=("$a") ;;
   esac
 done
 set -- "${ARGS[@]+"${ARGS[@]}"}"
 
-FILE="${1:?usage: check-voice.sh [--daily|--announcement] <markdown-file>}"
+FILE="${1:?usage: check-voice.sh [--daily|--strict|--announcement] <markdown-file>}"
 
 if [ ! -f "$FILE" ]; then
   echo "File not found: $FILE" >&2
@@ -58,13 +68,13 @@ check() {
   fi
 }
 
-echo "mode: $MODE"
+if [ "$STRICT" -eq 1 ]; then echo "mode: daily, strict"; else echo "mode: $MODE"; fi
 
 COMMA_COUNT=$(grep -o ',' "$FILE" | wc -l | tr -d ' ')
-if [ "$MODE" = "daily" ]; then
+if [ "$STRICT" -eq 1 ]; then
   check "zero commas (found: $COMMA_COUNT)" $([ "$COMMA_COUNT" -eq 0 ] && echo 0 || echo 1)
 else
-  echo "SKIP  comma check (announcements use real punctuation)"
+  echo "SKIP  comma check (the recent style and announcements use real punctuation; --strict checks it)"
 fi
 
 DASH_COUNT=$(grep -o '—\|–' "$FILE" | wc -l | tr -d ' ')
@@ -92,10 +102,10 @@ fi
 # Hard fail on explicit clock times only. "today" / "this morning" are used freely
 # in the published dailies (day 205, day 215), so they are a warning, not a failure.
 CLOCK_HITS=$(grep -ioE "at [0-9]{1,2}(:[0-9]{2})? ?(am|pm)" "$FILE" | tr '\n' ' ')
-if [ "$MODE" = "daily" ]; then
+if [ "$STRICT" -eq 1 ]; then
   check "no explicit clock times (found: ${CLOCK_HITS:-none})" $([ -z "$CLOCK_HITS" ] && echo 0 || echo 1)
 else
-  echo "SKIP  clock-time check (an announcement carrying a deadline needs the time)"
+  echo "SKIP  clock-time check (an event time is fine outside --strict)"
 fi
 
 SOFT_TIME=$(grep -ioE "today|this morning|by tonight" "$FILE" | sort -u | tr '\n' ' ')
