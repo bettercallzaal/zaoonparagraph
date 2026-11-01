@@ -41,21 +41,19 @@ def facts(text):
     out += [("number", n) for n in re.findall(r"\d+", bare)]
     return out
 
-def main():
-    if len(sys.argv) < 3:
-        print(__doc__.split("\n\n")[1], file=sys.stderr); sys.exit(2)
-    try:
-        edition = open(sys.argv[1], encoding="utf-8").read()
-        socials = [(p, open(p, encoding="utf-8").read()) for p in sys.argv[2:]]
-    except OSError as e:
-        print("CANNOT RUN: %s" % e, file=sys.stderr); sys.exit(2)
-    if not edition.strip():
-        print("CANNOT RUN: the edition file is empty", file=sys.stderr); sys.exit(2)
+def check(edition, socials):
+    """(facts checked, list of 'where: kind value is not in the edition').
+
+    socials is a list of (label, text). stage-socials.py calls this directly."""
+    # Paragraph's API body escapes markdown, so @gigi_gw_ arrives as @gigi\_gw\_.
+    # Measured 2026-11-01 on Day 304; the repo record had no escapes, so only a live
+    # read caught it.
+    edition = re.sub(r"\\([\\`*_{}\[\]()#+.!-])", r"\1", edition)
     ed = norm(edition)
     ed_numbers = set(re.findall(r"\d+", edition))
     ed_links = {l.rstrip(".,!?;:)]}'\"").rstrip("/") for l in re.findall(LINK, edition)}
     missing, total = [], 0
-    for path, text in socials:
+    for label, text in socials:
         for kind, value in facts(text):
             total += 1
             if kind == "link":
@@ -67,7 +65,20 @@ def main():
             else:
                 ok = norm(value) in ed
             if not ok:
-                missing.append("%s: %s %r is not in the edition" % (path, kind, value))
+                missing.append("%s: %s %r is not in the edition" % (label, kind, value))
+    return total, missing
+
+def main():
+    if len(sys.argv) < 3:
+        print(__doc__.split("\n\n")[1], file=sys.stderr); sys.exit(2)
+    try:
+        edition = open(sys.argv[1], encoding="utf-8").read()
+        socials = [(p, open(p, encoding="utf-8").read()) for p in sys.argv[2:]]
+    except OSError as e:
+        print("CANNOT RUN: %s" % e, file=sys.stderr); sys.exit(2)
+    if not edition.strip():
+        print("CANNOT RUN: the edition file is empty", file=sys.stderr); sys.exit(2)
+    total, missing = check(edition, socials)
     if total == 0:
         print("UNKNOWN: no facts found in the socials, so nothing was checked", file=sys.stderr); sys.exit(2)
     for m in missing:

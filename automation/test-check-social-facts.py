@@ -13,7 +13,7 @@ EDITION = """# Year of the ZABAL - Day 304
 
 zm
 
-Find Gigi on X at [@gigi_gw_](https://x.com/gigi_gw_). She said "the music and humor mainly".
+Find Gigi on X at [@gigi_gw_](https://x.com/gigi_gw_). She said "the music and humor mainly". Also @esc\\_aped\\_ here.
 
 The full conversation is about 38 minutes: [https://bczyapz.com/22](https://bczyapz.com/22)
 """
@@ -26,6 +26,7 @@ CASES = [
     (1, "a misquote", 'ZM. she said "i love crypto"'),
     (1, "a link not in the edition", "ZM. https://bczyapz.com/23"),
     (2, "no facts at all", "ZM. just words."),
+    (0, "a handle the API body escaped", "ZM. ask @esc_aped_"),
 ]
 
 def run(text):
