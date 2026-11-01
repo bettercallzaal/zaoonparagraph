@@ -164,6 +164,15 @@ else
   echo
 fi
 
+echo "### scheduled-post check self-test ###"
+echo
+if python3 "$SCRIPT_DIR/test-check-scheduled.py"; then
+  echo
+else
+  FAIL=1
+  echo
+fi
+
 echo "=== summary ==="
 echo "$CHECKED file(s) checked: $QUEUED queued, $PUBLISHED published."
 
