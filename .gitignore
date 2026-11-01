@@ -21,3 +21,6 @@ dist/
 *.private.md
 .gstack/
 .serena/
+
+# Python bytecode from running the scripts
+__pycache__/

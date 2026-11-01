@@ -2,7 +2,9 @@
 """stage-socials.py - the moment an edition publishes, turn the drafted socials into one
 clipboard page with the real URL in them.
 
-    python3 automation/stage-socials.py <post-id> [--dry-run]
+    python3 automation/stage-socials.py <post-id> [--dry-run | --json]
+
+--json prints the checked blocks for the dashboard and writes no clipboard page.
 
 Why this exists. The socials are written before the edition publishes, so they cannot carry
 its URL, and a slot saying "PUT THE URL HERE" inside a block Zaal pastes ends up pasted
@@ -111,7 +113,7 @@ def draft_block(md):
     return m.group(1).strip() if m else None
 
 def main():
-    if len(sys.argv) < 2: die("usage: stage-socials.py <post-id> [--dry-run]")
+    if len(sys.argv) < 2: die("usage: stage-socials.py <post-id> [--dry-run | --json]")
     pid, dry = sys.argv[1], "--dry-run" in sys.argv[2:]
     p = get_post(pid)
     if not p.get("id"): die("REFUSED: no post %s. A deleted draft answers with nulls." % pid, 1)
@@ -185,6 +187,10 @@ def main():
         die("CANNOT RUN: the fact check found no facts in the socials, so it checked nothing")
     if missing:
         die("REFUSED: the fact check failed\n  " + "\n  ".join(missing), 1)
+
+    if "--json" in sys.argv[2:]:
+        print(json.dumps({"title": title, "url": url, "blocks": [{"name": n, "body": b} for n, b in blocks]}))
+        return
 
     if dry:
         for name, body in blocks:
