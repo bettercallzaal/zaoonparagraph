@@ -4,7 +4,7 @@
 
 The dedicated home for **The ZAO newsletter on Paragraph** (paragraph.com/@thezao). All newsletter work lives here: drafting, editing, publishing to Paragraph, and distribution. Spun out 2026-07-07 so newsletter work has its own clean terminal, separate from the ZAOOS monorepo.
 
-The ZAO newsletter: **400+ editions** across Year of the ZAO / Year of the ZABAL / ZTalent series, 78 paid supporters. Daily build-in-public documentation. Currently produced via the **zabalnewsletterbuilder** (Vercel daily-3 tool, live at zabalnewsletterbuilder.vercel.app; runbook = that repo's NEWSLETTER-UPDATE.md).
+The ZAO newsletter: **400+ editions** across Year of the ZAO / Year of the ZABAL / ZTalent series. No paid supporter count is dated after July 2026 (78 then), so re-measure before quoting one. Daily build-in-public documentation. How editions ship is under "Immediate goal" below; the **zabalnewsletterbuilder** (Vercel daily-3 tool, live at zabalnewsletterbuilder.vercel.app; runbook = that repo's NEWSLETTER-UPDATE.md) only composes.
 
 ## Immediate goal (why this repo exists now)
 
@@ -48,5 +48,5 @@ What that leaves open:
 ## Related
 
 - ZAOOS newsletter research: docs in `research/business/` (newsletter strategy, 957 reach playbook).
-- `zabalnewsletterbuilder` (separate Vercel repo) - the current daily-3 generator.
+- `zabalnewsletterbuilder` (separate Vercel repo) - the daily-3 composer. It does not post.
 - Paragraph publication: paragraph.com/@thezao.
