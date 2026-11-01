@@ -28,7 +28,39 @@ When an edition goes live, one command reads the live edition, writes the social
 | X Article | Paragraph draft in the group | Publish |
 | LinkedIn | Paragraph draft, no link in the body | Publish, then the first comment if the test in step 2 fails |
 | Farcaster | Printed for Firefly | Paste, Farcaster only, so X is not hit twice |
-| Telegram, Discord, Facebook, group chats | Paragraph cannot send these (`docs/paragraph-platform-surfaces.md`) | See the question below |
+| Telegram, Discord, Facebook, group chats | Paragraph cannot send these. See the next section | One tap or one paste each |
+
+## The channels Paragraph cannot send
+
+Zaal, grill item 54: "lets resaerch best practices to make it easiest for us mayhbe we can use the zen browser for that". The rule for all of them is the same as for the rest: the tool fills, Zaal sends. Each block on the printed page gets a Copy button and, where the channel has one, a link that opens it with the text already in.
+
+| Channel | Easiest way, by the sources below | Recommendation |
+|---|---|---|
+| Telegram | A share link, `t.me/share/url?url=...&text=...`, opens Telegram with the link and text filled in. Telegram then asks the user to pick the chat, group or channel, and the text can still be edited. A bot could post instead: `sendMessage` takes a group or a channel `@username`, up to 4096 characters, with link previews, and The ZAO already runs bots. | Share link now. One tap, pick the group, send. A bot that posts is a send, so it only comes in on his word. |
+| Discord | No share link. A channel webhook posts with no bot and no login, up to 2000 characters, but its URL is the credential and anyone holding it can post. | Copy and paste now. A webhook for the one announcements channel later, on his word, run by a command he types after reading the text. Its URL is stored as a secret, never in this repo. |
+| Facebook | The posting API covers Pages only, through a Page token and Facebook Login. It says nothing about personal profiles, where the family and IRL friends audience is. The Share Dialog fills in the link but has no field for text. | A share link that opens Facebook with the edition link, then he pastes the text. If the audience is ever a Page, the API is the route, and that needs an app. |
+| X group chat | The API can post into an existing group DM, but it needs an approved developer account and his own sign-in. | Copy and paste. The setup costs more than the paste it saves. |
+| Farcaster group chat | Not checked: no source fetched. UNVERIFIED. | Copy and paste. |
+
+**Zen.** Zen is already his everyday browser, with one Chromium profile kept for agents, per the browser decision of 26 Aug. That decision says Claude in Chrome runs only on Chromium. This lane did not re-check that today. So no agent drives Zen, and a browser automation that fills and never sends would run in that Chromium profile, not in Zen. Where Zen does help:
+- A **Socials workspace** with Telegram, Discord, Facebook and the two group chats pinned. The share links above open there.
+- **Containers.** A workspace can have a default container, and a container keeps its own logins. So the ZAO accounts stay signed in apart from his personal ones, in one profile. Containers do not separate history or extensions.
+
+A link opened from the printed page can land outside that workspace. Opening Zen with the workspace already selected avoids that, and a page that opens links in a set container would need a Firefox add-on. Neither was tested here, since the load hold rules out any browser run.
+
+**What his posting looks like after this.** He publishes the edition, runs one command, reads three drafts in Paragraph and presses Publish on each. Then, in the Zen Socials workspace, from top to bottom: Farcaster in Firefly, Telegram by one tap, Discord by paste, Facebook by one tap plus a paste, and the two group chats by paste. Each block is short and ready, and nothing goes out without his press.
+
+**Sources, fetched 2026-11-01:**
+- core.telegram.org/widgets/share, FULL.
+- core.telegram.org/bots/api, the `sendMessage` section, FULL. It was read from the saved page, since the fetch tool stopped at 200,000 of 582,000 characters.
+- docs.discord.com/developers/resources/webhook, FULL. It does not cover announcement channels.
+- developers.facebook.com/docs/sharing/reference/share-dialog, FULL.
+- developers.facebook.com/docs/pages-api/posts, FULL.
+- docs.x.com/x-api/direct-messages/manage/introduction, FULL.
+- docs.zen-browser.app/user-manual/workspaces, FULL.
+- docs.paragraph.com/llms.txt and agent/connections.md, FULL. Telegram there is only a chat with Paragraph's agent, and there are no publish webhooks.
+
+**UNVERIFIED:** Farcaster group chats, Facebook's plain sharer link (only the Share Dialog was read), whether the Share Dialog needs an app id, and the Chromium-only claim, which comes from the 26 Aug decision.
 
 ## What gets built, in order
 
@@ -47,9 +79,9 @@ It posts nothing. It does not schedule. It does not make covers: the API takes n
 
 ## The one question
 
-Telegram, Discord, Facebook and the group chats: a short line for each on the printed page, or leave them out?
+May the Telegram and Discord blocks ever send by themselves, through a ZAO bot or a channel webhook, after you read them and type one command?
 
-**Default if you do not answer: leave them out for Day 304 and Day 305**, keep X, X Article, LinkedIn and Farcaster, and review after step 8. You said you want it shared as much as possible and also did not want a paste list, so those two pull apart here. Adding them later is one flag.
+**Default if you do not answer: no.** Every channel gets its block on the printed page, with a share link where one exists, and nothing sends but your own press. Days 304 and 305 go out that way. This replaces the earlier question, which was whether to include these channels. Item 54 asks for the easiest way to reach them, so they are in.
 
 ## Sources
 
