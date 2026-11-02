@@ -124,6 +124,7 @@ series the check reads, or were never published, and this note does not claim wh
 | `2026-10-29-day-302.md` | 2026-10-29 | 302 | Year of the ZABAL - Day 302 | `bMEwOOhvPdiRrxDNHJ9b` |
 | `2026-10-30-day-303.md` | 2026-10-30 | 303 | Year of the ZABAL - Day 303 | `Cc9VxTLyCifiWFU7yxah` |
 | `2026-10-31-day-304.md` | 2026-10-31 | 304 | Year of the ZABAL - Day 304 | `O92qHVhCVfCD92qSeM2I` |
+| `2026-11-01-day-305.md` | 2026-11-01 | 305 | Year of the ZABAL - Day 305 | `KPYoAnEYiIGlHYsfJIHa` |
 
 Subtitles, cover images and live URLs:
 
@@ -156,6 +157,7 @@ Subtitles, cover images and live URLs:
 | 302 | Artist day. Meet Legit, whose Clearer Picture went up on WaveZStation last week. | https://paragraph.com/@thezao/year-of-the-zabal-day-302 |
 | 303 | Today at 6 pm ET on BCZ Yapz: meet Gigi, who judges WaveWarZ battles and matches songs to art. | https://paragraph.com/@thezao/year-of-the-zabal-day-303 |
 | 304 | Gigi is not from the crypto space and she is not a musician. Here is how she ended up judging WaveWarZ battles. | https://paragraph.com/@thezao/year-of-the-zabal-day-304 |
+| 305 | Fractal 122 is tomorrow at 6 PM Eastern. Here is all you need to get ready. | https://paragraph.com/@thezao/year-of-the-zabal-day-305 |
 
 Post ids are also in `automation/post-ids.json`, keyed by the file path here.
 
