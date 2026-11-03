@@ -125,6 +125,8 @@ series the check reads, or were never published, and this note does not claim wh
 | `2026-10-30-day-303.md` | 2026-10-30 | 303 | Year of the ZABAL - Day 303 | `Cc9VxTLyCifiWFU7yxah` |
 | `2026-10-31-day-304.md` | 2026-10-31 | 304 | Year of the ZABAL - Day 304 | `O92qHVhCVfCD92qSeM2I` |
 | `2026-11-01-day-305.md` | 2026-11-01 | 305 | Year of the ZABAL - Day 305 | `KPYoAnEYiIGlHYsfJIHa` |
+| `2026-11-02-day-306.md` | 2026-11-02 | 306 | Year of the ZABAL - Day 306 | `Z1TV9cwYvGuozgvMJ1SP` |
+| `2026-11-03-day-307.md` | 2026-11-03 | 307 | Year of the ZABAL - Day 307 | `y2lTSgmY9fbNDktkt37q` |
 
 Subtitles, cover images and live URLs:
 
@@ -158,6 +160,8 @@ Subtitles, cover images and live URLs:
 | 303 | Today at 6 pm ET on BCZ Yapz: meet Gigi, who judges WaveWarZ battles and matches songs to art. | https://paragraph.com/@thezao/year-of-the-zabal-day-303 |
 | 304 | Gigi is not from the crypto space and she is not a musician. Here is how she ended up judging WaveWarZ battles. | https://paragraph.com/@thezao/year-of-the-zabal-day-304 |
 | 305 | Fractal 122 is tomorrow at 6 PM Eastern. Here is all you need to get ready. | https://paragraph.com/@thezao/year-of-the-zabal-day-305 |
+| 306 | ZAO Fractal 122 is tonight at 6 PM Eastern. Who's joining? | https://paragraph.com/@thezao/year-of-the-zabal-day-306 |
+| 307 | Ali gifted stock to The ZAO and members can snag some. | https://paragraph.com/@thezao/year-of-the-zabal-day-307 |
 
 Post ids are also in `automation/post-ids.json`, keyed by the file path here.
 
