@@ -24,7 +24,8 @@ Checks, every one of which refuses the run:
 
 --write-drafts writes to Paragraph, so it runs only on Zaal's word, once per edition. It makes
 the edition's bucket, refuses if the bucket already holds content (Day 304 had three agent
-drafts in its bucket; a second set would double them), creates three drafts with
+drafts in its bucket; a second set would double them; the edition itself, a bucket member
+since 3 Nov 2026, does not count), creates three drafts with
 POST /v1/content, which only drafts, and reads each back. It never sends, schedules or
 publishes, and never updates a draft: an update erases a LinkedIn first comment (31 Oct).
 Farcaster stays in Firefly, Farcaster only (Zaal, 13 Oct), so Firefly is a paste block here.
@@ -219,6 +220,8 @@ def write_drafts(r):
     members = call("GET", "/buckets/%s" % bid).get("members")
     if members is None:
         die("CANNOT RUN: the bucket read carried no members list, so a double cannot be ruled out", 2)
+    # Since 3 Nov 2026 the edition itself is a member of its own bucket, so it does not count.
+    members = [m for m in members if not (m.get("kind") == "post" and m.get("id") == r["pid"])]
     if members:
         die("REFUSED: bucket %s already holds %d item(s). Nothing written. Read them in Content first." % (bid, len(members)))
     t, day = r["texts"], r["day"]
