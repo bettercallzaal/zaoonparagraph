@@ -14,6 +14,9 @@ dist/
 .next/
 .vercel/
 
+# Approval hashes for automation/check-scheduled.py, per machine
+automation/.t5-approved.json
+
 # OS
 .DS_Store
 
