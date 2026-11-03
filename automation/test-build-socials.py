@@ -165,6 +165,24 @@ expect("--write-drafts refuses a bucket that already holds content", r, 1, "alre
 if WORLD["content"]:
     FAILS.append("wrote into a full bucket")
 
+# Since 3 Nov 2026 Paragraph puts the edition itself in its own bucket, as kind "post".
+fresh()
+WORLD["members"] = [{"kind": "post", "id": PID}]
+r = run(SPEC, "--write-drafts")
+expect("--write-drafts writes when the bucket holds only the edition itself", r, 0, "PASS  linkedin draft")
+
+fresh()
+WORLD["members"] = [{"kind": "post", "id": PID}, {"kind": "tweet"}]
+r = run(SPEC, "--write-drafts")
+expect("--write-drafts still refuses the edition plus a social", r, 1, "already holds 1")
+if WORLD["content"]:
+    FAILS.append("wrote beside an existing social")
+
+fresh()
+WORLD["members"] = [{"kind": "post", "id": "someotherpost"}]
+r = run(SPEC, "--write-drafts")
+expect("--write-drafts refuses a bucket holding a different post", r, 1, "already holds 1")
+
 expect("bad usage cannot run", run(SPEC, "--publish"), 2, "usage")
 if any(c[0] in ("PUT", "PATCH", "DELETE") for c in CALLS):
     FAILS.append("an update or delete call")
