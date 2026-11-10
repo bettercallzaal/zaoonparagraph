@@ -61,17 +61,11 @@ EDITION = BASE + "/@thezao/year-of-the-zabal-day-306"
 BODY = ("zm\n\nyear of the zabal day 306\n\n6 PM Eastern tonight is ZAO Fractal 122. Who's joining?\n\n"
         "Join here: [%s](%s)\n\n\\- BetterCallZaal on behalf of the ZABAL Team\n") % (GOOD, GOOD)
 SPEC = {"day": 306, "blocks": {
-    "firefly": "ZM\n\nzao fractal 122 is tonight at 6 pm eastern\n\n%s\n\n{edition}" % GOOD,
     "x_post": "ZM\n\nzao fractal 122 is tonight at 6 pm eastern\n\n{edition}",
     "x_article_title": "Fractal 122 is tonight",
     "x_article": "ZM\n\nZAO Fractal 122 is tonight at 6 PM Eastern.\n\nJoin here: [%s](%s)\n\nToday's edition: [Day 306]({edition})" % (GOOD, GOOD),
     "linkedin": "ZM\n\nFractal 122 is tonight at 6 PM Eastern. The links are in the first comment.",
     "linkedin_comment": "{edition}\n\nJoin here: %s" % GOOD,
-    "telegram": "ZM. fractal 122 tonight 6 pm eastern.\n\n{edition}",
-    "discord": "ZM crew\n\nfractal 122 tonight 6 pm eastern right here\n\n{edition}",
-    "facebook": "ZM\n\nMy music community meets tonight at 6 PM Eastern, number 122.",
-    "x_gc": "ZM\n\nfractal 122 tonight 6 pm eastern\n\n{edition}",
-    "fc_gc": "ZM\n\nfractal 122 tonight, bring your week\n\n{edition}",
 }}
 
 
@@ -107,11 +101,16 @@ def with_block(key, text):
 
 fresh()
 r = run(SPEC)
-expect("a good spec builds the sheet", r, 0, "11. Farcaster /zao group chat")
+expect("a good spec builds the sheet", r, 0, "5. LinkedIn first comment")
 expect("the sheet carries the live edition link, not the token", r, 0, EDITION)
 if "{edition}" in r.stdout:
     FAILS.append("token left in the sheet")
-expect("the sheet carries the Telegram share link", r, 0, "https://t.me/share/url?")
+if any(w in r.stdout for w in ("Telegram", "Firefly", "Discord", "Facebook", "group chat")):
+    FAILS.append("a paste channel is still in the sheet"); print("FAIL  the sheet has no paste channels")
+else:
+    print("PASS  the sheet has no paste channels")
+old = copy.deepcopy(SPEC); old["blocks"]["telegram"] = "ZM [FILL]"; fresh()
+expect("an old spec with paste keys still runs, and they are ignored", run(old), 0)
 
 fresh()
 WORLD["post"]["status"] = "draft"
@@ -121,23 +120,23 @@ WORLD["post"]["title"] = "Year of the ZABAL - Day 305"
 expect("a spec for another day is refused", run(SPEC), 1, "not Day 306")
 fresh()
 s = copy.deepcopy(SPEC)
-del s["blocks"]["discord"]
-expect("a missing block is refused", run(s), 1, "8. Discord, paste: missing")
-expect("a token other than {edition} is refused", run(with_block("discord", "ZM {link}\n\n{edition}")), 1, "slot")
-expect("a slot is refused", run(with_block("discord", "ZM [FILL line]\n\n{edition}")), 1, "slot")
-expect("an em dash is refused", run(with_block("x_gc", "ZM — fractal 122\n\n{edition}")), 1, "dash")
-expect("an emoji is refused", run(with_block("x_gc", "ZM fractal 122 \U0001F525\n\n{edition}")), 1, "emoji")
-expect("a hashtag is refused", run(with_block("x_gc", "ZM #fractal 122\n\n{edition}")), 1, "hashtag")
-expect("a retired name is refused", run(with_block("x_gc", "ZM fractal 122 with Artizen\n\n{edition}")), 1, "retired name")
-expect("'sang' as a word passes the retired check", run(with_block("facebook", "ZM\n\nWe sang tonight at 6 PM Eastern, number 122.")), 0)
-expect("a block missing the edition link is refused", run(with_block("discord", "ZM fractal 122")), 1, "no edition link")
+del s["blocks"]["linkedin_comment"]
+expect("a missing block is refused", run(s), 1, "5. LinkedIn first comment, paste after you publish: missing")
+expect("a token other than {edition} is refused", run(with_block("x_post", "ZM {link}\n\n{edition}")), 1, "slot")
+expect("a slot is refused", run(with_block("x_post", "ZM [FILL line]\n\n{edition}")), 1, "slot")
+expect("an em dash is refused", run(with_block("x_post", "ZM — fractal 122\n\n{edition}")), 1, "dash")
+expect("an emoji is refused", run(with_block("x_post", "ZM fractal 122 \U0001F525\n\n{edition}")), 1, "emoji")
+expect("a hashtag is refused", run(with_block("x_post", "ZM #fractal 122\n\n{edition}")), 1, "hashtag")
+expect("a retired name is refused", run(with_block("x_post", "ZM fractal 122 with Artizen\n\n{edition}")), 1, "retired name")
+expect("'sang' as a word passes the retired check", run(with_block("linkedin", "ZM\n\nWe sang tonight at 6 PM Eastern, number 122.")), 0)
+expect("a block missing the edition link is refused", run(with_block("linkedin_comment", "ZM fractal 122")), 1, "no edition link")
 expect("an X post over 280 is refused", run(with_block("x_post", "ZM " + "a" * 270 + "\n\n{edition}")), 1, "over 280")
 expect("a link in the LinkedIn body is refused", run(with_block("linkedin", "ZM fractal 122 at thezao.com")), 1, "first comment")
-expect("a number not in the edition is refused", run(with_block("x_gc", "ZM fractal 123\n\n{edition}")), 1, "not in the edition")
+expect("a number not in the edition is refused", run(with_block("x_post", "ZM fractal 123\n\n{edition}")), 1, "not in the edition")
 dead = BASE + "/link/dead"
 fresh()
 WORLD["post"]["markdown"] = BODY + "\n" + dead + "\n"
-expect("a dead link is refused", run(with_block("discord", "ZM fractal 122 %s\n\n{edition}" % dead)), 1, "answered 404")
+expect("a dead link is refused", run(with_block("linkedin_comment", "ZM fractal 122 %s\n\n{edition}" % dead)), 1, "answered 404")
 
 fresh()
 before = len([c for c in CALLS if c[0] != "GET"])

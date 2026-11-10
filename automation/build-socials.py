@@ -16,7 +16,7 @@ script; this replaces those.
 Checks, every one of which refuses the run:
   the post is published and the Day number in its title is the spec's day
   every block is present, non-empty, and carries no slot, dash, emoji, hashtag or retired name
-  the Firefly cast and the X post fit 280 on X, where each link counts 23
+  the X post fits 280 on X, where each link counts 23
   the LinkedIn body has no link (Zaal, 29 Oct: links go in the first comment)
   every block that should carry the edition link does
   every number, handle, quote and link is in the live edition (check-social-facts.py)
@@ -28,7 +28,10 @@ drafts in its bucket; a second set would double them; the edition itself, a buck
 since 3 Nov 2026, does not count), creates three drafts with
 POST /v1/content, which only drafts, and reads each back. It never sends, schedules or
 publishes, and never updates a draft: an update erases a LinkedIn first comment (31 Oct).
-Farcaster stays in Firefly, Farcaster only (Zaal, 13 Oct), so Firefly is a paste block here.
+Paragraph only since 3 Nov 2026 (Zaal): the X post, X Article and LinkedIn are Paragraph drafts that
+Zaal publishes in Content, and the LinkedIn first comment is the one thing he pastes. There are no
+Firefly, Telegram, Discord, Facebook or group-chat paste blocks. An older spec that still carries
+those keys runs; they are ignored and never checked or shown.
 
 Exit 0 done. Exit 1 refused. Exit 2 could not run.
 """
@@ -42,17 +45,11 @@ UA = "zaoonparagraph-build-socials/1.0"   # a bare urllib User-Agent gets a 403 
 
 # key, label, carries the edition link
 BLOCKS = [
-    ("firefly", "1. Farcaster, in Firefly, FARCASTER ONLY", True),
-    ("x_post", "2. X post (Paragraph draft)", True),
-    ("x_article_title", "3. X Article headline (Paragraph draft)", False),
-    ("x_article", "4. X Article body (Paragraph draft)", True),
-    ("linkedin", "5. LinkedIn body, no link (Paragraph draft)", False),
-    ("linkedin_comment", "6. LinkedIn first comment, paste after you publish", True),
-    ("telegram", "7. Telegram, tap the share link then pick the group", True),
-    ("discord", "8. Discord, paste", True),
-    ("facebook", "9. Facebook, tap the share link then paste this", False),
-    ("x_gc", "10. X group chat, paste", True),
-    ("fc_gc", "11. Farcaster /zao group chat, paste", True),
+    ("x_post", "1. X post (Paragraph draft)", True),
+    ("x_article_title", "2. X Article headline (Paragraph draft)", False),
+    ("x_article", "3. X Article body (Paragraph draft)", True),
+    ("linkedin", "4. LinkedIn body, no link (Paragraph draft)", False),
+    ("linkedin_comment", "5. LinkedIn first comment, paste after you publish", True),
 ]
 X_CAP = 280
 RETIRED = re.compile(r"(?i:magnetiq|songjam|acadia rising|artizen)|\bSANG\b")   # SANG in capitals only: "sang" is a word
@@ -164,9 +161,8 @@ def build(pid, spec_path):
     if errs:
         die("REFUSED:\n  " + "\n  ".join(errs))
 
-    for key in ("firefly", "x_post"):
-        if x_length(texts[key]) > X_CAP:
-            errs.append("%s is %d on X, over %d" % (key, x_length(texts[key]), X_CAP))
+    if x_length(texts["x_post"]) > X_CAP:
+        errs.append("x_post is %d on X, over %d" % (x_length(texts["x_post"]), X_CAP))
     if load("stage_socials", "stage-socials.py").ANY_LINK_RE.search(texts["linkedin"]):
         errs.append("the LinkedIn body has a link. Links go in the first comment.")
     if "\n" in texts["x_article_title"]:
@@ -189,25 +185,18 @@ def build(pid, spec_path):
     if errs:
         die("REFUSED:\n  " + "\n  ".join(errs))
 
-    share = {
-        "telegram": "https://t.me/share/url?" + urllib.parse.urlencode(
-            {"url": url, "text": texts["telegram"].replace(url, "").strip()}, quote_via=urllib.parse.quote),
-        "facebook": "https://www.facebook.com/sharer/sharer.php?" + urllib.parse.urlencode({"u": url}),
-    }
     return {"pid": pid, "title": title, "url": url, "day": int(m.group(1)), "texts": texts,
-            "share": share, "facts": checked, "links": len(links)}
+            "facts": checked, "links": len(links)}
 
 
 def sheet(r):
     t = r["texts"]
     out = ["<p>%s socials for your read. Nothing here is sent, scheduled or posted. Edition: <a href=\"%s\">%s</a></p>"
            % (html.escape(r["title"]), html.escape(r["url"]), html.escape(r["url"])),
-           "<p>Checked: %d facts found in the live edition, %d links answer 200. Firefly %d on X, X post %d on X.</p>"
-           % (r["facts"], r["links"], x_length(t["firefly"]), x_length(t["x_post"]))]
+           "<p>Checked: %d facts found in the live edition, %d links answer 200. X post %d on X.</p>"
+           % (r["facts"], r["links"], x_length(t["x_post"]))]
     for key, label, _ in BLOCKS:
         out.append("<h2>%s</h2>" % html.escape(label))
-        if key in r["share"]:
-            out.append('<p><a href="%s">Open the share link</a></p>' % html.escape(r["share"][key]))
         out.append('<pre class="msg">%s</pre>' % html.escape(t[key]))
     return "\n".join(out) + "\n"
 
