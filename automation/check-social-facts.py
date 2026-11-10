@@ -26,7 +26,7 @@ import re, sys
 
 LINK = r"https?://[^\s\]\[()<>\"']+"
 
-ALLOWED_LINKS = ("https://paragraph.com/@thezao/", "https://t.me/share/url", "https://www.facebook.com/sharer/")
+ALLOWED_LINKS = ("https://blog.thezao.com/", "https://paragraph.com/@thezao/", "https://t.me/share/url", "https://www.facebook.com/sharer/")
 
 def norm(s):
     return re.sub(r"\s+", " ", s.replace("’", "'").replace("“", '"').replace("”", '"')).lower()
