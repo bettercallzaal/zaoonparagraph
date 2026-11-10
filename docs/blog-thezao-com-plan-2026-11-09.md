@@ -107,7 +107,7 @@ Every outbound step is Zaal's hand. The lane runs only the read-only checks.
 
 - Zaal picked **B**, with the address pattern `https://blog.thezao.com/{slug}`. The $50 custom domain was not used.
 - #147 added `api/post.js`, `api/editions.js` and `api/_blog.js`, and Zaal merged it. Vercel serves a real file before a rewrite, and `index.html` sits at `/`, so the blog home is `/editions`. `/` on the blog host redirects there.
-- Zaal's hand: added `blog.thezao.com` in Vercel; set the Paragraph Website page to Website address `https://blog.thezao.com/editions` and Web Article address `https://blog.thezao.com/{slug}`; added the TXT record Paragraph showed (name `_paragraph.blog.thezao.com`) in Porkbun. Paragraph reports it verified.
+- Zaal's hand: added `blog.thezao.com` in Vercel; set the Paragraph Website page to Website address `https://blog.thezao.com/editions` and Web Article address `https://blog.thezao.com/{slug}`; added the TXT record Paragraph showed (name `_paragraph.blog.thezao.com`) in Porkbun. Paragraph reports it verified. Measured 9 Nov: dig shows the CNAME to Vercel DNS and the `_paragraph` TXT present; the 301s below show the Paragraph setting saved.
 - Read by curl after verification:
   - `paragraph.com/@thezao/year-of-the-zabal-day-313` and `-307` return a 301 to the same slug on blog.thezao.com, which returns 200.
   - `paragraph.com/@thezao` returns a 301 to `/editions`.
