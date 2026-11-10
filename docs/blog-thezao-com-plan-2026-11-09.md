@@ -1,5 +1,7 @@
 # blog.thezao.com - plan (9 Nov 2026)
 
+**Outcome, 9 Nov 2026 evening: Zaal picked B (Your own website), and it is live.** See "What happened" at the end. The rest of this doc is the plan as written before the pick.
+
 Zaal, seat pane, Mon 9 Nov: "i wanna set up blog.thezao.com and i wanna make the zaoonparagraph repo aswell alligned iwth all this".
 
 This is a plan only. No DNS record, Paragraph setting or Vercel domain was changed. Each of those steps is his to do, and each is marked **Zaal** in the test card.
@@ -100,3 +102,17 @@ Every outbound step is Zaal's hand. The lane runs only the read-only checks.
 - A ($50, no code) or B (our page, our upkeep)?
 - The address pattern for B.
 - Whether to ask hello@paragraph.com for the B details the docs outage hid (his send; the lane can draft it).
+
+## What happened (9 Nov 2026, evening)
+
+- Zaal picked **B**, with the address pattern `https://blog.thezao.com/{slug}`. The $50 custom domain was not used.
+- #147 added `api/post.js`, `api/editions.js` and `api/_blog.js`, and Zaal merged it. Vercel serves a real file before a rewrite, and `index.html` sits at `/`, so the blog home is `/editions`. `/` on the blog host redirects there.
+- Zaal's hand: added `blog.thezao.com` in Vercel; set the Paragraph Website page to Website address `https://blog.thezao.com/editions` and Web Article address `https://blog.thezao.com/{slug}`; added the TXT record Paragraph showed (name `_paragraph.blog.thezao.com`) in Porkbun. Paragraph reports it verified.
+- Read by curl after verification:
+  - `paragraph.com/@thezao/year-of-the-zabal-day-313` and `-307` return a 301 to the same slug on blog.thezao.com, which returns 200.
+  - `paragraph.com/@thezao` returns a 301 to `/editions`.
+  - `paragraph.com/@thezao/subscribe` stays on Paragraph (200).
+  - 8 random older editions, Day 37 to Day 303, return 200 on the blog.
+  - RSS item links still name paragraph.com, and each one 301s to the blog.
+- Paragraph never showed the TXT record or the subdomain rules before Save, so those "not established" items above are now settled by the live result.
+- The URL table above is carried out in #148: reader links default to the blog. `paragraph.com/@thezao/<slug>.md` still answers on Paragraph with no redirect, so record-edition keeps reading bodies from there.
