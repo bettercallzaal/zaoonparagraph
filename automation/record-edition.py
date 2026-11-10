@@ -17,7 +17,10 @@ import datetime, json, os, re, sys, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 API = "https://public.api.paragraph.com/api/v1/posts/"
-LIVE = "https://paragraph.com/@thezao/"
+# Two bases since 9 Nov 2026. The body still comes from Paragraph: <slug>.md answers there
+# with no redirect. The URL a reader follows is blog.thezao.com, where paragraph.com links 301.
+SOURCE = "https://paragraph.com/@thezao/"
+LIVE = os.environ.get("PARAGRAPH_PUB_BASE", "https://blog.thezao.com/")
 UA = "zaoonparagraph-record-edition/1.0"   # a bare urllib User-Agent gets a 403 here
 
 def die(msg, code=2):
@@ -97,7 +100,7 @@ def main():
             die("REFUSED: %s already exists." % rel, 1)
         if pid in ids.values():
             die("REFUSED: post %s is already tracked in automation/post-ids.json." % pid, 1)
-    body = clean_body(fetch(LIVE + slug + ".md"), subtitle)
+    body = clean_body(fetch(SOURCE + slug + ".md"), subtitle)
     if "-->" in subtitle:
         die("REFUSED: the subtitle would break the record header.", 1)
     now_ms = datetime.datetime.now(datetime.timezone.utc).timestamp() * 1000

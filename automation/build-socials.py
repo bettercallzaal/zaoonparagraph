@@ -37,7 +37,9 @@ import html, importlib.util, json, os, re, sys, urllib.error, urllib.parse, urll
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 API = os.environ.get("PARAGRAPH_API_BASE", "https://public.api.paragraph.com/api/v1").rstrip("/")
-PUB = os.environ.get("PARAGRAPH_PUB_BASE", "https://paragraph.com/@thezao/")
+# Reader links go to blog.thezao.com since 9 Nov 2026 (Paragraph "Your own website";
+# old paragraph.com links 301 there). PARAGRAPH_PUB_BASE overrides it.
+PUB = os.environ.get("PARAGRAPH_PUB_BASE", "https://blog.thezao.com/")
 UA = "zaoonparagraph-build-socials/1.0"   # a bare urllib User-Agent gets a 403 from this API
 
 # key, label, carries the edition link

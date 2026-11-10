@@ -29,7 +29,7 @@ here and your memory disagree, this block is right.
    daily editions only. Do not apply it.
 5. No em dashes and no en dashes. Use hyphens. No emojis.
 6. Put closing punctuation inside the link text: [RSVP for free.](url), not [RSVP for free](url).
-7. Link Paragraph posts with the paragraph.com/@thezao/writing/ address.
+7. Link editions with their blog.thezao.com/<slug> address (the reader site since 9 Nov 2026; old paragraph.com links redirect there).
 8. Countdowns come from today's date, on the day a piece goes out. ZAOstock is Saturday,
    October 3, 2026. Never carry a countdown over from a draft.
 9. ZAOstock: no set times for any act. No licence claim about the brand kit. No dollar or ETH

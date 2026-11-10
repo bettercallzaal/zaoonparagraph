@@ -63,7 +63,7 @@ const toDay = (ms) => {
   return Math.round((d - Date.UTC(d.getUTCFullYear(), 0, 0)) / 86400000);
 };
 const liveDay = (p) => Number((p.title.match(/Day (\d{1,3})\b/) || [])[1]) || null;
-const liveUrl = (slug) => 'https://paragraph.com/@thezao/' + slug;
+const liveUrl = (slug) => 'https://blog.thezao.com/' + slug;   // the reader site since 9 Nov 2026
 
 // ---- job tape: every script's output, as printed ----
 let tapeEl = null;

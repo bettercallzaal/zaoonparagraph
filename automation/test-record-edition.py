@@ -99,7 +99,7 @@ with tempfile.TemporaryDirectory() as root:
     check("row goes under the file table",
           "`Cc9VxTLyCifiWFU7yxah` |\n| `2026-10-31-day-304.md` | 2026-10-31 | 304 | Year of the ZABAL - Day 304 | `O92qHVhCVfCD92qSeM2I` |\n" in after, True)
     check("row goes under the subtitle table",
-          "day-303 |\n| 304 | The subtitle. | https://paragraph.com/@thezao/year-of-the-zabal-day-304 |\n" in after, True)
+          "day-303 |\n| 304 | The subtitle. | https://blog.thezao.com/year-of-the-zabal-day-304 |\n" in after, True)
     code, _, err = run_main(rec, ["x", POST["id"]])
     check("recording twice is refused", (code, "REFUSED" in err), (1, True))
 
@@ -123,7 +123,7 @@ with tempfile.TemporaryDirectory() as root:
     code, out, err = run_main(stage, ["x", "madeupid", "--json"])
     check("--json exits 0", code, 0)
     data = json.loads(out)
-    check("--json carries the url", data["url"], "https://paragraph.com/@thezao/a-made-up-edition")
+    check("--json carries the url", data["url"], "https://blog.thezao.com/a-made-up-edition")
     check("--json carries every block", len(data["blocks"]), 9)
 
 if FAILED:

@@ -188,7 +188,7 @@ since Day 194 in July.
 2. Copy the output and paste it into a new file: `drafts/2026-07-14-day-195.md`.
 3. Run `automation/check-voice.sh drafts/2026-07-14-day-195.md` to validate tone and formatting.
 4. Run `automation/create-draft.sh drafts/2026-07-14-day-195.md` to push it as a draft to Paragraph.
-5. Review the draft on Paragraph (paragraph.com/@thezao) for any final tweaks.
+5. Review the draft in the Paragraph editor (app.paragraph.com) for any final tweaks.
 6. Make edits locally and re-run `automation/update-draft.sh <post-id> drafts/2026-07-14-day-195.md` to sync.
 7. When ready, publish on Paragraph's UI.
 8. Run `automation/archive-issue.sh drafts/2026-07-14-day-195.md` to move it to `published/` and sync tracking.
@@ -205,7 +205,7 @@ since Day 194 in July.
 ## Related
 
 - **zabalnewsletterbuilder** (separate repo) - the Vercel daily-3 composer tool
-- **Paragraph publication** - the live newsletter at paragraph.com/@thezao
+- **Paragraph publication** - the newsletter, written and emailed from Paragraph and read at blog.thezao.com (old paragraph.com/@thezao links redirect there)
 - **ZAOOS research** - strategy docs in ZAOOS repo (doc 1066 = build-now roadmap, doc 957 = reach playbook, others = growth/platform findings)
 
 ## For the next person

@@ -21,6 +21,7 @@ CASES = [
     (0, "facts that are in the edition", 'ZM. @gigi_gw_ said "the music and humor mainly", 38 minutes https://bczyapz.com/22'),
     (0, "the Day number from the title", "ZM. day 304"),
     (0, "the edition and share links", "https://paragraph.com/@thezao/year-of-the-zabal-day-304 https://t.me/share/url?url=x"),
+    (0, "the edition on the blog", "https://blog.thezao.com/year-of-the-zabal-day-304"),
     (1, "an invented number", "ZM. 200 builders"),
     (1, "a handle one character short", "ZM. ask @gigi_gw"),
     (1, "a misquote", 'ZM. she said "i love crypto"'),

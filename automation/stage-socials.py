@@ -19,7 +19,7 @@ Exit 2 the check could not run.
 import json, os, re, subprocess, sys, urllib.request, html, glob, importlib.util
 
 API = "https://public.api.paragraph.com/api/v1/posts/"
-PUB = "https://paragraph.com/@thezao/"
+PUB = os.environ.get("PARAGRAPH_PUB_BASE", "https://blog.thezao.com/")   # reader links, same default as build-socials.py
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIREFLY_CAP = 280
 
