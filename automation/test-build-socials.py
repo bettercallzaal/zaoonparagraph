@@ -109,6 +109,17 @@ if any(w in r.stdout for w in ("Telegram", "Firefly", "Discord", "Facebook", "gr
     FAILS.append("a paste channel is still in the sheet"); print("FAIL  the sheet has no paste channels")
 else:
     print("PASS  the sheet has no paste channels")
+# The default reader link, with no PARAGRAPH_PUB_BASE override: build() fills
+# {edition} as PUB + slug, so PUB is the whole of the fill. Every other case
+# here sets the override, which is why this one reads the default directly.
+_env = {k: v for k, v in os.environ.items() if k != "PARAGRAPH_PUB_BASE"}
+_probe = ("import importlib.util as u; s = u.spec_from_file_location('bs', %r); m = u.module_from_spec(s); "
+          "s.loader.exec_module(m); print(m.PUB + 'year-of-the-zabal-day-306')") % SCRIPT
+_fill = subprocess.run([sys.executable, "-c", _probe], capture_output=True, text=True, env=_env).stdout.strip()
+if _fill.startswith("https://blog.thezao.com/"):
+    print("PASS  the default {edition} fill is on blog.thezao.com: %s" % _fill)
+else:
+    FAILS.append("default edition fill"); print("FAIL  the default {edition} fill is %r, not on blog.thezao.com" % _fill)
 old = copy.deepcopy(SPEC); old["blocks"]["telegram"] = "ZM [FILL]"; fresh()
 expect("an old spec with paste keys still runs, and they are ignored", run(old), 0)
 
