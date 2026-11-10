@@ -1,3 +1,23 @@
 {
-  "ignoreCommand": "bash scripts/vercel-ignore.sh"
+  "ignoreCommand": "bash scripts/vercel-ignore.sh",
+  "redirects": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "blog.thezao.com" }],
+      "destination": "/editions",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/editions",
+      "has": [{ "type": "host", "value": "blog.thezao.com" }],
+      "destination": "/api/editions"
+    },
+    {
+      "source": "/:slug([a-z0-9][a-z0-9-]*)",
+      "has": [{ "type": "host", "value": "blog.thezao.com" }],
+      "destination": "/api/post?slug=:slug"
+    }
+  ]
 }

@@ -25,6 +25,7 @@ BUILD_PATHS=(
   ':(glob)*.html'
   assets public favicon.ico
   vercel.json scripts/vercel-ignore.sh
+  api
 )
 
 # 1. Diff base: the previous deploy's SHA, fetched if the shallow clone lacks
